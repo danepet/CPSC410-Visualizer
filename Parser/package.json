@@ -1,0 +1,16 @@
+{
+  "name": "Parser",
+  "version": "1.0.0",
+  "description": "Dependency for parser.js",
+  "main": "parser.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+	"dependencies": {
+		"xml2js" : "",
+		"readline-sync" : ""
+	}
+			
+}

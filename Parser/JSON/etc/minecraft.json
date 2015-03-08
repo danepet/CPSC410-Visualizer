@@ -1,0 +1,6529 @@
+{
+    "staticInfo": [
+        {
+            "className": "ABMHandler",
+            "method": [
+                "ABMHandler",
+                "countObjects",
+                "apply"
+            ],
+            "field": [
+                "m_env",
+                "m_aabms"
+            ],
+            "size": 6715,
+            "inheritance": "N/A",
+            "dependency": [
+                "ServerEnvironment"
+            ]
+        },
+        {
+            "className": "ActiveBlockList",
+            "method": [
+                "update",
+                "contains",
+                "clear"
+            ],
+            "field": [
+                "m_list",
+                "m_forceloaded_list"
+            ],
+            "size": 6065,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "ActiveBlockModifier",
+            "method": [
+                "ActiveBlockModifier",
+                "~ActiveBlockModifier",
+                "getTriggerContents",
+                "getRequiredNeighbors",
+                "getTriggerInterval",
+                "getTriggerChance",
+                "trigger"
+            ],
+            "field": [],
+            "size": 9357,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "ActiveObject",
+            "method": [
+                "ActiveObject",
+                "getId",
+                "setId",
+                "getType",
+                "getCollisionBox",
+                "collideWithObjects"
+            ],
+            "field": [
+                "m_id"
+            ],
+            "size": 12367,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "Address",
+            "method": [
+                "Address",
+                "operator==",
+                "operator!=",
+                "Resolve",
+                "getAddress",
+                "getPort",
+                "setAddress",
+                "getAddress6",
+                "getFamily",
+                "isIPv6",
+                "isZero",
+                "setPort",
+                "print",
+                "serializeString"
+            ],
+            "field": [
+                "m_addr_family",
+                "m_address",
+                "m_port",
+                "ipv4",
+                "ipv6"
+            ],
+            "size": 23930,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "AlreadyExistsException",
+            "method": [
+                "AlreadyExistsException"
+            ],
+            "field": [],
+            "size": 3744,
+            "inheritance": "BaseException",
+            "dependency": []
+        },
+        {
+            "className": "AsyncQueuedException",
+            "method": [
+                "AsyncQueuedException"
+            ],
+            "field": [],
+            "size": 3710,
+            "inheritance": "BaseException",
+            "dependency": []
+        },
+        {
+            "className": "BanManager",
+            "method": [
+                "BanManager",
+                "~BanManager",
+                "load",
+                "save",
+                "isIpBanned",
+                "getBanDescription",
+                "getBanName",
+                "add",
+                "remove",
+                "isModified"
+            ],
+            "field": [
+                "m_mutex",
+                "m_banfilepath",
+                "m_ips",
+                "m_modified"
+            ],
+            "size": 13904,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "BaseException",
+            "method": [
+                "BaseException",
+                "~BaseException",
+                "what"
+            ],
+            "field": [
+                "m_s"
+            ],
+            "size": 16764,
+            "inheritance": "exception",
+            "dependency": []
+        },
+        {
+            "className": "Biome",
+            "method": [],
+            "field": [
+                "flags",
+                "c_top",
+                "c_filler",
+                "c_water",
+                "c_dust",
+                "c_dust_water",
+                "depth_top",
+                "depth_filler",
+                "height_min",
+                "height_max",
+                "heat_point",
+                "humidity_point"
+            ],
+            "size": 11752,
+            "inheritance": "GenElement",
+            "dependency": []
+        },
+        {
+            "className": "BiomeManager",
+            "method": [
+                "BiomeManager",
+                "~BiomeManager",
+                "create",
+                "calcBiomes",
+                "getBiome"
+            ],
+            "field": [
+                "ELEMENT_TITLE",
+                "ELEMENT_LIMIT",
+                "np_heat",
+                "np_humidity"
+            ],
+            "size": 13161,
+            "inheritance": "GenElementManager",
+            "dependency": []
+        },
+        {
+            "className": "BoolScopeSet",
+            "method": [
+                "BoolScopeSet",
+                "~BoolScopeSet"
+            ],
+            "field": [
+                "m_dst",
+                "m_orig_state"
+            ],
+            "size": 4494,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "CCraftDefManager",
+            "method": [
+                "~CCraftDefManager",
+                "getCraftResult",
+                "getCraftRecipe",
+                "getCraftRecipes",
+                "dump",
+                "registerCraft",
+                "clear",
+                "serialize",
+                "deSerialize"
+            ],
+            "field": [
+                "m_craft_definitions"
+            ],
+            "size": 15530,
+            "inheritance": "IWritableCraftDefManager",
+            "dependency": [
+                "CraftDefinition"
+            ]
+        },
+        {
+            "className": "CItemDefManager",
+            "method": [
+                "CItemDefManager",
+                "~CItemDefManager",
+                "get",
+                "getAlias",
+                "getAll",
+                "isKnown",
+                "createClientCachedDirect",
+                "getClientCached",
+                "getInventoryTexture",
+                "getWieldMesh",
+                "clear",
+                "registerItem",
+                "registerAlias",
+                "serialize",
+                "deSerialize",
+                "processQueue"
+            ],
+            "field": [
+                "m_item_definitions",
+                "m_aliases",
+                "m_main_thread",
+                "m_dummy_clientcached",
+                "m_clientcached",
+                "m_get_clientcached_queue"
+            ],
+            "size": 28006,
+            "inheritance": "IWritableItemDefManager",
+            "dependency": []
+        },
+        {
+            "className": "CNodeDefManager",
+            "method": [
+                "CNodeDefManager",
+                "~CNodeDefManager",
+                "clear",
+                "clone",
+                "get",
+                "getId",
+                "getIds",
+                "allocateId",
+                "set",
+                "allocateDummy",
+                "updateAliases",
+                "updateTextures",
+                "serialize",
+                "deSerialize",
+                "getResolver",
+                "addNameIdMapping",
+                "fillTileAttribs"
+            ],
+            "field": [
+                "m_content_features",
+                "m_name_id_mapping",
+                "m_name_id_mapping_with_aliases",
+                "m_group_to_items",
+                "m_next_id",
+                "m_resolver"
+            ],
+            "size": 32870,
+            "inheritance": "IWritableNodeDefManager",
+            "dependency": [
+                "NameIdMapping",
+                "NodeResolver"
+            ]
+        },
+        {
+            "className": "Camera",
+            "method": [
+                "Camera",
+                "~Camera",
+                "getPlayerNode",
+                "getHeadNode",
+                "getCameraNode",
+                "getPosition",
+                "getDirection",
+                "getOffset",
+                "getFovX",
+                "getFovY",
+                "getFovMax",
+                "successfullyCreated",
+                "step",
+                "update",
+                "updateViewingRange",
+                "setDigging",
+                "wield",
+                "drawWieldedTool",
+                "toggleCameraMode",
+                "getCameraMode"
+            ],
+            "field": [
+                "m_playernode",
+                "m_headnode",
+                "m_cameranode",
+                "m_wieldmgr",
+                "m_wieldnode",
+                "m_wieldlightnode",
+                "m_draw_control",
+                "m_gamedef",
+                "m_camera_position",
+                "m_camera_direction",
+                "m_camera_offset",
+                "m_aspect",
+                "m_fov_x",
+                "m_fov_y",
+                "m_added_busytime",
+                "m_added_frames",
+                "m_range_old",
+                "m_busytime_old",
+                "m_frametime_counter",
+                "m_time_per_range",
+                "m_view_bobbing_anim",
+                "m_view_bobbing_state",
+                "m_view_bobbing_speed",
+                "m_view_bobbing_fall",
+                "m_digging_anim",
+                "m_digging_button",
+                "m_wield_change_timer",
+                "m_wield_item_next",
+                "m_camera_mode"
+            ],
+            "size": 45096,
+            "inheritance": "N/A",
+            "dependency": [
+                "WieldMeshSceneNode",
+                "IGameDef"
+            ]
+        },
+        {
+            "className": "CaveV6",
+            "method": [
+                "CaveV6",
+                "makeCave",
+                "makeTunnel",
+                "carveRoute"
+            ],
+            "field": [
+                "mg",
+                "vm",
+                "ndef",
+                "min_tunnel_diameter",
+                "max_tunnel_diameter",
+                "tunnel_routepoints",
+                "dswitchint",
+                "part_max_length_rs",
+                "large_cave",
+                "large_cave_is_flat",
+                "flooded",
+                "max_stone_y",
+                "node_min",
+                "node_max",
+                "orp",
+                "of",
+                "ar",
+                "rs",
+                "main_direction",
+                "route_y_min",
+                "route_y_max",
+                "ps",
+                "ps2",
+                "c_water_source",
+                "c_lava_source",
+                "water_level"
+            ],
+            "size": 35699,
+            "inheritance": "N/A",
+            "dependency": [
+                "MapgenV6",
+                "ManualMapVoxelManipulator",
+                "INodeDefManager",
+                "PseudoRandom"
+            ]
+        },
+        {
+            "className": "CaveV7",
+            "method": [
+                "CaveV7",
+                "makeCave",
+                "makeTunnel",
+                "carveRoute"
+            ],
+            "field": [
+                "mg",
+                "vm",
+                "ndef",
+                "np_caveliquids",
+                "min_tunnel_diameter",
+                "max_tunnel_diameter",
+                "tunnel_routepoints",
+                "dswitchint",
+                "part_max_length_rs",
+                "large_cave",
+                "large_cave_is_flat",
+                "flooded",
+                "max_stone_y",
+                "node_min",
+                "node_max",
+                "orp",
+                "of",
+                "ar",
+                "rs",
+                "main_direction",
+                "route_y_min",
+                "route_y_max",
+                "ps",
+                "c_water_source",
+                "c_lava_source",
+                "c_ice",
+                "water_level"
+            ],
+            "size": 36643,
+            "inheritance": "N/A",
+            "dependency": [
+                "MapgenV7",
+                "ManualMapVoxelManipulator",
+                "INodeDefManager",
+                "PseudoRandom"
+            ]
+        },
+        {
+            "className": "ChatBackend",
+            "method": [
+                "ChatBackend",
+                "~ChatBackend",
+                "addMessage",
+                "addUnparsedMessage",
+                "getConsoleBuffer",
+                "getRecentBuffer",
+                "getRecentChat",
+                "getPrompt",
+                "reformat",
+                "clearRecentChat",
+                "step",
+                "scroll",
+                "scrollPageDown",
+                "scrollPageUp"
+            ],
+            "field": [
+                "m_console_buffer",
+                "m_recent_buffer",
+                "m_prompt"
+            ],
+            "size": 16975,
+            "inheritance": "N/A",
+            "dependency": [
+                "ChatBuffer",
+                "ChatPrompt"
+            ]
+        },
+        {
+            "className": "ChatBuffer",
+            "method": [
+                "ChatBuffer",
+                "~ChatBuffer",
+                "addLine",
+                "clear",
+                "getLineCount",
+                "getScrollback",
+                "getLine",
+                "step",
+                "deleteOldest",
+                "deleteByAge",
+                "getColumns",
+                "getRows",
+                "reformat",
+                "getFormattedLine",
+                "scroll",
+                "scrollAbsolute",
+                "scrollBottom",
+                "scrollTop",
+                "formatChatLine",
+                "getTopScrollPos",
+                "getBottomScrollPos"
+            ],
+            "field": [
+                "m_scrollback",
+                "m_unformatted",
+                "m_cols",
+                "m_rows",
+                "m_scroll",
+                "m_formatted",
+                "m_empty_formatted_line"
+            ],
+            "size": 27593,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "ChatPrompt",
+            "method": [
+                "ChatPrompt",
+                "~ChatPrompt",
+                "input",
+                "submit",
+                "clear",
+                "replace",
+                "historyPrev",
+                "historyNext",
+                "nickCompletion",
+                "reformat",
+                "getVisiblePortion",
+                "getVisibleCursorPosition",
+                "cursorOperation",
+                "clampView"
+            ],
+            "field": [
+                "m_prompt",
+                "m_line",
+                "m_history",
+                "m_history_index",
+                "m_history_limit",
+                "m_cols",
+                "m_view",
+                "m_cursor",
+                "m_nick_completion_start",
+                "m_nick_completion_end"
+            ],
+            "size": 28683,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "Client",
+            "method": [
+                "Client",
+                "~Client",
+                "Stop",
+                "isShutdown",
+                "connect",
+                "step",
+                "ProcessData",
+                "AsyncProcessPacket",
+                "AsyncProcessData",
+                "Send",
+                "interact",
+                "sendNodemetaFields",
+                "sendInventoryFields",
+                "sendInventoryAction",
+                "sendChatMessage",
+                "sendChangePassword",
+                "sendDamage",
+                "sendBreath",
+                "sendRespawn",
+                "sendReady",
+                "getEnv",
+                "removeNode",
+                "addNode",
+                "setPlayerControl",
+                "selectPlayerItem",
+                "getPlayerItem",
+                "getLocalInventoryUpdated",
+                "getLocalInventory",
+                "getInventory",
+                "inventoryAction",
+                "getSelectedActiveObject",
+                "getConnectedPlayerNames",
+                "getAnimationTime",
+                "getCrackLevel",
+                "setCrack",
+                "setHighlighted",
+                "getHighlighted",
+                "getHP",
+                "getBreath",
+                "checkPrivilege",
+                "getChatMessage",
+                "typeChatMessage",
+                "getMapSeed",
+                "addUpdateMeshTask",
+                "addUpdateMeshTaskWithEdge",
+                "addUpdateMeshTaskForNode",
+                "updateCameraOffset",
+                "getClientEvent",
+                "accessDenied",
+                "accessDeniedReason",
+                "itemdefReceived",
+                "nodedefReceived",
+                "mediaReceived",
+                "mediaReceiveProgress",
+                "afterContentReceived",
+                "getRTT",
+                "getCurRate",
+                "getAvgRate",
+                "getItemDefManager",
+                "getNodeDefManager",
+                "getCraftDefManager",
+                "getTextureSource",
+                "getShaderSource",
+                "getSceneManager",
+                "allocateUnknownNodeId",
+                "getSoundManager",
+                "getEventManager",
+                "checkLocalPrivilege",
+                "getMesh",
+                "loadMedia",
+                "request_media",
+                "received_media",
+                "getState",
+                "makeScreenshot",
+                "peerAdded",
+                "deletingPeer",
+                "ReceiveAll",
+                "Receive",
+                "sendPlayerPos",
+                "sendPlayerItem"
+            ],
+            "field": [
+                "m_packetcounter_timer",
+                "m_connection_reinit_timer",
+                "m_avg_rtt_timer",
+                "m_playerpos_send_timer",
+                "m_ignore_damage_timer",
+                "m_map_timer_and_unload_interval",
+                "m_tsrc",
+                "m_shsrc",
+                "m_itemdef",
+                "m_nodedef",
+                "m_sound",
+                "m_event",
+                "m_mesh_update_thread",
+                "m_env",
+                "m_con",
+                "m_device",
+                "m_server_ser_ver",
+                "m_playeritem",
+                "m_inventory_updated",
+                "m_inventory_from_server",
+                "m_inventory_from_server_age",
+                "m_active_blocks",
+                "m_packetcounter",
+                "m_show_hud",
+                "m_animation_time",
+                "m_crack_level",
+                "m_crack_pos",
+                "m_highlighted_pos",
+                "m_chat_queue",
+                "m_map_seed",
+                "m_password",
+                "m_access_denied",
+                "m_access_denied_reason",
+                "m_client_event_queue",
+                "m_itemdef_received",
+                "m_nodedef_received",
+                "m_media_downloader",
+                "m_time_of_day_set",
+                "m_last_time_of_day_f",
+                "m_time_of_day_update_timer",
+                "m_recommended_send_interval",
+                "m_removed_sounds_check_timer",
+                "m_sounds_server_to_client",
+                "m_sounds_client_to_server",
+                "m_sounds_to_objects",
+                "m_privileges",
+                "m_detached_inventories",
+                "m_mesh_data",
+                "m_state"
+            ],
+            "size": 131595,
+            "inheritance": "con::PeerHandler",
+            "dependency": [
+                "IWritableTextureSource",
+                "IWritableShaderSource",
+                "IWritableItemDefManager",
+                "IWritableNodeDefManager",
+                "ISoundManager",
+                "MtEventManager",
+                "MeshUpdateThread",
+                "ClientEnvironment",
+                "con::Connection",
+                "Inventory",
+                "PacketCounter",
+                "ClientMediaDownloader"
+            ]
+        },
+        {
+            "className": "ClientActiveObject",
+            "method": [
+                "ClientActiveObject",
+                "~ClientActiveObject",
+                "addToScene",
+                "removeFromScene",
+                "updateLight",
+                "getLightPosition",
+                "getSelectionBox",
+                "getCollisionBox",
+                "collideWithObjects",
+                "getPosition",
+                "getSceneNode",
+                "getMeshSceneNode",
+                "getAnimatedMeshSceneNode",
+                "getWieldMeshSceneNode",
+                "getSpriteSceneNode",
+                "isPlayer",
+                "isLocalPlayer",
+                "setAttachments",
+                "doShowSelectionBox",
+                "updateCameraOffset",
+                "step",
+                "processMessage",
+                "infoText",
+                "debugInfoText",
+                "initialize",
+                "directReportPunch",
+                "create",
+                "registerType"
+            ],
+            "field": [
+                "m_gamedef",
+                "m_env",
+                "m_types"
+            ],
+            "size": 43056,
+            "inheritance": "ActiveObject",
+            "dependency": [
+                "IGameDef",
+                "ClientEnvironment"
+            ]
+        },
+        {
+            "className": "ClientEnvironment",
+            "method": [
+                "ClientEnvironment",
+                "~ClientEnvironment",
+                "getMap",
+                "getClientMap",
+                "getGameDef",
+                "step",
+                "addPlayer",
+                "getLocalPlayer",
+                "addSimpleObject",
+                "getActiveObject",
+                "addActiveObject",
+                "removeActiveObject",
+                "processActiveObjectMessage",
+                "damageLocalPlayer",
+                "updateLocalPlayerBreath",
+                "getActiveObjects",
+                "getClientEvent",
+                "getPlayerNames",
+                "addPlayerName",
+                "removePlayerName",
+                "updateCameraOffset",
+                "getCameraOffset"
+            ],
+            "field": [
+                "m_attachements",
+                "m_map",
+                "m_smgr",
+                "m_texturesource",
+                "m_gamedef",
+                "m_irr",
+                "m_active_objects",
+                "m_simple_objects",
+                "m_client_event_queue",
+                "m_active_object_light_update_interval",
+                "m_lava_hurt_interval",
+                "m_drowning_interval",
+                "m_breathing_interval",
+                "m_player_names",
+                "m_camera_offset"
+            ],
+            "size": 46436,
+            "inheritance": "Environment",
+            "dependency": [
+                "ClientMap",
+                "ITextureSource",
+                "IGameDef",
+                "ClientActiveObject",
+                "ClientSimpleObject"
+            ]
+        },
+        {
+            "className": "ClientInterface",
+            "method": [
+                "ClientInterface",
+                "~ClientInterface",
+                "step",
+                "getClientIDs",
+                "getPlayerNames",
+                "send",
+                "sendToAll",
+                "DeleteClient",
+                "CreateClient",
+                "getClientNoEx",
+                "lockedGetClientNoEx",
+                "getClientState",
+                "setPlayerName",
+                "getProtocolVersion",
+                "setClientVersion",
+                "event",
+                "setEnv",
+                "state2Name",
+                "Lock",
+                "Unlock",
+                "getClientList",
+                "UpdatePlayerList"
+            ],
+            "field": [
+                "m_con",
+                "m_clients_mutex",
+                "m_clients",
+                "m_clients_names",
+                "m_env",
+                "m_env_mutex",
+                "m_print_info_timer",
+                "statenames"
+            ],
+            "size": 33858,
+            "inheritance": "N/A",
+            "dependency": [
+                "con::Connection",
+                "RemoteClient",
+                "ServerEnvironment"
+            ]
+        },
+        {
+            "className": "ClientMap",
+            "method": [
+                "ClientMap",
+                "~ClientMap",
+                "mapType",
+                "drop",
+                "updateCamera",
+                "emergeSector",
+                "OnRegisterSceneNode",
+                "render",
+                "getBoundingBox",
+                "updateDrawList",
+                "renderMap",
+                "getBackgroundBrightness",
+                "renderPostFx",
+                "PrintInfo",
+                "sectorWasDrawn"
+            ],
+            "field": [
+                "m_client",
+                "m_box",
+                "m_control",
+                "m_camera_position",
+                "m_camera_direction",
+                "m_camera_fov",
+                "m_camera_offset",
+                "m_camera_mutex",
+                "m_drawlist",
+                "m_last_drawn_sectors"
+            ],
+            "size": 37719,
+            "inheritance": "Map",
+            "dependency": [
+                "Client",
+                "MapBlock"
+            ]
+        },
+        {
+            "className": "ClientMapSector",
+            "method": [
+                "ClientMapSector",
+                "~ClientMapSector",
+                "getId"
+            ],
+            "field": [],
+            "size": 9800,
+            "inheritance": "MapSector",
+            "dependency": []
+        },
+        {
+            "className": "ClientMediaDownloader",
+            "method": [
+                "ClientMediaDownloader",
+                "~ClientMediaDownloader",
+                "getProgress",
+                "isStarted",
+                "isDone",
+                "addFile",
+                "addRemoteServer",
+                "step",
+                "conventionalTransferDone",
+                "initialStep",
+                "remoteHashSetReceived",
+                "remoteMediaReceived",
+                "selectRemoteServer",
+                "startRemoteMediaTransfers",
+                "startConventionalTransfers",
+                "checkAndLoad",
+                "serializeRequiredHashSet",
+                "deSerializeHashSet"
+            ],
+            "field": [
+                "m_files",
+                "m_remotes",
+                "m_media_cache",
+                "m_initial_step_done",
+                "m_uncached_count",
+                "m_uncached_received_count",
+                "m_httpfetch_caller",
+                "m_httpfetch_next_id",
+                "m_httpfetch_timeout",
+                "m_httpfetch_active",
+                "m_httpfetch_active_limit",
+                "m_outstanding_hash_sets",
+                "m_remote_file_transfers",
+                "m_name_bound"
+            ],
+            "size": 34758,
+            "inheritance": "N/A",
+            "dependency": [
+                "FileCache"
+            ]
+        },
+        {
+            "className": "ClientNotFoundException",
+            "method": [
+                "ClientNotFoundException"
+            ],
+            "field": [],
+            "size": 3746,
+            "inheritance": "BaseException",
+            "dependency": []
+        },
+        {
+            "className": "ClientSimpleObject",
+            "method": [
+                "ClientSimpleObject",
+                "~ClientSimpleObject",
+                "step"
+            ],
+            "field": [
+                "m_to_be_removed"
+            ],
+            "size": 5267,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "ClientStateError",
+            "method": [
+                "ClientStateError"
+            ],
+            "field": [],
+            "size": 3635,
+            "inheritance": "BaseException",
+            "dependency": []
+        },
+        {
+            "className": "Clouds",
+            "method": [
+                "Clouds",
+                "~Clouds",
+                "OnRegisterSceneNode",
+                "render",
+                "getBoundingBox",
+                "getMaterialCount",
+                "getMaterial",
+                "step",
+                "update",
+                "updateCameraOffset"
+            ],
+            "field": [
+                "m_material",
+                "m_box",
+                "m_cloud_y",
+                "m_color",
+                "m_seed",
+                "m_camera_pos",
+                "m_time",
+                "m_camera_offset"
+            ],
+            "size": 17990,
+            "inheritance": "ISceneNode",
+            "dependency": []
+        },
+        {
+            "className": "CommandLineError",
+            "method": [
+                "CommandLineError"
+            ],
+            "field": [],
+            "size": 3656,
+            "inheritance": "BaseException",
+            "dependency": []
+        },
+        {
+            "className": "ContainerFullException",
+            "method": [
+                "ContainerFullException"
+            ],
+            "field": [],
+            "size": 3754,
+            "inheritance": "BaseException",
+            "dependency": []
+        },
+        {
+            "className": "CraftDefinition",
+            "method": [
+                "CraftDefinition",
+                "~CraftDefinition",
+                "serialize",
+                "getName",
+                "check",
+                "getOutput",
+                "getInput",
+                "decrementInput",
+                "dump",
+                "deSerialize",
+                "serializeBody",
+                "deSerializeBody"
+            ],
+            "field": [],
+            "size": 20630,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "CraftDefinitionCooking",
+            "method": [
+                "CraftDefinitionCooking",
+                "~CraftDefinitionCooking",
+                "getName",
+                "check",
+                "getOutput",
+                "getInput",
+                "decrementInput",
+                "dump",
+                "serializeBody",
+                "deSerializeBody"
+            ],
+            "field": [
+                "output",
+                "recipe",
+                "cooktime",
+                "replacements"
+            ],
+            "size": 20159,
+            "inheritance": "CraftDefinition",
+            "dependency": []
+        },
+        {
+            "className": "CraftDefinitionFuel",
+            "method": [
+                "CraftDefinitionFuel",
+                "~CraftDefinitionFuel",
+                "getName",
+                "check",
+                "getOutput",
+                "getInput",
+                "decrementInput",
+                "dump",
+                "serializeBody",
+                "deSerializeBody"
+            ],
+            "field": [
+                "recipe",
+                "burntime",
+                "replacements"
+            ],
+            "size": 18867,
+            "inheritance": "CraftDefinition",
+            "dependency": []
+        },
+        {
+            "className": "CraftDefinitionShaped",
+            "method": [
+                "CraftDefinitionShaped",
+                "~CraftDefinitionShaped",
+                "getName",
+                "check",
+                "getOutput",
+                "getInput",
+                "decrementInput",
+                "dump",
+                "serializeBody",
+                "deSerializeBody"
+            ],
+            "field": [
+                "output",
+                "width",
+                "recipe",
+                "replacements"
+            ],
+            "size": 20175,
+            "inheritance": "CraftDefinition",
+            "dependency": []
+        },
+        {
+            "className": "CraftDefinitionShapeless",
+            "method": [
+                "CraftDefinitionShapeless",
+                "~CraftDefinitionShapeless",
+                "getName",
+                "check",
+                "getOutput",
+                "getInput",
+                "decrementInput",
+                "dump",
+                "serializeBody",
+                "deSerializeBody"
+            ],
+            "field": [
+                "output",
+                "recipe",
+                "replacements"
+            ],
+            "size": 19384,
+            "inheritance": "CraftDefinition",
+            "dependency": []
+        },
+        {
+            "className": "CraftDefinitionToolRepair",
+            "method": [
+                "CraftDefinitionToolRepair",
+                "~CraftDefinitionToolRepair",
+                "getName",
+                "check",
+                "getOutput",
+                "getInput",
+                "decrementInput",
+                "dump",
+                "serializeBody",
+                "deSerializeBody"
+            ],
+            "field": [
+                "additional_wear"
+            ],
+            "size": 17108,
+            "inheritance": "CraftDefinition",
+            "dependency": []
+        },
+        {
+            "className": "Database",
+            "method": [
+                "beginSave",
+                "endSave",
+                "saveBlock",
+                "loadBlock",
+                "getBlockAsInteger",
+                "getIntegerAsBlock",
+                "listAllLoadableBlocks",
+                "Initialized",
+                "~Database"
+            ],
+            "field": [],
+            "size": 11266,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "Database_Dummy",
+            "method": [
+                "Database_Dummy",
+                "beginSave",
+                "endSave",
+                "saveBlock",
+                "loadBlock",
+                "listAllLoadableBlocks",
+                "Initialized",
+                "~Database_Dummy"
+            ],
+            "field": [
+                "srvmap",
+                "m_database"
+            ],
+            "size": 12684,
+            "inheritance": "Database",
+            "dependency": [
+                "ServerMap"
+            ]
+        },
+        {
+            "className": "Database_SQLite3",
+            "method": [
+                "Database_SQLite3",
+                "beginSave",
+                "endSave",
+                "saveBlock",
+                "loadBlock",
+                "listAllLoadableBlocks",
+                "Initialized",
+                "~Database_SQLite3",
+                "createDatabase",
+                "verifyDatabase",
+                "createDirs"
+            ],
+            "field": [
+                "srvmap",
+                "m_savedir",
+                "m_database",
+                "m_database_read",
+                "m_database_write",
+                "m_database_list"
+            ],
+            "size": 19629,
+            "inheritance": "Database",
+            "dependency": [
+                "ServerMap"
+            ]
+        },
+        {
+            "className": "DebugStacker",
+            "method": [
+                "DebugStacker",
+                "~DebugStacker"
+            ],
+            "field": [
+                "m_stack",
+                "m_overflowed"
+            ],
+            "size": 4427,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "Debugbuf",
+            "method": [
+                "Debugbuf",
+                "overflow",
+                "xsputn"
+            ],
+            "field": [
+                "m_disable_stderr"
+            ],
+            "size": 5378,
+            "inheritance": "streambuf",
+            "dependency": []
+        },
+        {
+            "className": "DecoSchematic",
+            "method": [
+                "~DecoSchematic",
+                "generate",
+                "getHeight"
+            ],
+            "field": [
+                "flags",
+                "rotation",
+                "schematic",
+                "filename"
+            ],
+            "size": 12270,
+            "inheritance": "Decoration",
+            "dependency": [
+                "Schematic"
+            ]
+        },
+        {
+            "className": "DecoSimple",
+            "method": [
+                "~DecoSimple",
+                "canPlaceDecoration",
+                "generate",
+                "getHeight"
+            ],
+            "field": [
+                "c_decos",
+                "c_spawnby",
+                "deco_height",
+                "deco_height_max",
+                "nspawnby"
+            ],
+            "size": 13706,
+            "inheritance": "Decoration",
+            "dependency": []
+        },
+        {
+            "className": "Decoration",
+            "method": [
+                "Decoration",
+                "~Decoration",
+                "placeDeco",
+                "placeCutoffs",
+                "generate",
+                "getHeight"
+            ],
+            "field": [
+                "ndef",
+                "mapseed",
+                "c_place_on",
+                "sidelen",
+                "fill_ratio",
+                "np",
+                "biomes"
+            ],
+            "size": 16326,
+            "inheritance": "GenElement",
+            "dependency": [
+                "INodeDefManager"
+            ]
+        },
+        {
+            "className": "DecorationManager",
+            "method": [
+                "DecorationManager",
+                "~DecorationManager",
+                "create",
+                "placeAllDecos"
+            ],
+            "field": [
+                "ELEMENT_TITLE",
+                "ELEMENT_LIMIT"
+            ],
+            "size": 9874,
+            "inheritance": "GenElementManager",
+            "dependency": []
+        },
+        {
+            "className": "DstreamNoStderrLogOutput",
+            "method": [
+                "printLog"
+            ],
+            "field": [],
+            "size": 3221,
+            "inheritance": "ILogOutput",
+            "dependency": []
+        },
+        {
+            "className": "DummyLoadSAO",
+            "method": [
+                "DummyLoadSAO",
+                "getType",
+                "isStaticAllowed",
+                "step",
+                "getCollisionBox",
+                "collideWithObjects",
+                "create"
+            ],
+            "field": [],
+            "size": 19479,
+            "inheritance": "ServerActiveObject",
+            "dependency": []
+        },
+        {
+            "className": "DummySoundManager",
+            "method": [
+                "loadSoundFile",
+                "loadSoundData",
+                "updateListener",
+                "setListenerGain",
+                "playSound",
+                "playSoundAt",
+                "stopSound",
+                "soundExists",
+                "updateSoundPosition"
+            ],
+            "field": [],
+            "size": 13774,
+            "inheritance": "ISoundManager",
+            "dependency": []
+        },
+        {
+            "className": "DungeonGen",
+            "method": [
+                "DungeonGen",
+                "generate",
+                "makeDungeon",
+                "makeRoom",
+                "makeCorridor",
+                "makeDoor",
+                "makeFill",
+                "makeHole",
+                "findPlaceForDoor",
+                "findPlaceForRoomDoor",
+                "randomizeDir"
+            ],
+            "field": [
+                "vm",
+                "mg",
+                "blockseed",
+                "random",
+                "csize",
+                "c_torch",
+                "dp",
+                "m_pos",
+                "m_dir"
+            ],
+            "size": 26137,
+            "inheritance": "N/A",
+            "dependency": [
+                "ManualMapVoxelManipulator",
+                "Mapgen",
+                "PseudoRandom"
+            ]
+        },
+        {
+            "className": "EmergeManager",
+            "method": [
+                "EmergeManager",
+                "~EmergeManager",
+                "loadMapgenParams",
+                "initMapgens",
+                "getCurrentMapgen",
+                "createMapgen",
+                "createMapgenParams",
+                "startThreads",
+                "stopThreads",
+                "enqueueBlockEmerge",
+                "registerMapgen",
+                "loadParamsFromSettings",
+                "saveParamsToSettings",
+                "getBiomeAtPoint",
+                "getGroundLevelAtPoint",
+                "isBlockUnderground",
+                "getBlockSeed"
+            ],
+            "field": [
+                "ndef",
+                "mglist",
+                "mapgen",
+                "emergethread",
+                "threads_active",
+                "params",
+                "mapgen_debug_info",
+                "qlimit_total",
+                "qlimit_diskonly",
+                "qlimit_generate",
+                "gennotify",
+                "queuemutex",
+                "blocks_enqueued",
+                "peer_queue_count",
+                "biomemgr",
+                "oremgr",
+                "decomgr",
+                "schemmgr"
+            ],
+            "size": 37383,
+            "inheritance": "N/A",
+            "dependency": [
+                "INodeDefManager",
+                "Mapgen",
+                "EmergeThread",
+                "BiomeManager",
+                "OreManager",
+                "DecorationManager",
+                "SchematicManager"
+            ]
+        },
+        {
+            "className": "EmergeThread",
+            "method": [
+                "EmergeThread",
+                "Thread",
+                "popBlockEmerge",
+                "getBlockOrStartGen"
+            ],
+            "field": [
+                "m_server",
+                "map",
+                "emerge",
+                "mapgen",
+                "enable_mapgen_debug_info",
+                "id",
+                "qevent",
+                "blockqueue"
+            ],
+            "size": 20268,
+            "inheritance": "JThread",
+            "dependency": [
+                "Server",
+                "ServerMap",
+                "EmergeManager",
+                "Mapgen"
+            ]
+        },
+        {
+            "className": "Environment",
+            "method": [
+                "Environment",
+                "~Environment",
+                "step",
+                "getMap",
+                "addPlayer",
+                "removePlayer",
+                "getPlayer",
+                "getRandomConnectedPlayer",
+                "getNearestConnectedPlayer",
+                "getPlayers",
+                "getDayNightRatio",
+                "setTimeOfDay",
+                "getTimeOfDay",
+                "getTimeOfDayF",
+                "stepTimeOfDay",
+                "setTimeOfDaySpeed",
+                "getTimeOfDaySpeed",
+                "setDayNightRatioOverride"
+            ],
+            "field": [
+                "m_added_objects",
+                "m_players",
+                "m_time_of_day",
+                "m_time_of_day_f",
+                "m_time_of_day_speed",
+                "m_time_counter",
+                "m_enable_day_night_ratio_override",
+                "m_day_night_ratio_override",
+                "m_lock"
+            ],
+            "size": 31044,
+            "inheritance": "N/A",
+            "dependency": [
+                "Player"
+            ]
+        },
+        {
+            "className": "EventManager",
+            "method": [
+                "receiverReceive",
+                "~EventManager",
+                "put",
+                "reg",
+                "dereg"
+            ],
+            "field": [
+                "m_dest"
+            ],
+            "size": 11526,
+            "inheritance": "MtEventManager",
+            "dependency": []
+        },
+        {
+            "className": "ExtrusionMeshCache",
+            "method": [
+                "ExtrusionMeshCache",
+                "~ExtrusionMeshCache",
+                "create",
+                "createCube"
+            ],
+            "field": [
+                "m_extrusion_meshes",
+                "m_cube"
+            ],
+            "size": 7342,
+            "inheritance": "IReferenceCounted",
+            "dependency": []
+        },
+        {
+            "className": "FatalSystemException",
+            "method": [
+                "FatalSystemException"
+            ],
+            "field": [],
+            "size": 3726,
+            "inheritance": "BaseException",
+            "dependency": []
+        },
+        {
+            "className": "FileCache",
+            "method": [
+                "FileCache",
+                "update",
+                "load",
+                "loadByPath",
+                "updateByPath"
+            ],
+            "field": [
+                "m_dir"
+            ],
+            "size": 7289,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "FileNotGoodException",
+            "method": [
+                "FileNotGoodException"
+            ],
+            "field": [],
+            "size": 3725,
+            "inheritance": "BaseException",
+            "dependency": []
+        },
+        {
+            "className": "FormspecFormSource",
+            "method": [
+                "FormspecFormSource",
+                "~FormspecFormSource",
+                "setForm",
+                "getForm"
+            ],
+            "field": [
+                "m_formspec"
+            ],
+            "size": 7041,
+            "inheritance": "IFormSource",
+            "dependency": []
+        },
+        {
+            "className": "GUIChatConsole",
+            "method": [
+                "GUIChatConsole",
+                "~GUIChatConsole",
+                "openConsole",
+                "isOpen",
+                "isOpenInhibited",
+                "closeConsole",
+                "closeConsoleAtOnce",
+                "getDesiredHeight",
+                "setCursor",
+                "draw",
+                "canTakeFocus",
+                "OnEvent",
+                "reformatConsole",
+                "recalculateConsolePosition",
+                "animate",
+                "drawBackground",
+                "drawText",
+                "drawPrompt"
+            ],
+            "field": [
+                "m_chat_backend",
+                "m_client",
+                "m_screensize",
+                "m_animate_time_old",
+                "m_open",
+                "m_height",
+                "m_desired_height",
+                "m_desired_height_fraction",
+                "m_height_speed",
+                "m_open_inhibited",
+                "m_cursor_blink",
+                "m_cursor_blink_speed",
+                "m_cursor_height",
+                "m_background",
+                "m_background_color",
+                "m_font",
+                "m_fontsize"
+            ],
+            "size": 35309,
+            "inheritance": "IGUIElement",
+            "dependency": [
+                "ChatBackend",
+                "Client"
+            ]
+        },
+        {
+            "className": "GUIEngine",
+            "method": [
+                "GUIEngine",
+                "~GUIEngine",
+                "getScriptIface",
+                "getScriptDir",
+                "queueAsync",
+                "loadMainMenuScript",
+                "run",
+                "limitFrameRate",
+                "drawBackground",
+                "drawOverlay",
+                "drawHeader",
+                "drawFooter",
+                "setTexture",
+                "drawVersion",
+                "setTopleftText",
+                "cloudInit",
+                "cloudPreProcess",
+                "cloudPostProcess",
+                "playSound",
+                "stopSound",
+                "downloadFile"
+            ],
+            "field": [
+                "m_device",
+                "m_parent",
+                "m_menumanager",
+                "m_smgr",
+                "m_data",
+                "m_texture_source",
+                "m_sound_manager",
+                "m_formspecgui",
+                "m_buttonhandler",
+                "m_menu",
+                "m_kill",
+                "m_startgame",
+                "m_script",
+                "m_scriptdir",
+                "m_textures",
+                "m_irr_toplefttext",
+                "m_clouds_enabled",
+                "m_cloud"
+            ],
+            "size": 44948,
+            "inheritance": "N/A",
+            "dependency": [
+                "IMenuManager",
+                "ISimpleTextureSource",
+                "ISoundManager",
+                "FormspecFormSource",
+                "TextDestGuiEngine",
+                "GUIFormSpecMenu"
+            ]
+        },
+        {
+            "className": "GUIFileSelectMenu",
+            "method": [
+                "GUIFileSelectMenu",
+                "~GUIFileSelectMenu",
+                "removeChildren",
+                "regenerateGui",
+                "drawMenu",
+                "OnEvent",
+                "isRunning",
+                "setTextDest",
+                "acceptInput"
+            ],
+            "field": [
+                "m_title",
+                "m_accepted",
+                "m_parent",
+                "m_selectedPath",
+                "m_fileOpenDialog",
+                "m_running",
+                "m_text_dst",
+                "m_formname"
+            ],
+            "size": 21044,
+            "inheritance": "GUIModalMenu",
+            "dependency": []
+        },
+        {
+            "className": "GUIFormSpecMenu",
+            "method": [
+                "GUIFormSpecMenu",
+                "~GUIFormSpecMenu",
+                "setFormSpec",
+                "setFormSource",
+                "setTextDest",
+                "allowClose",
+                "lockSize",
+                "removeChildren",
+                "setInitialFocus",
+                "regenerateGui",
+                "getItemAtPos",
+                "drawList",
+                "drawSelectedItem",
+                "drawMenu",
+                "updateSelectedItem",
+                "verifySelectedItem",
+                "acceptInput",
+                "preprocessEvent",
+                "OnEvent",
+                "pausesGame",
+                "getTable",
+                "getBasePos",
+                "parseElement",
+                "parseSize",
+                "parseList",
+                "parseCheckbox",
+                "parseImage",
+                "parseItemImage",
+                "parseButton",
+                "parseBackground",
+                "parseTableOptions",
+                "parseTableColumns",
+                "parseTable",
+                "parseTextList",
+                "parseDropDown",
+                "parsePwdField",
+                "parseField",
+                "parseSimpleField",
+                "parseTextArea",
+                "parseLabel",
+                "parseVertLabel",
+                "parseImageButton",
+                "parseItemImageButton",
+                "parseTabHeader",
+                "parseBox",
+                "parseBackgroundColor",
+                "parseListColors",
+                "parseTooltip",
+                "parseVersionDirect",
+                "parseScrollBar",
+                "DoubleClickDetection",
+                "getLabelByID",
+                "getNameByID"
+            ],
+            "field": [
+                "doPause",
+                "padding",
+                "spacing",
+                "imgsize",
+                "offset",
+                "m_device",
+                "m_invmgr",
+                "m_gamedef",
+                "m_tsrc",
+                "m_client",
+                "m_formspec_string",
+                "m_current_inventory_location",
+                "m_inventorylists",
+                "m_backgrounds",
+                "m_images",
+                "m_itemimages",
+                "m_boxes",
+                "m_fields",
+                "m_tables",
+                "m_checkboxes",
+                "m_tooltips",
+                "m_scrollbars",
+                "m_selected_item",
+                "m_selected_amount",
+                "m_selected_dragging",
+                "m_selected_content_guess",
+                "m_selected_content_guess_inventory",
+                "m_pointer",
+                "m_old_pointer",
+                "m_tooltip_element",
+                "m_tooltip_show_delay",
+                "m_hovered_time",
+                "m_old_tooltip_id",
+                "m_old_tooltip",
+                "m_allowclose",
+                "m_lock",
+                "m_lockscreensize",
+                "m_bgfullscreen",
+                "m_slotborder",
+                "m_clipbackground",
+                "m_bgcolor",
+                "m_slotbg_n",
+                "m_slotbg_h",
+                "m_slotbordercolor",
+                "m_default_tooltip_bgcolor",
+                "m_default_tooltip_color",
+                "m_form_src",
+                "m_text_dst",
+                "m_font",
+                "m_formspec_version",
+                "current_keys_pending",
+                "m_doubleclickdetect",
+                "m_btn_height"
+            ],
+            "size": 119333,
+            "inheritance": "GUIModalMenu",
+            "dependency": [
+                "InventoryManager",
+                "IGameDef",
+                "ISimpleTextureSource",
+                "Client",
+                "GUITable",
+                "IFormSource"
+            ]
+        },
+        {
+            "className": "GUIKeyChangeMenu",
+            "method": [
+                "GUIKeyChangeMenu",
+                "~GUIKeyChangeMenu",
+                "removeChildren",
+                "regenerateGui",
+                "drawMenu",
+                "acceptInput",
+                "OnEvent",
+                "init_keys",
+                "resetMenu",
+                "add_key"
+            ],
+            "field": [
+                "shift_down",
+                "activeKey",
+                "key_used",
+                "key_used_text",
+                "key_settings"
+            ],
+            "size": 19206,
+            "inheritance": "GUIModalMenu",
+            "dependency": [
+                "KeyPress"
+            ]
+        },
+        {
+            "className": "GUIModalMenu",
+            "method": [
+                "GUIModalMenu",
+                "~GUIModalMenu",
+                "allowFocusRemoval",
+                "canTakeFocus",
+                "draw",
+                "quitMenu",
+                "removeChildren",
+                "regenerateGui",
+                "drawMenu",
+                "preprocessEvent",
+                "OnEvent",
+                "pausesGame"
+            ],
+            "field": [
+                "m_screensize_old",
+                "m_menumgr",
+                "m_allow_focus_removal"
+            ],
+            "size": 20092,
+            "inheritance": "IGUIElement",
+            "dependency": [
+                "IMenuManager"
+            ]
+        },
+        {
+            "className": "GUIPasswordChange",
+            "method": [
+                "GUIPasswordChange",
+                "~GUIPasswordChange",
+                "removeChildren",
+                "regenerateGui",
+                "drawMenu",
+                "acceptInput",
+                "OnEvent"
+            ],
+            "field": [
+                "m_client"
+            ],
+            "size": 12455,
+            "inheritance": "GUIModalMenu",
+            "dependency": [
+                "Client"
+            ]
+        },
+        {
+            "className": "GUITable",
+            "method": [
+                "GUITable",
+                "~GUITable",
+                "setTextList",
+                "setTable",
+                "clear",
+                "checkEvent",
+                "getSelected",
+                "setSelected",
+                "getDynamicData",
+                "setDynamicData",
+                "getTypeName",
+                "updateAbsolutePosition",
+                "draw",
+                "OnEvent",
+                "splitOption",
+                "allocString",
+                "allocImage",
+                "allocationComplete",
+                "drawCell",
+                "getRow",
+                "doesRowStartWith",
+                "getRowAt",
+                "getCellAt",
+                "autoScroll",
+                "updateScrollBar",
+                "sendTableEvent",
+                "getOpenedTrees",
+                "setOpenedTrees",
+                "openTree",
+                "closeTree",
+                "toggleVisibleTree",
+                "alignContent"
+            ],
+            "field": [
+                "m_tsrc",
+                "m_rows",
+                "m_visible_rows",
+                "m_is_textlist",
+                "m_has_tree_column",
+                "m_selected",
+                "m_sel_column",
+                "m_sel_doubleclick",
+                "m_keynav_time",
+                "m_keynav_buffer",
+                "m_border",
+                "m_color",
+                "m_background",
+                "m_highlight",
+                "m_highlight_text",
+                "m_rowheight",
+                "m_font",
+                "m_scrollbar",
+                "m_strings",
+                "m_images",
+                "m_alloc_strings",
+                "m_alloc_images"
+            ],
+            "size": 61394,
+            "inheritance": "IGUIElement",
+            "dependency": [
+                "ISimpleTextureSource"
+            ]
+        },
+        {
+            "className": "GUIVolumeChange",
+            "method": [
+                "GUIVolumeChange",
+                "~GUIVolumeChange",
+                "removeChildren",
+                "regenerateGui",
+                "drawMenu",
+                "OnEvent",
+                "pausesGame"
+            ],
+            "field": [],
+            "size": 11249,
+            "inheritance": "GUIModalMenu",
+            "dependency": []
+        },
+        {
+            "className": "Game",
+            "method": [
+                "Game",
+                "~Game",
+                "startup",
+                "run",
+                "shutdown",
+                "extendedResourceCleanup",
+                "init",
+                "initSound",
+                "createSingleplayerServer",
+                "createClient",
+                "initGui",
+                "connectToServer",
+                "getServerContent",
+                "updateInteractTimers",
+                "checkConnection",
+                "handleCallbacks",
+                "processQueues",
+                "updateProfilers",
+                "addProfilerGraphs",
+                "updateStats",
+                "processUserInput",
+                "processKeyboardInput",
+                "processItemSelection",
+                "dropSelectedItem",
+                "openInventory",
+                "openConsole",
+                "toggleFreeMove",
+                "toggleFreeMoveAlt",
+                "toggleFast",
+                "toggleNoClip",
+                "toggleChat",
+                "toggleHud",
+                "toggleFog",
+                "toggleDebug",
+                "toggleUpdateCamera",
+                "toggleProfiler",
+                "increaseViewRange",
+                "decreaseViewRange",
+                "toggleFullViewRange",
+                "updateCameraDirection",
+                "updatePlayerControl",
+                "step",
+                "processClientEvents",
+                "updateCamera",
+                "updateSound",
+                "processPlayerInteraction",
+                "handlePointingAtNode",
+                "handlePointingAtObject",
+                "handleDigging",
+                "updateFrame",
+                "updateGui",
+                "updateProfilerGraphs",
+                "limitFps",
+                "showOverlayMessage"
+            ],
+            "field": [
+                "input",
+                "client",
+                "server",
+                "font",
+                "texture_src",
+                "shader_src",
+                "itemdef_manager",
+                "nodedef_manager",
+                "soundfetcher",
+                "sound",
+                "sound_is_dummy",
+                "soundmaker",
+                "chat_backend",
+                "current_formspec",
+                "eventmgr",
+                "quicktune",
+                "gui_chat_console",
+                "draw_control",
+                "camera",
+                "clouds",
+                "sky",
+                "local_inventory",
+                "hud",
+                "device",
+                "driver",
+                "smgr",
+                "text_height",
+                "kill",
+                "error_message",
+                "gamedef",
+                "skybox",
+                "random_input",
+                "simple_singleplayer_mode",
+                "crack_animation_length",
+                "guitext",
+                "guitext2",
+                "guitext_info",
+                "guitext_status",
+                "guitext_chat",
+                "guitext_profiler",
+                "infotext",
+                "statustext",
+                "keycache",
+                "profiler_interval"
+            ],
+            "size": 105630,
+            "inheritance": "N/A",
+            "dependency": [
+                "InputHandler",
+                "Client",
+                "Server",
+                "IWritableTextureSource",
+                "IWritableShaderSource",
+                "IWritableItemDefManager",
+                "IWritableNodeDefManager",
+                "GameOnDemandSoundFetcher",
+                "ISoundManager",
+                "SoundMaker",
+                "ChatBackend",
+                "GUIFormSpecMenu",
+                "EventManager",
+                "QuicktuneShortcutter",
+                "GUIChatConsole",
+                "Camera",
+                "Clouds",
+                "Sky",
+                "Inventory",
+                "Hud",
+                "IGameDef"
+            ]
+        },
+        {
+            "className": "GameGlobalShaderConstantSetter",
+            "method": [
+                "GameGlobalShaderConstantSetter",
+                "~GameGlobalShaderConstantSetter",
+                "onSetConstants"
+            ],
+            "field": [
+                "m_sky",
+                "m_force_fog_off",
+                "m_fog_range",
+                "m_client"
+            ],
+            "size": 9818,
+            "inheritance": "IShaderConstantSetter",
+            "dependency": [
+                "Sky",
+                "Client"
+            ]
+        },
+        {
+            "className": "GameOnDemandSoundFetcher",
+            "method": [
+                "fetchSounds"
+            ],
+            "field": [
+                "m_fetched"
+            ],
+            "size": 4260,
+            "inheritance": "OnDemandSoundFetcher",
+            "dependency": []
+        },
+        {
+            "className": "GenElement",
+            "method": [
+                "~GenElement"
+            ],
+            "field": [
+                "id",
+                "name"
+            ],
+            "size": 5410,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "GenElementManager",
+            "method": [
+                "GenElementManager",
+                "~GenElementManager",
+                "create",
+                "add",
+                "get",
+                "update",
+                "remove",
+                "getByName"
+            ],
+            "field": [
+                "ELEMENT_TITLE",
+                "ELEMENT_LIMIT",
+                "m_elements"
+            ],
+            "size": 15129,
+            "inheritance": "N/A",
+            "dependency": [
+                "GenElement"
+            ]
+        },
+        {
+            "className": "GenericCAO",
+            "method": [
+                "GenericCAO",
+                "~GenericCAO",
+                "getType",
+                "initialize",
+                "getParent",
+                "getCollisionBox",
+                "collideWithObjects",
+                "getSelectionBox",
+                "getPosition",
+                "getSceneNode",
+                "getMeshSceneNode",
+                "getAnimatedMeshSceneNode",
+                "getWieldMeshSceneNode",
+                "getSpriteSceneNode",
+                "isPlayer",
+                "isLocalPlayer",
+                "isVisible",
+                "setVisible",
+                "setAttachments",
+                "removeFromScene",
+                "addToScene",
+                "expireVisuals",
+                "updateLight",
+                "getLightPosition",
+                "updateNodePos",
+                "step",
+                "updateTexturePos",
+                "updateTextures",
+                "updateAnimation",
+                "updateBonePosition",
+                "updateAttachments",
+                "processMessage",
+                "directReportPunch",
+                "debugInfoText",
+                "create"
+            ],
+            "field": [
+                "m_name",
+                "m_is_player",
+                "m_is_local_player",
+                "m_id",
+                "m_prop",
+                "m_smgr",
+                "m_irr",
+                "m_selection_box",
+                "m_meshnode",
+                "m_animated_meshnode",
+                "m_wield_meshnode",
+                "m_spritenode",
+                "m_textnode",
+                "m_position",
+                "m_velocity",
+                "m_acceleration",
+                "m_yaw",
+                "m_hp",
+                "pos_translator",
+                "m_tx_size",
+                "m_tx_basepos",
+                "m_initial_tx_basepos_set",
+                "m_tx_select_horiz_by_yawpitch",
+                "m_animation_range",
+                "m_animation_speed",
+                "m_animation_blend",
+                "m_bone_position",
+                "m_attachment_bone",
+                "m_attachment_position",
+                "m_attachment_rotation",
+                "m_attached_to_local",
+                "m_anim_frame",
+                "m_anim_num_frames",
+                "m_anim_framelength",
+                "m_anim_timer",
+                "m_armor_groups",
+                "m_reset_textures_timer",
+                "m_visuals_expired",
+                "m_step_distance_counter",
+                "m_last_light",
+                "m_is_visible",
+                "m_children"
+            ],
+            "size": 79666,
+            "inheritance": "ClientActiveObject",
+            "dependency": [
+                "WieldMeshSceneNode"
+            ]
+        },
+        {
+            "className": "Hud",
+            "method": [
+                "Hud",
+                "drawHotbar",
+                "resizeHotbar",
+                "drawCrosshair",
+                "drawSelectionBoxes",
+                "drawLuaElements",
+                "drawStatbar",
+                "drawItems",
+                "drawItem"
+            ],
+            "field": [
+                "driver",
+                "smgr",
+                "guienv",
+                "font",
+                "text_height",
+                "gamedef",
+                "player",
+                "inventory",
+                "tsrc",
+                "crosshair_argb",
+                "selectionbox_argb",
+                "use_crosshair_image",
+                "hotbar_image",
+                "use_hotbar_image",
+                "hotbar_selected_image",
+                "use_hotbar_selected_image",
+                "camera_offset",
+                "m_screensize",
+                "m_displaycenter",
+                "m_hotbar_imagesize",
+                "m_padding",
+                "hbar_colors"
+            ],
+            "size": 33353,
+            "inheritance": "N/A",
+            "dependency": [
+                "IGameDef",
+                "LocalPlayer",
+                "Inventory",
+                "ITextureSource"
+            ]
+        },
+        {
+            "className": "ICraftDefManager",
+            "method": [
+                "ICraftDefManager",
+                "~ICraftDefManager",
+                "getCraftResult",
+                "getCraftRecipe",
+                "getCraftRecipes",
+                "dump",
+                "serialize"
+            ],
+            "field": [],
+            "size": 10740,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "IFormSource",
+            "method": [
+                "~IFormSource",
+                "getForm",
+                "resolveText"
+            ],
+            "field": [],
+            "size": 5251,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "IGameCallback",
+            "method": [
+                "exitToOS",
+                "keyConfig",
+                "disconnect",
+                "changePassword",
+                "changeVolume",
+                "signalKeyConfigChange"
+            ],
+            "field": [],
+            "size": 6972,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "IGameDef",
+            "method": [
+                "getItemDefManager",
+                "getNodeDefManager",
+                "getCraftDefManager",
+                "getTextureSource",
+                "getShaderSource",
+                "allocateUnknownNodeId",
+                "getSoundManager",
+                "getEventManager",
+                "getMesh",
+                "getSceneManager",
+                "getRollbackReportSink",
+                "checkLocalPrivilege",
+                "idef",
+                "ndef",
+                "cdef",
+                "tsrc",
+                "sound",
+                "shsrc",
+                "event",
+                "rollback"
+            ],
+            "field": [],
+            "size": 22684,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "IItemDefManager",
+            "method": [
+                "IItemDefManager",
+                "~IItemDefManager",
+                "get",
+                "getAlias",
+                "getAll",
+                "isKnown",
+                "getInventoryTexture",
+                "getWieldMesh",
+                "serialize"
+            ],
+            "field": [],
+            "size": 12418,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "ILogOutput",
+            "method": [
+                "printLog"
+            ],
+            "field": [],
+            "size": 5581,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "IMenuManager",
+            "method": [
+                "createdMenu",
+                "deletingMenu"
+            ],
+            "field": [],
+            "size": 3482,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "INodeDefManager",
+            "method": [
+                "INodeDefManager",
+                "~INodeDefManager",
+                "get",
+                "getId",
+                "getIds",
+                "serialize",
+                "getResolver"
+            ],
+            "field": [],
+            "size": 13650,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "IPv6AddressBytes",
+            "method": [
+                "IPv6AddressBytes"
+            ],
+            "field": [
+                "bytes"
+            ],
+            "size": 2550,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "IRollbackManager",
+            "method": [
+                "reportAction",
+                "getActor",
+                "isActorGuess",
+                "setActor",
+                "getSuspect",
+                "~IRollbackManager",
+                "flush",
+                "getNodeActors",
+                "getRevertActions"
+            ],
+            "field": [],
+            "size": 13085,
+            "inheritance": "IRollbackReportSink",
+            "dependency": []
+        },
+        {
+            "className": "IRollbackReportSink",
+            "method": [
+                "~IRollbackReportSink",
+                "reportAction",
+                "getActor",
+                "isActorGuess",
+                "setActor",
+                "getSuspect"
+            ],
+            "field": [],
+            "size": 8796,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "IShaderConstantSetter",
+            "method": [
+                "~IShaderConstantSetter",
+                "onSetConstants"
+            ],
+            "field": [],
+            "size": 4085,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "IShaderConstantSetterRegistry",
+            "method": [
+                "~IShaderConstantSetterRegistry",
+                "onSetConstants"
+            ],
+            "field": [],
+            "size": 3769,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "IShaderSource",
+            "method": [
+                "IShaderSource",
+                "~IShaderSource",
+                "getShaderIdDirect",
+                "getShaderInfo",
+                "getShader"
+            ],
+            "field": [],
+            "size": 7655,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "ISimpleTextureSource",
+            "method": [
+                "ISimpleTextureSource",
+                "~ISimpleTextureSource",
+                "getTexture"
+            ],
+            "field": [],
+            "size": 5538,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "ISoundManager",
+            "method": [
+                "~ISoundManager",
+                "loadSoundFile",
+                "loadSoundData",
+                "updateListener",
+                "setListenerGain",
+                "playSound",
+                "playSoundAt",
+                "stopSound",
+                "soundExists",
+                "updateSoundPosition"
+            ],
+            "field": [],
+            "size": 17035,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "ITextureSource",
+            "method": [
+                "ITextureSource",
+                "~ITextureSource",
+                "getTextureId",
+                "getTextureName",
+                "getTexture",
+                "getDevice",
+                "isKnownSourceImage",
+                "generateTextureFromMesh",
+                "getNormalTexture"
+            ],
+            "field": [],
+            "size": 14446,
+            "inheritance": "ISimpleTextureSource",
+            "dependency": []
+        },
+        {
+            "className": "IWritableCraftDefManager",
+            "method": [
+                "IWritableCraftDefManager",
+                "~IWritableCraftDefManager",
+                "getCraftResult",
+                "getCraftRecipe",
+                "getCraftRecipes",
+                "dump",
+                "registerCraft",
+                "clear",
+                "serialize",
+                "deSerialize"
+            ],
+            "field": [],
+            "size": 15138,
+            "inheritance": "ICraftDefManager",
+            "dependency": []
+        },
+        {
+            "className": "IWritableItemDefManager",
+            "method": [
+                "IWritableItemDefManager",
+                "~IWritableItemDefManager",
+                "get",
+                "getAlias",
+                "getAll",
+                "isKnown",
+                "getInventoryTexture",
+                "getWieldMesh",
+                "clear",
+                "registerItem",
+                "registerAlias",
+                "serialize",
+                "deSerialize",
+                "processQueue"
+            ],
+            "field": [],
+            "size": 19307,
+            "inheritance": "IItemDefManager",
+            "dependency": []
+        },
+        {
+            "className": "IWritableNodeDefManager",
+            "method": [
+                "IWritableNodeDefManager",
+                "~IWritableNodeDefManager",
+                "clone",
+                "get",
+                "getId",
+                "getIds",
+                "set",
+                "allocateDummy",
+                "updateAliases",
+                "updateTextures",
+                "serialize",
+                "deSerialize",
+                "getResolver"
+            ],
+            "field": [],
+            "size": 21832,
+            "inheritance": "INodeDefManager",
+            "dependency": []
+        },
+        {
+            "className": "IWritableShaderSource",
+            "method": [
+                "IWritableShaderSource",
+                "~IWritableShaderSource",
+                "getShaderIdDirect",
+                "getShaderInfo",
+                "getShader",
+                "processQueue",
+                "insertSourceShader",
+                "rebuildShaders",
+                "addGlobalConstantSetter"
+            ],
+            "field": [],
+            "size": 13368,
+            "inheritance": "IShaderSource",
+            "dependency": []
+        },
+        {
+            "className": "IWritableTextureSource",
+            "method": [
+                "IWritableTextureSource",
+                "~IWritableTextureSource",
+                "getTextureId",
+                "getTextureName",
+                "getTexture",
+                "getDevice",
+                "isKnownSourceImage",
+                "generateTextureFromMesh",
+                "processQueue",
+                "insertSourceImage",
+                "rebuildImagesAndTextures",
+                "getNormalTexture"
+            ],
+            "field": [],
+            "size": 18459,
+            "inheritance": "ITextureSource",
+            "dependency": []
+        },
+        {
+            "className": "InputHandler",
+            "method": [
+                "InputHandler",
+                "~InputHandler",
+                "isKeyDown",
+                "wasKeyDown",
+                "getMousePos",
+                "setMousePos",
+                "getLeftState",
+                "getRightState",
+                "getLeftClicked",
+                "getRightClicked",
+                "resetLeftClicked",
+                "resetRightClicked",
+                "getLeftReleased",
+                "getRightReleased",
+                "resetLeftReleased",
+                "resetRightReleased",
+                "getMouseWheel",
+                "step",
+                "clear"
+            ],
+            "field": [],
+            "size": 22081,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "InvalidFilenameException",
+            "method": [
+                "InvalidFilenameException"
+            ],
+            "field": [],
+            "size": 3788,
+            "inheritance": "BaseException",
+            "dependency": []
+        },
+        {
+            "className": "InvalidPositionException",
+            "method": [
+                "InvalidPositionException"
+            ],
+            "field": [],
+            "size": 4775,
+            "inheritance": "BaseException",
+            "dependency": []
+        },
+        {
+            "className": "Inventory",
+            "method": [
+                "~Inventory",
+                "clear",
+                "clearContents",
+                "Inventory",
+                "operator=",
+                "operator==",
+                "operator!=",
+                "serialize",
+                "deSerialize",
+                "addList",
+                "getList",
+                "getLists",
+                "deleteList",
+                "addItem",
+                "checkModified",
+                "setModified",
+                "getListIndex"
+            ],
+            "field": [
+                "m_lists",
+                "m_itemdef",
+                "m_dirty"
+            ],
+            "size": 23363,
+            "inheritance": "N/A",
+            "dependency": [
+                "InventoryList",
+                "IItemDefManager"
+            ]
+        },
+        {
+            "className": "InventoryList",
+            "method": [
+                "InventoryList",
+                "~InventoryList",
+                "clearItems",
+                "setSize",
+                "setWidth",
+                "setName",
+                "serialize",
+                "deSerialize",
+                "operator=",
+                "operator==",
+                "operator!=",
+                "getName",
+                "getSize",
+                "getWidth",
+                "getUsedSlots",
+                "getFreeSlots",
+                "getItem",
+                "changeItem",
+                "deleteItem",
+                "addItem",
+                "itemFits",
+                "roomForItem",
+                "containsItem",
+                "removeItem",
+                "takeItem",
+                "peekItem",
+                "moveItem"
+            ],
+            "field": [
+                "m_items",
+                "m_size",
+                "m_width",
+                "m_name",
+                "m_itemdef"
+            ],
+            "size": 38012,
+            "inheritance": "N/A",
+            "dependency": [
+                "IItemDefManager"
+            ]
+        },
+        {
+            "className": "InventoryManager",
+            "method": [
+                "InventoryManager",
+                "~InventoryManager",
+                "getInventory",
+                "setInventoryModified",
+                "inventoryAction"
+            ],
+            "field": [],
+            "size": 7349,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "IrrlichtTimeGetter",
+            "method": [
+                "IrrlichtTimeGetter",
+                "getTime"
+            ],
+            "field": [
+                "m_device"
+            ],
+            "size": 4725,
+            "inheritance": "TimeGetter",
+            "dependency": []
+        },
+        {
+            "className": "ItemCAO",
+            "method": [
+                "ItemCAO",
+                "~ItemCAO",
+                "getType",
+                "addToScene",
+                "removeFromScene",
+                "updateLight",
+                "getLightPosition",
+                "updateNodePos",
+                "updateInfoText",
+                "updateTexture",
+                "step",
+                "processMessage",
+                "initialize",
+                "getSelectionBox",
+                "getPosition",
+                "infoText",
+                "getCollisionBox",
+                "create"
+            ],
+            "field": [
+                "m_selection_box",
+                "m_node",
+                "m_position",
+                "m_itemstring",
+                "m_infotext"
+            ],
+            "size": 30909,
+            "inheritance": "ClientActiveObject",
+            "dependency": []
+        },
+        {
+            "className": "ItemNotFoundException",
+            "method": [
+                "ItemNotFoundException"
+            ],
+            "field": [],
+            "size": 3748,
+            "inheritance": "BaseException",
+            "dependency": []
+        },
+        {
+            "className": "ItemSAO",
+            "method": [
+                "getType",
+                "getMinimumSavedMovement",
+                "ItemSAO",
+                "step",
+                "getClientInitializationData",
+                "getStaticData",
+                "createItemStack",
+                "punch",
+                "getCollisionBox",
+                "collideWithObjects",
+                "create"
+            ],
+            "field": [
+                "m_itemstring",
+                "m_itemstring_changed",
+                "m_speed_f",
+                "m_last_sent_position",
+                "m_move_interval"
+            ],
+            "size": 27841,
+            "inheritance": "ServerActiveObject",
+            "dependency": []
+        },
+        {
+            "className": "KeyList",
+            "method": [
+                "find",
+                "clear",
+                "set",
+                "unset",
+                "toggle",
+                "operator[]"
+            ],
+            "field": [],
+            "size": 11285,
+            "inheritance": "std::list< KeyPress >",
+            "dependency": []
+        },
+        {
+            "className": "KeyPress",
+            "method": [
+                "KeyPress",
+                "operator==",
+                "sym",
+                "name",
+                "debug",
+                "valid_kcode"
+            ],
+            "field": [
+                "Key",
+                "Char",
+                "m_name"
+            ],
+            "size": 10987,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "LagPool",
+            "method": [
+                "LagPool",
+                "setMax",
+                "add",
+                "grab"
+            ],
+            "field": [
+                "m_pool",
+                "m_max"
+            ],
+            "size": 6210,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "LoadError",
+            "method": [
+                "LoadError"
+            ],
+            "field": [],
+            "size": 3528,
+            "inheritance": "BaseException",
+            "dependency": []
+        },
+        {
+            "className": "LocalPlayer",
+            "method": [
+                "LocalPlayer",
+                "~LocalPlayer",
+                "isLocal",
+                "move",
+                "applyControl",
+                "getStandingNodePos",
+                "getCAO",
+                "setCAO"
+            ],
+            "field": [
+                "parent",
+                "isAttached",
+                "overridePosition",
+                "last_position",
+                "last_speed",
+                "last_pitch",
+                "last_yaw",
+                "last_keyPressed",
+                "camera_impact",
+                "eye_offset_first",
+                "eye_offset_third",
+                "last_animation",
+                "last_animation_speed",
+                "hotbar_image",
+                "hotbar_selected_image",
+                "light_color",
+                "m_sneak_node",
+                "m_sneak_node_exists",
+                "m_old_node_below",
+                "m_old_node_below_type",
+                "m_need_to_get_new_sneak_node",
+                "m_can_jump",
+                "m_cao"
+            ],
+            "size": 46558,
+            "inheritance": "Player",
+            "dependency": [
+                "ClientActiveObject",
+                "GenericCAO"
+            ]
+        },
+        {
+            "className": "LogOutputBuffer",
+            "method": [
+                "LogOutputBuffer",
+                "~LogOutputBuffer",
+                "printLog",
+                "get",
+                "empty"
+            ],
+            "field": [
+                "m_buf"
+            ],
+            "size": 7915,
+            "inheritance": "ILogOutput",
+            "dependency": []
+        },
+        {
+            "className": "Logbuf",
+            "method": [
+                "Logbuf",
+                "~Logbuf",
+                "overflow",
+                "xsputn",
+                "printbuf",
+                "bufchar"
+            ],
+            "field": [
+                "m_lev",
+                "m_buf"
+            ],
+            "size": 8806,
+            "inheritance": "streambuf",
+            "dependency": []
+        },
+        {
+            "className": "LuaEntitySAO",
+            "method": [
+                "LuaEntitySAO",
+                "~LuaEntitySAO",
+                "getType",
+                "getSendType",
+                "addedToEnvironment",
+                "isAttached",
+                "step",
+                "getClientInitializationData",
+                "getStaticData",
+                "punch",
+                "rightClick",
+                "setPos",
+                "moveTo",
+                "getMinimumSavedMovement",
+                "getDescription",
+                "setHP",
+                "getHP",
+                "setArmorGroups",
+                "setAnimation",
+                "setBonePosition",
+                "setAttachment",
+                "accessObjectProperties",
+                "notifyObjectPropertiesModified",
+                "setVelocity",
+                "getVelocity",
+                "setAcceleration",
+                "getAcceleration",
+                "setYaw",
+                "getYaw",
+                "setTextureMod",
+                "setSprite",
+                "getName",
+                "getCollisionBox",
+                "collideWithObjects",
+                "create",
+                "getPropertyPacket",
+                "sendPosition"
+            ],
+            "field": [
+                "m_init_name",
+                "m_init_state",
+                "m_registered",
+                "m_prop",
+                "m_hp",
+                "m_velocity",
+                "m_acceleration",
+                "m_yaw",
+                "m_armor_groups",
+                "m_properties_sent",
+                "m_last_sent_yaw",
+                "m_last_sent_position",
+                "m_last_sent_velocity",
+                "m_last_sent_position_timer",
+                "m_last_sent_move_precision",
+                "m_armor_groups_sent",
+                "m_animation_range",
+                "m_animation_speed",
+                "m_animation_blend",
+                "m_animation_sent",
+                "m_bone_position",
+                "m_bone_position_sent",
+                "m_attachment_parent_id",
+                "m_attachment_bone",
+                "m_attachment_position",
+                "m_attachment_rotation",
+                "m_attachment_sent"
+            ],
+            "size": 74460,
+            "inheritance": "ServerActiveObject",
+            "dependency": []
+        },
+        {
+            "className": "MainGameCallback",
+            "method": [
+                "MainGameCallback",
+                "exitToOS",
+                "disconnect",
+                "changePassword",
+                "changeVolume",
+                "keyConfig",
+                "signalKeyConfigChange"
+            ],
+            "field": [
+                "disconnect_requested",
+                "changepassword_requested",
+                "changevolume_requested",
+                "keyconfig_requested",
+                "shutdown_requested",
+                "keyconfig_changed",
+                "device"
+            ],
+            "size": 15378,
+            "inheritance": "IGameCallback",
+            "dependency": []
+        },
+        {
+            "className": "MainMenuManager",
+            "method": [
+                "createdMenu",
+                "deletingMenu",
+                "preprocessEvent",
+                "menuCount",
+                "pausesGame"
+            ],
+            "field": [
+                "m_stack"
+            ],
+            "size": 7994,
+            "inheritance": "IMenuManager",
+            "dependency": [
+                "GUIModalMenu"
+            ]
+        },
+        {
+            "className": "MainShaderConstantSetter",
+            "method": [
+                "MainShaderConstantSetter",
+                "~MainShaderConstantSetter",
+                "onSetConstants"
+            ],
+            "field": [],
+            "size": 5376,
+            "inheritance": "IShaderConstantSetter",
+            "dependency": []
+        },
+        {
+            "className": "ManualMapVoxelManipulator",
+            "method": [
+                "ManualMapVoxelManipulator",
+                "~ManualMapVoxelManipulator",
+                "clear",
+                "setMap",
+                "initialEmerge",
+                "blitBackAll"
+            ],
+            "field": [
+                "m_is_dirty",
+                "m_create_area",
+                "m_map",
+                "m_loaded_blocks"
+            ],
+            "size": 19624,
+            "inheritance": "VoxelManipulator",
+            "dependency": [
+                "Map"
+            ]
+        },
+        {
+            "className": "Map",
+            "method": [
+                "Map",
+                "~Map",
+                "mapType",
+                "drop",
+                "addEventReceiver",
+                "removeEventReceiver",
+                "dispatchEvent",
+                "getSectorNoGenerateNoExNoLock",
+                "getSectorNoGenerateNoEx",
+                "getSectorNoGenerate",
+                "emergeSector",
+                "getBlockNoCreate",
+                "getBlockNoCreateNoEx",
+                "emergeBlock",
+                "isNodeUnderground",
+                "isValidPosition",
+                "setNode",
+                "getNodeNoEx",
+                "unspreadLight",
+                "unLightNeighbors",
+                "spreadLight",
+                "lightNeighbors",
+                "getBrightestNeighbour",
+                "propagateSunlight",
+                "updateLighting",
+                "addNodeAndUpdate",
+                "removeNodeAndUpdate",
+                "addNodeWithEvent",
+                "removeNodeWithEvent",
+                "getDayNightDiff",
+                "beginSave",
+                "endSave",
+                "save",
+                "saveBlock",
+                "timerUpdate",
+                "unloadUnreferencedBlocks",
+                "deleteSectors",
+                "PrintInfo",
+                "transformLiquids",
+                "getNodeMetadata",
+                "setNodeMetadata",
+                "removeNodeMetadata",
+                "getNodeTimer",
+                "setNodeTimer",
+                "removeNodeTimer",
+                "getSectorsPtr",
+                "transforming_liquid_add",
+                "transforming_liquid_size"
+            ],
+            "field": [
+                "m_dout",
+                "m_gamedef",
+                "m_event_receivers",
+                "m_sectors",
+                "m_sector_cache",
+                "m_sector_cache_p",
+                "m_transforming_liquid"
+            ],
+            "size": 68239,
+            "inheritance": "N/A",
+            "dependency": [
+                "IGameDef",
+                "MapEventReceiver",
+                "MapSector"
+            ]
+        },
+        {
+            "className": "MapBlock",
+            "method": [
+                "MapBlock",
+                "~MapBlock",
+                "getParent",
+                "reallocate",
+                "isDummy",
+                "unDummify",
+                "raiseModified",
+                "getModified",
+                "getModifiedReason",
+                "resetModified",
+                "getIsUnderground",
+                "setIsUnderground",
+                "setLightingExpired",
+                "getLightingExpired",
+                "isGenerated",
+                "setGenerated",
+                "isValid",
+                "getPos",
+                "getPosRelative",
+                "getBox",
+                "isValidPosition",
+                "getNode",
+                "getNodeNoEx",
+                "setNode",
+                "getNodeNoCheck",
+                "setNodeNoCheck",
+                "isValidPositionParent",
+                "getNodeParent",
+                "setNodeParent",
+                "drawbox",
+                "propagateSunlight",
+                "copyTo",
+                "copyFrom",
+                "actuallyUpdateDayNightDiff",
+                "expireDayNightDiff",
+                "getDayNightDiff",
+                "getGroundLevel",
+                "setTimestamp",
+                "setTimestampNoChangedFlag",
+                "getTimestamp",
+                "getDiskTimestamp",
+                "resetUsageTimer",
+                "incrementUsageTimer",
+                "getUsageTimer",
+                "refGrab",
+                "refDrop",
+                "refGet",
+                "getNodeTimer",
+                "removeNodeTimer",
+                "setNodeTimer",
+                "clearNodeTimers",
+                "serialize",
+                "deSerialize",
+                "serializeNetworkSpecific",
+                "deSerializeNetworkSpecific",
+                "deSerialize_pre22",
+                "getNodeRef"
+            ],
+            "field": [
+                "mesh",
+                "m_node_metadata",
+                "m_node_timers",
+                "m_static_objects",
+                "m_parent",
+                "m_pos",
+                "m_gamedef",
+                "data",
+                "m_modified",
+                "m_modified_reason",
+                "m_modified_reason_too_long",
+                "is_underground",
+                "m_lighting_expired",
+                "m_day_night_differs",
+                "m_day_night_differs_expired",
+                "m_generated",
+                "m_timestamp",
+                "m_disk_timestamp",
+                "m_usage_timer",
+                "m_refcount"
+            ],
+            "size": 85432,
+            "inheritance": "N/A",
+            "dependency": [
+                "MapBlockMesh",
+                "NodeMetadataList",
+                "NodeTimerList",
+                "StaticObjectList",
+                "Map",
+                "IGameDef"
+            ]
+        },
+        {
+            "className": "MapBlockMesh",
+            "method": [
+                "MapBlockMesh",
+                "~MapBlockMesh",
+                "animate",
+                "getMesh",
+                "isAnimationForced",
+                "decreaseAnimationForceTimer",
+                "updateCameraOffset"
+            ],
+            "field": [
+                "m_mesh",
+                "m_gamedef",
+                "m_enable_shaders",
+                "m_enable_highlighting",
+                "m_highlight_mesh_color",
+                "m_has_animation",
+                "m_animation_force_timer",
+                "m_last_crack",
+                "m_crack_materials",
+                "m_highlighted_materials",
+                "m_animation_tiles",
+                "m_animation_frames",
+                "m_animation_frame_offsets",
+                "m_last_daynight_ratio",
+                "m_daynight_diffs",
+                "m_camera_offset"
+            ],
+            "size": 22776,
+            "inheritance": "N/A",
+            "dependency": [
+                "IGameDef"
+            ]
+        },
+        {
+            "className": "MapEditEventAreaIgnorer",
+            "method": [
+                "MapEditEventAreaIgnorer",
+                "~MapEditEventAreaIgnorer"
+            ],
+            "field": [
+                "m_ignorevariable"
+            ],
+            "size": 4107,
+            "inheritance": "N/A",
+            "dependency": [
+                "VoxelArea"
+            ]
+        },
+        {
+            "className": "MapEditEventIgnorer",
+            "method": [
+                "MapEditEventIgnorer",
+                "~MapEditEventIgnorer"
+            ],
+            "field": [
+                "m_flag"
+            ],
+            "size": 3643,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "MapEventReceiver",
+            "method": [
+                "onMapEditEvent"
+            ],
+            "field": [],
+            "size": 2338,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "MapSector",
+            "method": [
+                "MapSector",
+                "~MapSector",
+                "getId",
+                "deleteBlocks",
+                "getPos",
+                "getBlockNoCreateNoEx",
+                "createBlankBlockNoInsert",
+                "createBlankBlock",
+                "insertBlock",
+                "deleteBlock",
+                "getBlocks",
+                "getBlockBuffered"
+            ],
+            "field": [
+                "differs_from_disk",
+                "m_blocks",
+                "m_parent",
+                "m_pos",
+                "m_gamedef",
+                "m_block_cache",
+                "m_block_cache_y"
+            ],
+            "size": 22422,
+            "inheritance": "N/A",
+            "dependency": [
+                "MapBlock",
+                "Map",
+                "IGameDef"
+            ]
+        },
+        {
+            "className": "Mapgen",
+            "method": [
+                "Mapgen",
+                "~Mapgen",
+                "findGroundLevelFull",
+                "findGroundLevel",
+                "updateHeightmap",
+                "updateLiquid",
+                "setLighting",
+                "lightSpread",
+                "calcLighting",
+                "calcLightingOld",
+                "makeChunk",
+                "getGroundLevelAtPoint"
+            ],
+            "field": [
+                "seed",
+                "water_level",
+                "generating",
+                "id",
+                "vm",
+                "ndef",
+                "heightmap",
+                "biomemap",
+                "csize",
+                "gennotify",
+                "gen_notifications"
+            ],
+            "size": 28446,
+            "inheritance": "N/A",
+            "dependency": [
+                "ManualMapVoxelManipulator",
+                "INodeDefManager"
+            ]
+        },
+        {
+            "className": "MapgenSinglenode",
+            "method": [
+                "MapgenSinglenode",
+                "~MapgenSinglenode",
+                "makeChunk",
+                "getGroundLevelAtPoint"
+            ],
+            "field": [
+                "flags",
+                "c_node"
+            ],
+            "size": 14816,
+            "inheritance": "Mapgen",
+            "dependency": []
+        },
+        {
+            "className": "MapgenV5",
+            "method": [
+                "MapgenV5",
+                "~MapgenV5",
+                "makeChunk",
+                "calculateNoise",
+                "generateBaseTerrain",
+                "generateBlobs",
+                "generateBiomes",
+                "dustTopNodes"
+            ],
+            "field": [
+                "emerge",
+                "bmgr",
+                "ystride",
+                "zstride",
+                "flags",
+                "spflags",
+                "blockseed",
+                "node_min",
+                "node_max",
+                "full_node_min",
+                "full_node_max",
+                "noise_filler_depth",
+                "noise_factor",
+                "noise_height",
+                "noise_cave1",
+                "noise_cave2",
+                "noise_ground",
+                "noise_crumble",
+                "noise_wetness",
+                "noise_heat",
+                "noise_humidity",
+                "c_stone",
+                "c_dirt",
+                "c_dirt_with_grass",
+                "c_sand",
+                "c_water_source",
+                "c_lava_source",
+                "c_ice",
+                "c_gravel",
+                "c_cobble",
+                "c_desert_sand",
+                "c_desert_stone",
+                "c_mossycobble",
+                "c_sandbrick",
+                "c_stair_cobble",
+                "c_stair_sandstone"
+            ],
+            "size": 50329,
+            "inheritance": "Mapgen",
+            "dependency": [
+                "EmergeManager",
+                "BiomeManager",
+                "Noise"
+            ]
+        },
+        {
+            "className": "MapgenV6",
+            "method": [
+                "MapgenV6",
+                "~MapgenV6",
+                "makeChunk",
+                "getGroundLevelAtPoint",
+                "baseTerrainLevel",
+                "baseTerrainLevelFromNoise",
+                "baseTerrainLevelFromMap",
+                "find_stone_level",
+                "block_is_underground",
+                "find_ground_level_from_noise",
+                "getHumidity",
+                "getTreeAmount",
+                "getHaveAppleTree",
+                "getMudAmount",
+                "getHaveBeach",
+                "getBiome",
+                "get_blockseed",
+                "calculateNoise",
+                "generateGround",
+                "addMud",
+                "flowMud",
+                "addDirtGravelBlobs",
+                "growGrass",
+                "placeTreesAndJungleGrass",
+                "generateCaves",
+                "generateExperimental"
+            ],
+            "field": [
+                "emerge",
+                "ystride",
+                "flags",
+                "spflags",
+                "blockseed",
+                "node_min",
+                "node_max",
+                "full_node_min",
+                "full_node_max",
+                "central_area_size",
+                "volume_nodes",
+                "noise_terrain_base",
+                "noise_terrain_higher",
+                "noise_steepness",
+                "noise_height_select",
+                "noise_mud",
+                "noise_beach",
+                "noise_biome",
+                "np_cave",
+                "np_humidity",
+                "np_trees",
+                "np_apple_trees",
+                "freq_desert",
+                "freq_beach",
+                "c_stone",
+                "c_dirt",
+                "c_dirt_with_grass",
+                "c_sand",
+                "c_water_source",
+                "c_lava_source",
+                "c_gravel",
+                "c_cobble",
+                "c_desert_sand",
+                "c_desert_stone",
+                "c_mossycobble",
+                "c_sandbrick",
+                "c_stair_cobble",
+                "c_stair_sandstone"
+            ],
+            "size": 75017,
+            "inheritance": "Mapgen",
+            "dependency": [
+                "EmergeManager",
+                "Noise"
+            ]
+        },
+        {
+            "className": "MapgenV7",
+            "method": [
+                "MapgenV7",
+                "~MapgenV7",
+                "makeChunk",
+                "getGroundLevelAtPoint",
+                "getBiomeAtPoint",
+                "baseTerrainLevelAtPoint",
+                "baseTerrainLevelFromMap",
+                "getMountainTerrainAtPoint",
+                "getMountainTerrainFromMap",
+                "calculateNoise",
+                "generateTerrain",
+                "generateBaseTerrain",
+                "generateMountainTerrain",
+                "generateRidgeTerrain",
+                "generateBiomes",
+                "dustTopNodes",
+                "generateCaves"
+            ],
+            "field": [
+                "emerge",
+                "bmgr",
+                "ystride",
+                "zstride",
+                "flags",
+                "spflags",
+                "blockseed",
+                "node_min",
+                "node_max",
+                "full_node_min",
+                "full_node_max",
+                "ridge_heightmap",
+                "noise_terrain_base",
+                "noise_terrain_alt",
+                "noise_terrain_persist",
+                "noise_height_select",
+                "noise_filler_depth",
+                "noise_mount_height",
+                "noise_ridge_uwater",
+                "noise_mountain",
+                "noise_ridge",
+                "noise_heat",
+                "noise_humidity",
+                "c_stone",
+                "c_dirt",
+                "c_dirt_with_grass",
+                "c_sand",
+                "c_water_source",
+                "c_lava_source",
+                "c_ice",
+                "c_gravel",
+                "c_cobble",
+                "c_desert_sand",
+                "c_desert_stone"
+            ],
+            "size": 58274,
+            "inheritance": "Mapgen",
+            "dependency": [
+                "EmergeManager",
+                "BiomeManager",
+                "Noise"
+            ]
+        },
+        {
+            "className": "MenuMusicFetcher",
+            "method": [
+                "fetchSounds"
+            ],
+            "field": [
+                "m_fetched"
+            ],
+            "size": 5260,
+            "inheritance": "OnDemandSoundFetcher",
+            "dependency": []
+        },
+        {
+            "className": "MenuTextureSource",
+            "method": [
+                "MenuTextureSource",
+                "~MenuTextureSource",
+                "getTexture"
+            ],
+            "field": [
+                "m_driver",
+                "m_to_delete"
+            ],
+            "size": 8549,
+            "inheritance": "ISimpleTextureSource",
+            "dependency": []
+        },
+        {
+            "className": "MeshUpdateQueue",
+            "method": [
+                "MeshUpdateQueue",
+                "~MeshUpdateQueue",
+                "addBlock",
+                "pop",
+                "size"
+            ],
+            "field": [
+                "m_queue",
+                "m_urgents",
+                "m_mutex"
+            ],
+            "size": 8614,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "MeshUpdateThread",
+            "method": [
+                "MeshUpdateThread",
+                "Thread"
+            ],
+            "field": [
+                "m_queue_in",
+                "m_queue_out",
+                "m_gamedef",
+                "m_camera_offset"
+            ],
+            "size": 7720,
+            "inheritance": "JThread",
+            "dependency": [
+                "MeshUpdateQueue",
+                "IGameDef"
+            ]
+        },
+        {
+            "className": "ModConfiguration",
+            "method": [
+                "ModConfiguration",
+                "isConsistent",
+                "getMods",
+                "getUnsatisfiedMods",
+                "addModsInPath",
+                "addMods",
+                "resolveDependencies"
+            ],
+            "field": [
+                "m_unsatisfied_mods",
+                "m_sorted_mods",
+                "m_name_conflicts"
+            ],
+            "size": 11665,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "ModError",
+            "method": [
+                "ModError",
+                "~ModError",
+                "what"
+            ],
+            "field": [
+                "m_s"
+            ],
+            "size": 5084,
+            "inheritance": "exception",
+            "dependency": []
+        },
+        {
+            "className": "MtEvent",
+            "method": [
+                "~MtEvent",
+                "getType",
+                "checkIs"
+            ],
+            "field": [],
+            "size": 4486,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "MtEventManager",
+            "method": [
+                "~MtEventManager",
+                "put",
+                "reg",
+                "dereg"
+            ],
+            "field": [],
+            "size": 8169,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "MtEventReceiver",
+            "method": [
+                "~MtEventReceiver",
+                "onEvent"
+            ],
+            "field": [],
+            "size": 2615,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "MyEventReceiver",
+            "method": [
+                "OnEvent",
+                "IsKeyDown",
+                "WasKeyDown",
+                "getMouseWheel",
+                "clearInput",
+                "MyEventReceiver"
+            ],
+            "field": [
+                "leftclicked",
+                "rightclicked",
+                "leftreleased",
+                "rightreleased",
+                "left_active",
+                "middle_active",
+                "right_active",
+                "mouse_wheel",
+                "keyIsDown",
+                "keyWasDown"
+            ],
+            "size": 16290,
+            "inheritance": "IEventReceiver",
+            "dependency": [
+                "KeyList"
+            ]
+        },
+        {
+            "className": "NameIdMapping",
+            "method": [
+                "serialize",
+                "deSerialize",
+                "clear",
+                "set",
+                "removeId",
+                "eraseName",
+                "getName",
+                "getId",
+                "size"
+            ],
+            "field": [
+                "m_id_to_name",
+                "m_name_to_id"
+            ],
+            "size": 12001,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "NewNameGetter",
+            "method": [
+                "NewNameGetter",
+                "get"
+            ],
+            "field": [
+                "old_to_new"
+            ],
+            "size": 3720,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "NodeDugEvent",
+            "method": [
+                "NodeDugEvent",
+                "getType"
+            ],
+            "field": [
+                "p",
+                "n"
+            ],
+            "size": 5984,
+            "inheritance": "MtEvent",
+            "dependency": []
+        },
+        {
+            "className": "NodeMetadata",
+            "method": [
+                "NodeMetadata",
+                "~NodeMetadata",
+                "serialize",
+                "deSerialize",
+                "clear",
+                "getString",
+                "setString",
+                "resolveString",
+                "getStrings",
+                "getInventory"
+            ],
+            "field": [
+                "m_stringvars",
+                "m_inventory"
+            ],
+            "size": 13187,
+            "inheritance": "N/A",
+            "dependency": [
+                "Inventory"
+            ]
+        },
+        {
+            "className": "NodeMetadataFormSource",
+            "method": [
+                "NodeMetadataFormSource",
+                "getForm",
+                "resolveText"
+            ],
+            "field": [
+                "m_map",
+                "m_p"
+            ],
+            "size": 9553,
+            "inheritance": "IFormSource",
+            "dependency": [
+                "ClientMap"
+            ]
+        },
+        {
+            "className": "NodeMetadataList",
+            "method": [
+                "~NodeMetadataList",
+                "serialize",
+                "deSerialize",
+                "get",
+                "remove",
+                "set",
+                "clear"
+            ],
+            "field": [
+                "m_data"
+            ],
+            "size": 9173,
+            "inheritance": "N/A",
+            "dependency": [
+                "NodeMetadata"
+            ]
+        },
+        {
+            "className": "NodeResolver",
+            "method": [
+                "NodeResolver",
+                "~NodeResolver",
+                "addNode",
+                "addNodeList",
+                "cancelNode",
+                "cancelNodeList",
+                "resolveNodes",
+                "isNodeRegFinished"
+            ],
+            "field": [
+                "m_ndef",
+                "m_is_node_registration_complete",
+                "m_pending_contents",
+                "m_pending_content_vecs"
+            ],
+            "size": 18401,
+            "inheritance": "N/A",
+            "dependency": [
+                "INodeDefManager"
+            ]
+        },
+        {
+            "className": "NodeTimer",
+            "method": [
+                "NodeTimer",
+                "~NodeTimer",
+                "serialize",
+                "deSerialize"
+            ],
+            "field": [
+                "timeout",
+                "elapsed"
+            ],
+            "size": 7288,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "NodeTimerList",
+            "method": [
+                "NodeTimerList",
+                "~NodeTimerList",
+                "serialize",
+                "deSerialize",
+                "get",
+                "remove",
+                "set",
+                "clear",
+                "step"
+            ],
+            "field": [
+                "m_data"
+            ],
+            "size": 11046,
+            "inheritance": "N/A",
+            "dependency": [
+                "NodeTimer"
+            ]
+        },
+        {
+            "className": "Noise",
+            "method": [
+                "Noise",
+                "~Noise",
+                "setSize",
+                "setSpreadFactor",
+                "setOctaves",
+                "resizeNoiseBuf",
+                "gradientMap2D",
+                "gradientMap3D",
+                "perlinMap2D",
+                "perlinMap2DModulated",
+                "perlinMap3D",
+                "transformNoiseMap"
+            ],
+            "field": [
+                "np",
+                "seed",
+                "sx",
+                "sy",
+                "sz",
+                "noisebuf",
+                "buf",
+                "result"
+            ],
+            "size": 21651,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "NotImplementedException",
+            "method": [
+                "NotImplementedException"
+            ],
+            "field": [],
+            "size": 3781,
+            "inheritance": "BaseException",
+            "dependency": []
+        },
+        {
+            "className": "NullPointerException",
+            "method": [
+                "what"
+            ],
+            "field": [],
+            "size": 2481,
+            "inheritance": "exception",
+            "dependency": []
+        },
+        {
+            "className": "Nullstream",
+            "method": [
+                "Nullstream"
+            ],
+            "field": [],
+            "size": 2289,
+            "inheritance": "ostream",
+            "dependency": []
+        },
+        {
+            "className": "OnDemandSoundFetcher",
+            "method": [
+                "fetchSounds"
+            ],
+            "field": [],
+            "size": 3241,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "OpenALSoundManager",
+            "method": [
+                "OpenALSoundManager",
+                "~OpenALSoundManager",
+                "addBuffer",
+                "getBuffer",
+                "createPlayingSound",
+                "createPlayingSoundAt",
+                "playSoundRaw",
+                "playSoundRawAt",
+                "deleteSound",
+                "getFetchBuffer",
+                "maintain",
+                "loadSoundFile",
+                "loadSoundData",
+                "updateListener",
+                "setListenerGain",
+                "playSound",
+                "playSoundAt",
+                "stopSound",
+                "soundExists",
+                "updateSoundPosition"
+            ],
+            "field": [
+                "m_fetcher",
+                "m_device",
+                "m_context",
+                "m_can_vorbis",
+                "m_next_id",
+                "m_buffers",
+                "m_sounds_playing",
+                "m_listener_pos",
+                "m_is_initialized"
+            ],
+            "size": 36097,
+            "inheritance": "ISoundManager",
+            "dependency": [
+                "OnDemandSoundFetcher"
+            ]
+        },
+        {
+            "className": "Ore",
+            "method": [
+                "Ore",
+                "~Ore",
+                "placeOre",
+                "generate"
+            ],
+            "field": [
+                "c_ore",
+                "c_wherein",
+                "clust_scarcity",
+                "clust_num_ores",
+                "clust_size",
+                "height_min",
+                "height_max",
+                "ore_param2",
+                "flags",
+                "nthresh",
+                "np",
+                "noise"
+            ],
+            "size": 17568,
+            "inheritance": "GenElement",
+            "dependency": [
+                "Noise"
+            ]
+        },
+        {
+            "className": "OreManager",
+            "method": [
+                "OreManager",
+                "~OreManager",
+                "create",
+                "placeAllOres"
+            ],
+            "field": [
+                "ELEMENT_TITLE",
+                "ELEMENT_LIMIT"
+            ],
+            "size": 9422,
+            "inheritance": "GenElementManager",
+            "dependency": []
+        },
+        {
+            "className": "OreScatter",
+            "method": [
+                "~OreScatter",
+                "generate"
+            ],
+            "field": [],
+            "size": 7748,
+            "inheritance": "Ore",
+            "dependency": []
+        },
+        {
+            "className": "OreSheet",
+            "method": [
+                "~OreSheet",
+                "generate"
+            ],
+            "field": [],
+            "size": 7678,
+            "inheritance": "Ore",
+            "dependency": []
+        },
+        {
+            "className": "PacketCounter",
+            "method": [
+                "PacketCounter",
+                "add",
+                "clear",
+                "print"
+            ],
+            "field": [
+                "m_packets"
+            ],
+            "size": 5430,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "Particle",
+            "method": [
+                "Particle",
+                "~Particle",
+                "getBoundingBox",
+                "getMaterialCount",
+                "getMaterial",
+                "OnRegisterSceneNode",
+                "render",
+                "step",
+                "get_expired",
+                "updateLight",
+                "updateVertices"
+            ],
+            "field": [
+                "m_vertices",
+                "m_time",
+                "m_expiration",
+                "m_env",
+                "m_gamedef",
+                "m_box",
+                "m_collisionbox",
+                "m_material",
+                "m_texpos",
+                "m_texsize",
+                "m_pos",
+                "m_velocity",
+                "m_acceleration",
+                "m_player",
+                "m_size",
+                "m_light",
+                "m_collisiondetection",
+                "m_vertical",
+                "m_camera_offset"
+            ],
+            "size": 29556,
+            "inheritance": "ISceneNode",
+            "dependency": [
+                "ClientEnvironment",
+                "IGameDef",
+                "LocalPlayer"
+            ]
+        },
+        {
+            "className": "ParticleSpawner",
+            "method": [
+                "ParticleSpawner",
+                "~ParticleSpawner",
+                "step",
+                "get_expired"
+            ],
+            "field": [
+                "m_time",
+                "m_gamedef",
+                "m_smgr",
+                "m_player",
+                "m_amount",
+                "m_spawntime",
+                "m_minpos",
+                "m_maxpos",
+                "m_minvel",
+                "m_maxvel",
+                "m_minacc",
+                "m_maxacc",
+                "m_minexptime",
+                "m_maxexptime",
+                "m_minsize",
+                "m_maxsize",
+                "m_texture",
+                "m_spawntimes",
+                "m_collisiondetection",
+                "m_vertical"
+            ],
+            "size": 24556,
+            "inheritance": "N/A",
+            "dependency": [
+                "IGameDef",
+                "LocalPlayer"
+            ]
+        },
+        {
+            "className": "Player",
+            "method": [
+                "Player",
+                "~Player",
+                "move",
+                "getSpeed",
+                "setSpeed",
+                "accelerateHorizontal",
+                "accelerateVertical",
+                "getPosition",
+                "getLightPosition",
+                "getEyeOffset",
+                "getEyePosition",
+                "setPosition",
+                "setPitch",
+                "setYaw",
+                "getPitch",
+                "getYaw",
+                "getBreath",
+                "setBreath",
+                "getRadPitch",
+                "getRadYaw",
+                "getName",
+                "getCollisionbox",
+                "getFreeHudID",
+                "isLocal",
+                "getPlayerSAO",
+                "setPlayerSAO",
+                "serialize",
+                "deSerialize",
+                "checkModified",
+                "setModified",
+                "getPlayerControl",
+                "getHud",
+                "addHud",
+                "removeHud",
+                "clearHud",
+                "maxHudId"
+            ],
+            "field": [
+                "touching_ground",
+                "in_liquid",
+                "in_liquid_stable",
+                "liquid_viscosity",
+                "is_climbing",
+                "swimming_vertical",
+                "camera_barely_in_ceiling",
+                "inventory",
+                "movement_acceleration_default",
+                "movement_acceleration_air",
+                "movement_acceleration_fast",
+                "movement_speed_walk",
+                "movement_speed_crouch",
+                "movement_speed_fast",
+                "movement_speed_climb",
+                "movement_speed_jump",
+                "movement_liquid_fluidity",
+                "movement_liquid_fluidity_smooth",
+                "movement_liquid_sink",
+                "movement_gravity",
+                "physics_override_speed",
+                "physics_override_jump",
+                "physics_override_gravity",
+                "physics_override_sneak",
+                "physics_override_sneak_glitch",
+                "local_animations",
+                "local_animation_speed",
+                "hp",
+                "hurt_tilt_timer",
+                "hurt_tilt_strength",
+                "peer_id",
+                "inventory_formspec",
+                "control",
+                "keyPressed",
+                "hud_flags",
+                "hud_hotbar_itemcount",
+                "m_gamedef",
+                "m_name",
+                "m_breath",
+                "m_pitch",
+                "m_yaw",
+                "m_speed",
+                "m_position",
+                "m_collisionbox",
+                "m_dirty",
+                "hud"
+            ],
+            "size": 77736,
+            "inheritance": "N/A",
+            "dependency": [
+                "Inventory",
+                "IGameDef"
+            ]
+        },
+        {
+            "className": "PlayerInventoryFormSource",
+            "method": [
+                "PlayerInventoryFormSource",
+                "getForm"
+            ],
+            "field": [
+                "m_client"
+            ],
+            "size": 6049,
+            "inheritance": "IFormSource",
+            "dependency": [
+                "Client"
+            ]
+        },
+        {
+            "className": "PlayerSAO",
+            "method": [
+                "PlayerSAO",
+                "~PlayerSAO",
+                "getType",
+                "getSendType",
+                "getDescription",
+                "addedToEnvironment",
+                "removingFromEnvironment",
+                "isStaticAllowed",
+                "getClientInitializationData",
+                "getStaticData",
+                "isAttached",
+                "step",
+                "setBasePosition",
+                "setPos",
+                "moveTo",
+                "setYaw",
+                "setPitch",
+                "punch",
+                "rightClick",
+                "getHP",
+                "setHP",
+                "readDamage",
+                "getBreath",
+                "setBreath",
+                "setArmorGroups",
+                "setAnimation",
+                "setBonePosition",
+                "setAttachment",
+                "accessObjectProperties",
+                "notifyObjectPropertiesModified",
+                "getInventory",
+                "getInventoryLocation",
+                "setInventoryModified",
+                "getWieldList",
+                "getWieldIndex",
+                "setWieldIndex",
+                "disconnected",
+                "getPlayer",
+                "getPeerID",
+                "getLastGoodPosition",
+                "resetTimeFromLastPunch",
+                "noCheatDigStart",
+                "getNoCheatDigPos",
+                "getNoCheatDigTime",
+                "noCheatDigEnd",
+                "getDigPool",
+                "checkMovementCheat",
+                "updatePrivileges",
+                "getCollisionBox",
+                "collideWithObjects",
+                "getPropertyPacket"
+            ],
+            "field": [
+                "m_player",
+                "m_peer_id",
+                "m_inventory",
+                "m_damage",
+                "m_dig_pool",
+                "m_move_pool",
+                "m_last_good_position",
+                "m_time_from_last_punch",
+                "m_nocheat_dig_pos",
+                "m_nocheat_dig_time",
+                "m_wield_index",
+                "m_position_not_sent",
+                "m_armor_groups",
+                "m_armor_groups_sent",
+                "m_properties_sent",
+                "m_prop",
+                "m_privs",
+                "m_is_singleplayer",
+                "m_animation_range",
+                "m_animation_speed",
+                "m_animation_blend",
+                "m_animation_sent",
+                "m_bone_position",
+                "m_bone_position_sent",
+                "m_attachment_parent_id",
+                "m_attachment_bone",
+                "m_attachment_position",
+                "m_attachment_rotation",
+                "m_attachment_sent",
+                "m_moved",
+                "m_inventory_not_sent",
+                "m_hp_not_sent",
+                "m_breath_not_sent",
+                "m_wielded_item_not_sent",
+                "m_physics_override_speed",
+                "m_physics_override_jump",
+                "m_physics_override_gravity",
+                "m_physics_override_sneak",
+                "m_physics_override_sneak_glitch",
+                "m_physics_override_sent"
+            ],
+            "size": 98117,
+            "inheritance": "ServerActiveObject",
+            "dependency": [
+                "Player",
+                "Inventory",
+                "LagPool"
+            ]
+        },
+        {
+            "className": "ProcessingLimitException",
+            "method": [
+                "ProcessingLimitException"
+            ],
+            "field": [],
+            "size": 3798,
+            "inheritance": "BaseException",
+            "dependency": []
+        },
+        {
+            "className": "Profiler",
+            "method": [
+                "Profiler",
+                "add",
+                "avg",
+                "clear",
+                "print",
+                "printPage",
+                "graphAdd",
+                "graphGet",
+                "remove"
+            ],
+            "field": [
+                "m_mutex",
+                "m_data",
+                "m_avgcounts",
+                "m_graphvalues"
+            ],
+            "size": 14491,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "ProfilerGraph",
+            "method": [
+                "ProfilerGraph",
+                "put",
+                "draw"
+            ],
+            "field": [
+                "m_log",
+                "m_log_max_size"
+            ],
+            "size": 6091,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "PseudoRandom",
+            "method": [
+                "PseudoRandom",
+                "seed",
+                "next",
+                "range"
+            ],
+            "field": [
+                "m_next"
+            ],
+            "size": 6378,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "QuicktuneShortcutter",
+            "method": [
+                "hasMessage",
+                "getMessage",
+                "getSelectedName",
+                "next",
+                "prev",
+                "inc",
+                "dec"
+            ],
+            "field": [
+                "m_names",
+                "m_selected_i",
+                "m_message"
+            ],
+            "size": 10204,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "RandomInputHandler",
+            "method": [
+                "RandomInputHandler",
+                "isKeyDown",
+                "wasKeyDown",
+                "getMousePos",
+                "setMousePos",
+                "getLeftState",
+                "getRightState",
+                "getLeftClicked",
+                "getRightClicked",
+                "resetLeftClicked",
+                "resetRightClicked",
+                "getLeftReleased",
+                "getRightReleased",
+                "resetLeftReleased",
+                "resetRightReleased",
+                "getMouseWheel",
+                "step",
+                "Rand"
+            ],
+            "field": [
+                "keydown",
+                "mousepos",
+                "mousespeed",
+                "leftdown",
+                "rightdown",
+                "leftclicked",
+                "rightclicked",
+                "leftreleased",
+                "rightreleased"
+            ],
+            "size": 29457,
+            "inheritance": "InputHandler",
+            "dependency": [
+                "KeyList"
+            ]
+        },
+        {
+            "className": "RealInputHandler",
+            "method": [
+                "RealInputHandler",
+                "isKeyDown",
+                "wasKeyDown",
+                "getMousePos",
+                "setMousePos",
+                "getLeftState",
+                "getRightState",
+                "getLeftClicked",
+                "getRightClicked",
+                "resetLeftClicked",
+                "resetRightClicked",
+                "getLeftReleased",
+                "getRightReleased",
+                "resetLeftReleased",
+                "resetRightReleased",
+                "getMouseWheel",
+                "clear"
+            ],
+            "field": [
+                "m_device",
+                "m_receiver",
+                "m_mousepos"
+            ],
+            "size": 23209,
+            "inheritance": "InputHandler",
+            "dependency": [
+                "MyEventReceiver"
+            ]
+        },
+        {
+            "className": "RemoteClient",
+            "method": [
+                "RemoteClient",
+                "~RemoteClient",
+                "GetNextBlocks",
+                "GotBlock",
+                "SentBlock",
+                "SetBlockNotSent",
+                "SetBlocksNotSent",
+                "ResendBlockIfOnWire",
+                "SendingCount",
+                "PrintInfo",
+                "getState",
+                "getName",
+                "setName",
+                "notifyEvent",
+                "setPendingSerializationVersion",
+                "confirmSerializationVersion",
+                "uptime",
+                "setVersionInfo",
+                "getMajor",
+                "getMinor",
+                "getPatch",
+                "getVersion"
+            ],
+            "field": [
+                "peer_id",
+                "serialization_version",
+                "net_proto_version",
+                "m_time_from_building",
+                "m_known_objects",
+                "m_pending_serialization_version",
+                "m_state",
+                "m_blocks_sent",
+                "m_nearest_unsent_d",
+                "m_last_center",
+                "m_nearest_unsent_reset_timer",
+                "m_blocks_sending",
+                "m_excess_gotblocks",
+                "m_nothing_to_send_pause_timer",
+                "m_name",
+                "m_version_major",
+                "m_version_minor",
+                "m_version_patch",
+                "m_full_version",
+                "m_connection_time"
+            ],
+            "size": 41246,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "RemotePlayer",
+            "method": [
+                "RemotePlayer",
+                "~RemotePlayer",
+                "save",
+                "getPlayerSAO",
+                "setPlayerSAO",
+                "setPosition"
+            ],
+            "field": [
+                "m_sao"
+            ],
+            "size": 22907,
+            "inheritance": "Player",
+            "dependency": [
+                "PlayerSAO"
+            ]
+        },
+        {
+            "className": "ResolveError",
+            "method": [
+                "ResolveError"
+            ],
+            "field": [],
+            "size": 3551,
+            "inheritance": "BaseException",
+            "dependency": []
+        },
+        {
+            "className": "RollbackManager",
+            "method": [
+                "reportAction",
+                "getActor",
+                "isActorGuess",
+                "setActor",
+                "getSuspect",
+                "flush",
+                "RollbackManager",
+                "~RollbackManager",
+                "addAction",
+                "getEntriesSince",
+                "getNodeActors",
+                "getRevertActions"
+            ],
+            "field": [
+                "m_filepath",
+                "m_gamedef",
+                "m_current_actor",
+                "m_current_actor_is_guess",
+                "m_action_todisk_buffer",
+                "m_action_latest_buffer"
+            ],
+            "size": 22593,
+            "inheritance": "IRollbackManager",
+            "dependency": [
+                "IGameDef"
+            ]
+        },
+        {
+            "className": "RollbackScopeActor",
+            "method": [
+                "RollbackScopeActor",
+                "~RollbackScopeActor"
+            ],
+            "field": [
+                "m_sink",
+                "m_actor_was",
+                "m_actor_was_guess"
+            ],
+            "size": 6047,
+            "inheritance": "N/A",
+            "dependency": [
+                "IRollbackReportSink"
+            ]
+        },
+        {
+            "className": "SHA1",
+            "method": [
+                "process",
+                "SHA1",
+                "~SHA1",
+                "addBytes",
+                "getDigest",
+                "lrot",
+                "storeBigEndianUint32",
+                "hexPrinter"
+            ],
+            "field": [
+                "H0",
+                "H1",
+                "H2",
+                "H3",
+                "H4",
+                "bytes",
+                "unprocessedBytes",
+                "size"
+            ],
+            "size": 14969,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "Schematic",
+            "method": [
+                "Schematic",
+                "~Schematic",
+                "updateContentIds",
+                "blitToVManip",
+                "loadSchematicFromFile",
+                "saveSchematicToFile",
+                "getSchematicFromMap",
+                "placeStructure",
+                "applyProbabilities"
+            ],
+            "field": [
+                "c_nodes",
+                "flags",
+                "size",
+                "schemdata",
+                "slice_probs"
+            ],
+            "size": 17976,
+            "inheritance": "GenElement",
+            "dependency": []
+        },
+        {
+            "className": "SchematicManager",
+            "method": [
+                "SchematicManager",
+                "~SchematicManager",
+                "create"
+            ],
+            "field": [
+                "ELEMENT_TITLE",
+                "ELEMENT_LIMIT"
+            ],
+            "size": 8385,
+            "inheritance": "GenElementManager",
+            "dependency": []
+        },
+        {
+            "className": "ScopeProfiler",
+            "method": [
+                "ScopeProfiler",
+                "~ScopeProfiler"
+            ],
+            "field": [
+                "m_profiler",
+                "m_name",
+                "m_timer",
+                "m_type"
+            ],
+            "size": 7985,
+            "inheritance": "N/A",
+            "dependency": [
+                "Profiler"
+            ]
+        },
+        {
+            "className": "SendFailedException",
+            "method": [
+                "SendFailedException"
+            ],
+            "field": [],
+            "size": 3675,
+            "inheritance": "BaseException",
+            "dependency": []
+        },
+        {
+            "className": "SerializationError",
+            "method": [
+                "SerializationError"
+            ],
+            "field": [],
+            "size": 3691,
+            "inheritance": "BaseException",
+            "dependency": []
+        },
+        {
+            "className": "Server",
+            "method": [
+                "Server",
+                "~Server",
+                "start",
+                "stop",
+                "step",
+                "AsyncRunStep",
+                "Receive",
+                "StageTwoClientInit",
+                "ProcessData",
+                "setTimeOfDay",
+                "onMapEditEvent",
+                "getInventory",
+                "setInventoryModified",
+                "getStatusString",
+                "getShutdownRequested",
+                "requestShutdown",
+                "playSound",
+                "stopSound",
+                "getPlayerEffectivePrivs",
+                "checkPriv",
+                "reportPrivsModified",
+                "reportInventoryFormspecModified",
+                "setIpBanned",
+                "unsetIpBanned",
+                "getBanDescription",
+                "notifyPlayer",
+                "notifyPlayers",
+                "spawnParticle",
+                "spawnParticleAll",
+                "addParticleSpawner",
+                "addParticleSpawnerAll",
+                "deleteParticleSpawner",
+                "deleteParticleSpawnerAll",
+                "createDetachedInventory",
+                "getScriptIface",
+                "getRollbackManager",
+                "getEmergeManager",
+                "rollbackRevertActions",
+                "getItemDefManager",
+                "getNodeDefManager",
+                "getCraftDefManager",
+                "getTextureSource",
+                "getShaderSource",
+                "allocateUnknownNodeId",
+                "getSoundManager",
+                "getEventManager",
+                "getRollbackReportSink",
+                "getSceneManager",
+                "getWritableItemDefManager",
+                "getWritableNodeDefManager",
+                "getWritableCraftDefManager",
+                "getModSpec",
+                "getModNames",
+                "getBuiltinLuaPath",
+                "getWorldPath",
+                "isSingleplayer",
+                "setAsyncFatalError",
+                "showFormspec",
+                "getMap",
+                "getEnv",
+                "hudAdd",
+                "hudRemove",
+                "hudChange",
+                "hudSetFlags",
+                "hudSetHotbarItemcount",
+                "hudSetHotbarImage",
+                "hudSetHotbarSelectedImage",
+                "getPeerAddress",
+                "setLocalPlayerAnimations",
+                "setPlayerEyeOffset",
+                "setSky",
+                "overrideDayNightRatio",
+                "peerAdded",
+                "deletingPeer",
+                "DenyAccess",
+                "getClientConInfo",
+                "getClientInfo",
+                "SendMovement",
+                "SendHP",
+                "SendBreath",
+                "SendAccessDenied",
+                "SendDeathscreen",
+                "SendItemDef",
+                "SendNodeDef",
+                "SetBlocksNotSent",
+                "SendInventory",
+                "SendChatMessage",
+                "SendTimeOfDay",
+                "SendPlayerHP",
+                "SendPlayerBreath",
+                "SendMovePlayer",
+                "SendLocalPlayerAnimations",
+                "SendEyeOffset",
+                "SendPlayerPrivileges",
+                "SendPlayerInventoryFormspec",
+                "SendShowFormspecMessage",
+                "SendHUDAdd",
+                "SendHUDRemove",
+                "SendHUDChange",
+                "SendHUDSetFlags",
+                "SendHUDSetParam",
+                "SendSetSky",
+                "SendOverrideDayNightRatio",
+                "sendRemoveNode",
+                "sendAddNode",
+                "setBlockNotSent",
+                "SendBlockNoLock",
+                "SendBlocks",
+                "fillMediaCache",
+                "sendMediaAnnouncement",
+                "sendRequestedMedia",
+                "sendDetachedInventory",
+                "sendDetachedInventories",
+                "SendAddParticleSpawner",
+                "SendDeleteParticleSpawner",
+                "SendSpawnParticle",
+                "DiePlayer",
+                "RespawnPlayer",
+                "DeleteClient",
+                "UpdateCrafting",
+                "getClient",
+                "getClientNoEx",
+                "getPlayerName",
+                "getPlayerSAO",
+                "emergePlayer",
+                "handlePeerChanges"
+            ],
+            "field": [
+                "m_path_world",
+                "m_gamespec",
+                "m_simple_singleplayer_mode",
+                "m_async_fatal_error",
+                "m_liquid_transform_timer",
+                "m_liquid_transform_every",
+                "m_print_info_timer",
+                "m_masterserver_timer",
+                "m_objectdata_timer",
+                "m_emergethread_trigger_timer",
+                "m_savemap_timer",
+                "m_map_timer_and_unload_interval",
+                "m_env",
+                "m_env_mutex",
+                "m_con",
+                "m_banmanager",
+                "m_rollback",
+                "m_rollback_sink_enabled",
+                "m_enable_rollback_recording",
+                "m_emerge",
+                "m_script",
+                "m_itemdef",
+                "m_nodedef",
+                "m_craftdef",
+                "m_event",
+                "m_mods",
+                "m_step_dtime",
+                "m_step_dtime_mutex",
+                "m_lag",
+                "m_thread",
+                "m_time_of_day_send_timer",
+                "m_uptime",
+                "m_clients",
+                "m_peer_change_queue",
+                "m_modspaths",
+                "m_shutdown_requested",
+                "m_unsent_map_edit_queue",
+                "m_ignore_map_edit_events",
+                "m_ignore_map_edit_events_area",
+                "m_ignore_map_edit_events_peer_id",
+                "m_media",
+                "m_playing_sounds",
+                "m_next_sound_id",
+                "m_detached_inventories",
+                "m_particlespawner_ids"
+            ],
+            "size": 196304,
+            "inheritance": "con::PeerHandler",
+            "dependency": [
+                "ServerEnvironment",
+                "con::Connection",
+                "BanManager",
+                "IRollbackManager",
+                "EmergeManager",
+                "IWritableItemDefManager",
+                "IWritableNodeDefManager",
+                "IWritableCraftDefManager",
+                "EventManager",
+                "ServerThread",
+                "ClientInterface",
+                "VoxelArea",
+                "Inventory"
+            ]
+        },
+        {
+            "className": "ServerActiveObject",
+            "method": [
+                "ServerActiveObject",
+                "~ServerActiveObject",
+                "getSendType",
+                "addedToEnvironment",
+                "removingFromEnvironment",
+                "environmentDeletes",
+                "getBasePosition",
+                "setBasePosition",
+                "getEnv",
+                "setPos",
+                "moveTo",
+                "getMinimumSavedMovement",
+                "getDescription",
+                "step",
+                "getClientInitializationData",
+                "getStaticData",
+                "isStaticAllowed",
+                "punch",
+                "rightClick",
+                "setHP",
+                "getHP",
+                "setArmorGroups",
+                "setPhysicsOverride",
+                "setAnimation",
+                "setBonePosition",
+                "setAttachment",
+                "accessObjectProperties",
+                "notifyObjectPropertiesModified",
+                "getInventory",
+                "getInventoryLocation",
+                "setInventoryModified",
+                "getWieldList",
+                "getWieldIndex",
+                "getWieldedItem",
+                "setWieldedItem",
+                "create",
+                "registerType"
+            ],
+            "field": [
+                "m_known_by_count",
+                "m_removed",
+                "m_pending_deactivation",
+                "m_static_exists",
+                "m_static_block",
+                "m_messages_out",
+                "m_env",
+                "m_base_position",
+                "m_types"
+            ],
+            "size": 62518,
+            "inheritance": "ActiveObject",
+            "dependency": [
+                "ServerEnvironment"
+            ]
+        },
+        {
+            "className": "ServerEnvironment",
+            "method": [
+                "ServerEnvironment",
+                "~ServerEnvironment",
+                "getMap",
+                "getServerMap",
+                "getScriptIface",
+                "getGameDef",
+                "getSendRecommendedInterval",
+                "saveLoadedPlayers",
+                "savePlayer",
+                "loadPlayer",
+                "saveMeta",
+                "loadMeta",
+                "getActiveObject",
+                "addActiveObject",
+                "getAddedActiveObjects",
+                "getRemovedActiveObjects",
+                "getActiveObjectMessage",
+                "activateBlock",
+                "addActiveBlockModifier",
+                "setNode",
+                "removeNode",
+                "swapNode",
+                "getObjectsInsideRadius",
+                "clearAllObjects",
+                "step",
+                "line_of_sight",
+                "getGameTime",
+                "reportMaxLagEstimate",
+                "getMaxLagEstimate",
+                "getForceloadedBlocks",
+                "addActiveObjectRaw",
+                "removeRemovedObjects",
+                "activateObjects",
+                "deactivateFarObjects"
+            ],
+            "field": [
+                "m_map",
+                "m_script",
+                "m_gamedef",
+                "m_path_world",
+                "m_active_objects",
+                "m_active_object_messages",
+                "m_send_recommended_timer",
+                "m_object_management_interval",
+                "m_active_blocks",
+                "m_active_blocks_management_interval",
+                "m_active_block_modifier_interval",
+                "m_active_blocks_nodemetadata_interval",
+                "m_active_block_interval_overload_skip",
+                "m_game_time",
+                "m_game_time_fraction_counter",
+                "m_abms",
+                "m_recommended_send_interval",
+                "m_max_lag_estimate"
+            ],
+            "size": 61796,
+            "inheritance": "Environment",
+            "dependency": [
+                "ServerMap",
+                "IGameDef",
+                "ServerActiveObject",
+                "ActiveBlockList"
+            ]
+        },
+        {
+            "className": "ServerError",
+            "method": [
+                "ServerError"
+            ],
+            "field": [],
+            "size": 3578,
+            "inheritance": "BaseException",
+            "dependency": []
+        },
+        {
+            "className": "ServerMap",
+            "method": [
+                "ServerMap",
+                "~ServerMap",
+                "mapType",
+                "createSector",
+                "initBlockMake",
+                "finishBlockMake",
+                "createBlock",
+                "emergeBlock",
+                "getBlockOrEmerge",
+                "prepareBlock",
+                "findGroundLevel",
+                "createDirs",
+                "getSectorDir",
+                "getSectorPos",
+                "getBlockPos",
+                "verifyDatabase",
+                "loadFromFolders",
+                "beginSave",
+                "endSave",
+                "save",
+                "listAllLoadableBlocks",
+                "listAllLoadedBlocks",
+                "saveMapMeta",
+                "loadMapMeta",
+                "saveSectorMeta",
+                "loadSectorMeta",
+                "loadSectorFull",
+                "saveBlock",
+                "loadBlock",
+                "updateVManip",
+                "PrintInfo",
+                "isSavingEnabled",
+                "getSeed",
+                "getWaterLevel",
+                "getBlockFilename"
+            ],
+            "field": [
+                "m_emerge",
+                "m_savedir",
+                "m_map_saving_enabled",
+                "m_map_metadata_changed",
+                "dbase"
+            ],
+            "size": 57238,
+            "inheritance": "Map",
+            "dependency": [
+                "EmergeManager",
+                "Database"
+            ]
+        },
+        {
+            "className": "ServerMapSector",
+            "method": [
+                "ServerMapSector",
+                "~ServerMapSector",
+                "getId",
+                "serialize",
+                "deSerialize"
+            ],
+            "field": [],
+            "size": 12853,
+            "inheritance": "MapSector",
+            "dependency": []
+        },
+        {
+            "className": "ServerThread",
+            "method": [
+                "ServerThread",
+                "Thread"
+            ],
+            "field": [
+                "m_server"
+            ],
+            "size": 4333,
+            "inheritance": "JThread",
+            "dependency": [
+                "Server"
+            ]
+        },
+        {
+            "className": "SettingNotFoundException",
+            "method": [
+                "SettingNotFoundException"
+            ],
+            "field": [],
+            "size": 3803,
+            "inheritance": "BaseException",
+            "dependency": []
+        },
+        {
+            "className": "Settings",
+            "method": [
+                "Settings",
+                "operator+=",
+                "operator=",
+                "readConfigFile",
+                "updateConfigFile",
+                "parseCommandLine",
+                "parseConfigLines",
+                "writeLines",
+                "get",
+                "getBool",
+                "getU16",
+                "getS16",
+                "getS32",
+                "getU64",
+                "getFloat",
+                "getV2F",
+                "getV3F",
+                "getFlagStr",
+                "getStruct",
+                "getNames",
+                "exists",
+                "getNoEx",
+                "getFlag",
+                "getU16NoEx",
+                "getS16NoEx",
+                "getS32NoEx",
+                "getU64NoEx",
+                "getFloatNoEx",
+                "getV2FNoEx",
+                "getV3FNoEx",
+                "getFlagStrNoEx",
+                "set",
+                "setDefault",
+                "setBool",
+                "setS16",
+                "setS32",
+                "setU64",
+                "setFloat",
+                "setV2F",
+                "setV3F",
+                "setFlagStr",
+                "setStruct",
+                "remove",
+                "clear",
+                "updateValue",
+                "update",
+                "parseConfigObject",
+                "getUpdatedConfigObject",
+                "updateNoLock",
+                "clearNoLock"
+            ],
+            "field": [
+                "m_settings",
+                "m_defaults",
+                "m_mutex"
+            ],
+            "size": 61861,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "ShaderCallback",
+            "method": [
+                "ShaderCallback",
+                "~ShaderCallback",
+                "OnSetConstants"
+            ],
+            "field": [
+                "m_scsr",
+                "m_name"
+            ],
+            "size": 6812,
+            "inheritance": "IShaderConstantSetCallBack",
+            "dependency": [
+                "IShaderConstantSetterRegistry"
+            ]
+        },
+        {
+            "className": "ShaderSource",
+            "method": [
+                "ShaderSource",
+                "~ShaderSource",
+                "getShaderIdDirect",
+                "getShader",
+                "getShaderInfo",
+                "processQueue",
+                "insertSourceShader",
+                "rebuildShaders",
+                "addGlobalConstantSetter",
+                "onSetConstants"
+            ],
+            "field": [
+                "m_main_thread",
+                "m_device",
+                "m_shader_callback",
+                "m_sourcecache",
+                "m_shaderinfo_cache",
+                "m_shaderinfo_cache_mutex",
+                "m_get_shader_queue",
+                "m_global_setters"
+            ],
+            "size": 23373,
+            "inheritance": "IWritableShaderSource",
+            "dependency": [
+                "ShaderCallback",
+                "SourceShaderCache",
+                "IShaderConstantSetter"
+            ]
+        },
+        {
+            "className": "SimpleTimeGetter",
+            "method": [
+                "getTime"
+            ],
+            "field": [],
+            "size": 2698,
+            "inheritance": "TimeGetter",
+            "dependency": []
+        },
+        {
+            "className": "SimpleTriggerEvent",
+            "method": [
+                "SimpleTriggerEvent",
+                "getType"
+            ],
+            "field": [
+                "type"
+            ],
+            "size": 4893,
+            "inheritance": "MtEvent",
+            "dependency": []
+        },
+        {
+            "className": "Sky",
+            "method": [
+                "Sky",
+                "OnRegisterSceneNode",
+                "render",
+                "getBoundingBox",
+                "getMaterial",
+                "getMaterialCount",
+                "update",
+                "getBrightness",
+                "getBgColor",
+                "getSkyColor",
+                "getCloudsVisible",
+                "getCloudColor",
+                "setVisible",
+                "setFallbackBgColor",
+                "m_horizon_blend",
+                "m_mix_scolor",
+                "m_mix_scolorf"
+            ],
+            "field": [
+                "Box",
+                "m_materials",
+                "m_visible",
+                "m_fallback_bg_color",
+                "m_first_update",
+                "m_time_of_day",
+                "m_time_brightness",
+                "m_sunlight_seen",
+                "m_brightness",
+                "m_cloud_brightness",
+                "m_clouds_visible",
+                "m_directional_colored_fog",
+                "m_bgcolor_bright_f",
+                "m_skycolor_bright_f",
+                "m_cloudcolor_bright_f",
+                "m_bgcolor",
+                "m_skycolor",
+                "m_cloudcolor_f",
+                "m_stars",
+                "m_star_vertices",
+                "m_sun_texture",
+                "m_moon_texture",
+                "m_sun_tonemap",
+                "m_moon_tonemap"
+            ],
+            "size": 38512,
+            "inheritance": "ISceneNode",
+            "dependency": []
+        },
+        {
+            "className": "SmokePuffCSO",
+            "method": [
+                "SmokePuffCSO",
+                "~SmokePuffCSO",
+                "step"
+            ],
+            "field": [
+                "m_age",
+                "m_spritenode"
+            ],
+            "size": 7462,
+            "inheritance": "ClientSimpleObject",
+            "dependency": []
+        },
+        {
+            "className": "SocketException",
+            "method": [
+                "SocketException"
+            ],
+            "field": [],
+            "size": 3602,
+            "inheritance": "BaseException",
+            "dependency": []
+        },
+        {
+            "className": "SoundMaker",
+            "method": [
+                "SoundMaker",
+                "playPlayerStep",
+                "registerReceiver",
+                "step",
+                "viewBobbingStep",
+                "playerRegainGround",
+                "playerJump",
+                "cameraPunchLeft",
+                "cameraPunchRight",
+                "nodeDug",
+                "playerDamage",
+                "playerFallingDamage"
+            ],
+            "field": [
+                "m_sound",
+                "m_ndef",
+                "m_player_step_timer",
+                "m_player_step_sound",
+                "m_player_leftpunch_sound",
+                "m_player_rightpunch_sound"
+            ],
+            "size": 20603,
+            "inheritance": "N/A",
+            "dependency": [
+                "ISoundManager",
+                "INodeDefManager"
+            ]
+        },
+        {
+            "className": "SourceImageCache",
+            "method": [
+                "~SourceImageCache",
+                "insert",
+                "get",
+                "getOrLoad"
+            ],
+            "field": [
+                "m_images"
+            ],
+            "size": 6335,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "SourceShaderCache",
+            "method": [
+                "insert",
+                "get",
+                "getOrLoad",
+                "readFile"
+            ],
+            "field": [
+                "m_programs"
+            ],
+            "size": 6829,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "StaticObjectList",
+            "method": [
+                "insert",
+                "remove",
+                "serialize",
+                "deSerialize"
+            ],
+            "field": [
+                "m_stored",
+                "m_active"
+            ],
+            "size": 7041,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "StderrLogOutput",
+            "method": [
+                "printLog"
+            ],
+            "field": [],
+            "size": 3109,
+            "inheritance": "ILogOutput",
+            "dependency": []
+        },
+        {
+            "className": "Strfnd",
+            "method": [
+                "start",
+                "where",
+                "to",
+                "what",
+                "next",
+                "next_esc",
+                "skip_over",
+                "atend",
+                "Strfnd"
+            ],
+            "field": [
+                "tek",
+                "p"
+            ],
+            "size": 10769,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "TargetInexistentException",
+            "method": [
+                "what"
+            ],
+            "field": [],
+            "size": 2541,
+            "inheritance": "exception",
+            "dependency": []
+        },
+        {
+            "className": "TestCAO",
+            "method": [
+                "TestCAO",
+                "~TestCAO",
+                "getType",
+                "addToScene",
+                "removeFromScene",
+                "updateLight",
+                "getLightPosition",
+                "updateNodePos",
+                "step",
+                "processMessage",
+                "getCollisionBox",
+                "create"
+            ],
+            "field": [
+                "m_node",
+                "m_position"
+            ],
+            "size": 22975,
+            "inheritance": "ClientActiveObject",
+            "dependency": []
+        },
+        {
+            "className": "TestSAO",
+            "method": [
+                "TestSAO",
+                "getType",
+                "step",
+                "getCollisionBox",
+                "collideWithObjects",
+                "create"
+            ],
+            "field": [
+                "m_timer1",
+                "m_age"
+            ],
+            "size": 19838,
+            "inheritance": "ServerActiveObject",
+            "dependency": []
+        },
+        {
+            "className": "TextDestGuiEngine",
+            "method": [
+                "TextDestGuiEngine",
+                "gotText"
+            ],
+            "field": [
+                "m_engine"
+            ],
+            "size": 7856,
+            "inheritance": "TextDest",
+            "dependency": [
+                "GUIEngine"
+            ]
+        },
+        {
+            "className": "TextureSource",
+            "method": [
+                "TextureSource",
+                "~TextureSource",
+                "getTextureId",
+                "getTextureName",
+                "getTexture",
+                "getDevice",
+                "isKnownSourceImage",
+                "processQueue",
+                "insertSourceImage",
+                "rebuildImagesAndTextures",
+                "generateTextureFromMesh",
+                "generateImage",
+                "getNormalTexture",
+                "generateTexture",
+                "generateImagePart"
+            ],
+            "field": [
+                "m_main_thread",
+                "m_device",
+                "m_sourcecache",
+                "m_source_image_existence",
+                "m_textureinfo_cache",
+                "m_name_to_id",
+                "m_textureinfo_cache_mutex",
+                "m_get_texture_queue",
+                "m_texture_trash",
+                "m_setting_trilinear_filter",
+                "m_setting_bilinear_filter",
+                "m_setting_anisotropic_filter"
+            ],
+            "size": 32812,
+            "inheritance": "IWritableTextureSource",
+            "dependency": [
+                "SourceImageCache"
+            ]
+        },
+        {
+            "className": "TimeGetter",
+            "method": [
+                "getTime"
+            ],
+            "field": [],
+            "size": 2725,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "TouchScreenGUI",
+            "method": [
+                "TouchScreenGUI",
+                "~TouchScreenGUI",
+                "translateEvent",
+                "init",
+                "getYaw",
+                "getPitch",
+                "getShootline",
+                "step",
+                "resetHud",
+                "registerHudItem",
+                "Toggle",
+                "Hide",
+                "Show",
+                "getButtonID",
+                "handleChangedButton",
+                "initButton",
+                "loadButtonTexture",
+                "ButtonEvent",
+                "isHUDButton",
+                "isReleaseHUDButton",
+                "doubleTapDetection"
+            ],
+            "field": [
+                "m_device",
+                "m_guienv",
+                "m_receiver",
+                "m_texturesource",
+                "m_screensize",
+                "m_hud_rects",
+                "m_hud_ids",
+                "m_visible",
+                "m_camera_yaw",
+                "m_camera_pitch",
+                "m_shootline",
+                "m_control_pad_rect",
+                "m_move_id",
+                "m_move_has_really_moved",
+                "m_move_downtime",
+                "m_move_sent_as_mouse_event",
+                "m_move_downlocation",
+                "m_buttons",
+                "m_known_ids",
+                "m_pointerpos",
+                "m_key_events"
+            ],
+            "size": 43718,
+            "inheritance": "N/A",
+            "dependency": [
+                "ISimpleTextureSource"
+            ]
+        },
+        {
+            "className": "UDPSocket",
+            "method": [
+                "UDPSocket",
+                "~UDPSocket",
+                "Bind",
+                "init",
+                "Send",
+                "Receive",
+                "GetHandle",
+                "setTimeoutMs",
+                "WaitData"
+            ],
+            "field": [
+                "m_handle",
+                "m_timeout_ms",
+                "m_addr_family"
+            ],
+            "size": 13611,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "UnknownKeycode",
+            "method": [
+                "UnknownKeycode"
+            ],
+            "field": [],
+            "size": 3597,
+            "inheritance": "BaseException",
+            "dependency": []
+        },
+        {
+            "className": "VersionMismatchException",
+            "method": [
+                "VersionMismatchException"
+            ],
+            "field": [],
+            "size": 3798,
+            "inheritance": "BaseException",
+            "dependency": []
+        },
+        {
+            "className": "VoxelArea",
+            "method": [
+                "VoxelArea",
+                "addArea",
+                "addPoint",
+                "pad",
+                "getExtent",
+                "getVolume",
+                "contains",
+                "operator==",
+                "operator+",
+                "operator-",
+                "diff",
+                "index",
+                "add_x",
+                "add_y",
+                "add_z",
+                "add_p",
+                "print"
+            ],
+            "field": [
+                "MinEdge",
+                "MaxEdge"
+            ],
+            "size": 25499,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "VoxelManipulator",
+            "method": [
+                "VoxelManipulator",
+                "~VoxelManipulator",
+                "getNode",
+                "getNodeNoEx",
+                "getNodeNoExNoEmerge",
+                "getNodeRefUnsafe",
+                "getFlagsRefUnsafe",
+                "exists",
+                "getNodeRef",
+                "setNode",
+                "setNodeNoRef",
+                "setNodeNoEmerge",
+                "clear",
+                "print",
+                "addArea",
+                "copyFrom",
+                "copyTo",
+                "clearFlag",
+                "unspreadLight",
+                "spreadLight"
+            ],
+            "field": [
+                "m_area",
+                "m_data",
+                "m_flags"
+            ],
+            "size": 32275,
+            "inheritance": "N/A",
+            "dependency": [
+                "VoxelArea"
+            ]
+        },
+        {
+            "className": "WStrfnd",
+            "method": [
+                "start",
+                "where",
+                "to",
+                "what",
+                "next",
+                "next_esc",
+                "atend",
+                "WStrfnd"
+            ],
+            "field": [
+                "tek",
+                "p"
+            ],
+            "size": 9897,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "WieldMeshSceneNode",
+            "method": [
+                "WieldMeshSceneNode",
+                "~WieldMeshSceneNode",
+                "setCube",
+                "setExtruded",
+                "setItem",
+                "setColor",
+                "render",
+                "getBoundingBox",
+                "changeToMesh"
+            ],
+            "field": [
+                "m_meshnode",
+                "m_material_type",
+                "m_lighting",
+                "m_enable_shaders",
+                "m_bilinear_filter",
+                "m_trilinear_filter",
+                "m_bounding_box"
+            ],
+            "size": 18533,
+            "inheritance": "ISceneNode",
+            "dependency": []
+        },
+        {
+            "className": "con::Channel",
+            "method": [
+                "readNextIncomingSeqNum",
+                "incNextIncomingSeqNum",
+                "getOutgoingSequenceNumber",
+                "readOutgoingSequenceNumber",
+                "putBackSequenceNumber",
+                "readNextSplitSeqNum",
+                "setNextSplitSeqNum",
+                "Channel",
+                "~Channel",
+                "UpdatePacketLossCounter",
+                "UpdatePacketTooLateCounter",
+                "UpdateBytesSent",
+                "UpdateBytesLost",
+                "UpdateBytesReceived",
+                "UpdateTimers",
+                "getCurrentDownloadRateKB",
+                "getMaxDownloadRateKB",
+                "getCurrentLossRateKB",
+                "getMaxLossRateKB",
+                "getCurrentIncomingRateKB",
+                "getMaxIncomingRateKB",
+                "getAvgDownloadRateKB",
+                "getAvgLossRateKB",
+                "getAvgIncomingRateKB",
+                "getWindowSize",
+                "setWindowSize"
+            ],
+            "field": [
+                "incoming_reliables",
+                "outgoing_reliables_sent",
+                "queued_reliables",
+                "queued_commands",
+                "incoming_splits",
+                "m_internal_mutex",
+                "window_size",
+                "next_incoming_seqnum",
+                "next_outgoing_seqnum",
+                "next_outgoing_split_seqnum",
+                "current_packet_loss",
+                "current_packet_too_late",
+                "current_packet_successfull",
+                "packet_loss_counter",
+                "current_bytes_transfered",
+                "current_bytes_received",
+                "current_bytes_lost",
+                "max_kbps",
+                "cur_kbps",
+                "avg_kbps",
+                "max_incoming_kbps",
+                "cur_incoming_kbps",
+                "avg_incoming_kbps",
+                "max_kbps_lost",
+                "cur_kbps_lost",
+                "avg_kbps_lost",
+                "bpm_counter",
+                "rate_samples"
+            ],
+            "size": 52350,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "con::Connection",
+            "method": [
+                "Connection",
+                "~Connection",
+                "getEvent",
+                "waitEvent",
+                "putCommand",
+                "SetTimeoutMs",
+                "Serve",
+                "Connect",
+                "Connected",
+                "Disconnect",
+                "Receive",
+                "SendToAll",
+                "Send",
+                "GetPeerID",
+                "GetPeerAddress",
+                "getPeerStat",
+                "getLocalStat",
+                "GetProtocolID",
+                "getDesc",
+                "DisconnectPeer",
+                "getPeer",
+                "getPeerNoEx",
+                "lookupPeer",
+                "createPeer",
+                "createServerPeer",
+                "deletePeer",
+                "SetPeerID",
+                "sendAck",
+                "PrintInfo",
+                "getPeerIDs",
+                "putEvent",
+                "TriggerSend",
+                "getPeers"
+            ],
+            "field": [
+                "m_udpSocket",
+                "m_command_queue",
+                "m_event_queue",
+                "m_peer_id",
+                "m_protocol_id",
+                "m_peers",
+                "m_peers_mutex",
+                "m_sendThread",
+                "m_receiveThread",
+                "m_info_mutex",
+                "m_bc_peerhandler",
+                "m_bc_receive_timeout",
+                "m_shutting_down",
+                "m_next_remote_peer_id"
+            ],
+            "size": 54725,
+            "inheritance": "N/A",
+            "dependency": [
+                "UDPSocket"
+            ]
+        },
+        {
+            "className": "con::ConnectionBindFailed",
+            "method": [
+                "ConnectionBindFailed"
+            ],
+            "field": [],
+            "size": 3778,
+            "inheritance": "BaseException",
+            "dependency": []
+        },
+        {
+            "className": "con::ConnectionException",
+            "method": [
+                "ConnectionException"
+            ],
+            "field": [],
+            "size": 3756,
+            "inheritance": "BaseException",
+            "dependency": []
+        },
+        {
+            "className": "con::ConnectionReceiveThread",
+            "method": [
+                "ConnectionReceiveThread",
+                "Thread",
+                "receive",
+                "getFromBuffers",
+                "checkIncomingBuffers",
+                "processPacket"
+            ],
+            "field": [
+                "m_connection"
+            ],
+            "size": 10432,
+            "inheritance": "JThread",
+            "dependency": []
+        },
+        {
+            "className": "con::ConnectionSendThread",
+            "method": [
+                "ConnectionSendThread",
+                "Thread",
+                "Trigger",
+                "setPeerTimeout",
+                "runTimeouts",
+                "rawSend",
+                "rawSendAsPacket",
+                "processReliableCommand",
+                "processNonReliableCommand",
+                "serve",
+                "connect",
+                "disconnect",
+                "disconnect_peer",
+                "send",
+                "sendReliable",
+                "sendToAll",
+                "sendToAllReliable",
+                "sendPackets",
+                "sendAsPacket",
+                "sendAsPacketReliable",
+                "packetsQueued"
+            ],
+            "field": [
+                "m_connection",
+                "m_max_packet_size",
+                "m_timeout",
+                "m_outgoing_queue",
+                "m_send_sleep_semaphore",
+                "m_iteration_packets_avaialble",
+                "m_max_commands_per_iteration",
+                "m_max_data_packets_per_iteration",
+                "m_max_packets_requeued"
+            ],
+            "size": 36055,
+            "inheritance": "JThread",
+            "dependency": []
+        },
+        {
+            "className": "con::IncomingDataCorruption",
+            "method": [
+                "IncomingDataCorruption"
+            ],
+            "field": [],
+            "size": 3818,
+            "inheritance": "BaseException",
+            "dependency": []
+        },
+        {
+            "className": "con::IncomingSplitBuffer",
+            "method": [
+                "~IncomingSplitBuffer",
+                "insert",
+                "removeUnreliableTimedOuts"
+            ],
+            "field": [
+                "m_buf",
+                "m_map_mutex"
+            ],
+            "size": 6264,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "con::InvalidIncomingDataException",
+            "method": [
+                "InvalidIncomingDataException"
+            ],
+            "field": [],
+            "size": 3919,
+            "inheritance": "BaseException",
+            "dependency": []
+        },
+        {
+            "className": "con::InvalidOutgoingDataException",
+            "method": [
+                "InvalidOutgoingDataException"
+            ],
+            "field": [],
+            "size": 3919,
+            "inheritance": "BaseException",
+            "dependency": []
+        },
+        {
+            "className": "con::NoIncomingDataException",
+            "method": [
+                "NoIncomingDataException"
+            ],
+            "field": [],
+            "size": 3844,
+            "inheritance": "BaseException",
+            "dependency": []
+        },
+        {
+            "className": "con::NotFoundException",
+            "method": [
+                "NotFoundException"
+            ],
+            "field": [],
+            "size": 3737,
+            "inheritance": "BaseException",
+            "dependency": []
+        },
+        {
+            "className": "con::Peer",
+            "method": [
+                "Peer",
+                "~Peer",
+                "Drop",
+                "PutReliableSendCommand",
+                "isActive",
+                "getAddress",
+                "ResetTimeout",
+                "isTimedOut",
+                "setSentWithID",
+                "hasSentWithID",
+                "getNextSplitSequenceNumber",
+                "setNextSplitSequenceNumber",
+                "addSpiltPacket",
+                "Ping",
+                "getStat",
+                "reportRTT",
+                "RTTStatistics",
+                "IncUseCount",
+                "DecUseCount"
+            ],
+            "field": [
+                "id",
+                "m_increment_packets_remaining",
+                "m_increment_bytes_remaining",
+                "m_exclusive_access_mutex",
+                "m_pending_deletion",
+                "m_connection",
+                "address",
+                "m_ping_timer",
+                "m_rtt",
+                "m_last_rtt",
+                "m_usage",
+                "m_timeout_counter",
+                "m_last_timeout_check",
+                "m_has_sent_with_id"
+            ],
+            "size": 36481,
+            "inheritance": "N/A",
+            "dependency": [
+                "Address"
+            ]
+        },
+        {
+            "className": "con::PeerHandler",
+            "method": [
+                "PeerHandler",
+                "~PeerHandler",
+                "peerAdded",
+                "deletingPeer"
+            ],
+            "field": [],
+            "size": 6529,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "con::PeerHelper",
+            "method": [
+                "PeerHelper",
+                "~PeerHelper",
+                "operator=",
+                "operator->",
+                "operator!",
+                "operator&",
+                "operator!="
+            ],
+            "field": [
+                "m_peer"
+            ],
+            "size": 9678,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "con::PeerNotFoundException",
+            "method": [
+                "PeerNotFoundException"
+            ],
+            "field": [],
+            "size": 3810,
+            "inheritance": "BaseException",
+            "dependency": []
+        },
+        {
+            "className": "con::ProcessedQueued",
+            "method": [
+                "ProcessedQueued"
+            ],
+            "field": [],
+            "size": 3704,
+            "inheritance": "BaseException",
+            "dependency": []
+        },
+        {
+            "className": "con::ProcessedSilentlyException",
+            "method": [
+                "ProcessedSilentlyException"
+            ],
+            "field": [],
+            "size": 3894,
+            "inheritance": "BaseException",
+            "dependency": []
+        },
+        {
+            "className": "con::ReliablePacketBuffer",
+            "method": [
+                "ReliablePacketBuffer",
+                "getFirstSeqnum",
+                "popFirst",
+                "popSeqnum",
+                "insert",
+                "incrementTimeouts",
+                "getTimedOuts",
+                "print",
+                "empty",
+                "containsPacket",
+                "notFound",
+                "size",
+                "findPacket"
+            ],
+            "field": [
+                "m_list",
+                "m_list_size",
+                "m_oldest_non_answered_ack",
+                "m_list_mutex"
+            ],
+            "size": 18596,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "con::UDPPeer",
+            "method": [
+                "UDPPeer",
+                "~UDPPeer",
+                "PutReliableSendCommand",
+                "isActive",
+                "getAddress",
+                "setNonLegacyPeer",
+                "getLegacyPeer",
+                "getNextSplitSequenceNumber",
+                "setNextSplitSequenceNumber",
+                "addSpiltPacket",
+                "reportRTT",
+                "RunCommandQueues",
+                "getResendTimeout",
+                "setResendTimeout",
+                "Ping",
+                "processReliableSendCommand"
+            ],
+            "field": [
+                "channels",
+                "m_pending_disconnect",
+                "resend_timeout",
+                "m_legacy_peer"
+            ],
+            "size": 32699,
+            "inheritance": "con::Peer",
+            "dependency": []
+        },
+        {
+            "className": "path_cost",
+            "method": [
+                "path_cost",
+                "operator="
+            ],
+            "field": [
+                "valid",
+                "value",
+                "direction",
+                "updated"
+            ],
+            "size": 7507,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "path_gridnode",
+            "method": [
+                "path_gridnode",
+                "operator=",
+                "get_cost",
+                "set_cost"
+            ],
+            "field": [
+                "valid",
+                "target",
+                "source",
+                "totalcost",
+                "sourcedir",
+                "surfaces",
+                "pos",
+                "directions",
+                "is_element",
+                "type"
+            ],
+            "size": 16560,
+            "inheritance": "N/A",
+            "dependency": [
+                "path_cost"
+            ]
+        },
+        {
+            "className": "pathfinder",
+            "method": [
+                "pathfinder",
+                "get_Path",
+                "getRealPos",
+                "getIndexPos",
+                "getIndexElement",
+                "invert",
+                "valid_index",
+                "tov3f",
+                "get_manhattandistance",
+                "get_dir_heuristic",
+                "build_costmap",
+                "calc_cost",
+                "update_all_costs",
+                "update_cost_heuristic",
+                "build_path"
+            ],
+            "field": [
+                "m_max_index_x",
+                "m_max_index_y",
+                "m_max_index_z",
+                "m_searchdistance",
+                "m_maxdrop",
+                "m_maxjump",
+                "m_min_target_distance",
+                "m_prefetch",
+                "m_start",
+                "m_destination",
+                "m_limits",
+                "m_data",
+                "m_env"
+            ],
+            "size": 38098,
+            "inheritance": "N/A",
+            "dependency": [
+                "path_gridnode",
+                "ServerEnvironment"
+            ]
+        }
+    ]
+}

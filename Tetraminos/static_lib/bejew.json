@@ -1,0 +1,430 @@
+{
+    "staticInfo": [
+        {
+            "className": "bejeweled::BoardModel",
+            "method": [
+                "BoardModel",
+                "~BoardModel",
+                "getNumRows",
+                "getNumColumns",
+                "getTileId",
+                "fillBoard",
+                "hasSequencesProximity",
+                "gravitateBoardStep",
+                "dropNewTilesRow",
+                "swapTiles",
+                "hasMoreMoves",
+                "markAllSequencesOnBoard",
+                "operator=",
+                "findAllSequences",
+                "markSequenceOnBoard",
+                "isBeginningOfSequence",
+                "isEndOfSequence"
+            ],
+            "field": [
+                "EMPTY_TILE",
+                "m_numCols",
+                "m_numRows",
+                "m_numTileTypes",
+                "m_grid",
+                "m_matchingSequences"
+            ],
+            "size": 29538,
+            "inheritance": "N/A",
+            "dependency": [
+                "bejeweled::Grid",
+                "bejeweled::TileSequence"
+            ]
+        },
+        {
+            "className": "bejeweled::BoardView",
+            "method": [
+                "BoardView",
+                "~BoardView",
+                "draw",
+                "isTileAtCoordinate",
+                "removeTileAtIndex",
+                "getTileRowByY",
+                "getTileColumnByX",
+                "setTileSelected",
+                "setTileDeselected",
+                "isTileSelected",
+                "deselectAllTiles",
+                "operator="
+            ],
+            "field": [
+                "TILE_NOT_FOUND",
+                "m_boardModel",
+                "m_tileDrawer",
+                "m_numCols",
+                "m_numRows",
+                "m_originX",
+                "m_originY",
+                "m_selectedTiles",
+                "m_tileHeight",
+                "m_tileWidth"
+            ],
+            "size": 27794,
+            "inheritance": "bejeweled::Drawable",
+            "dependency": [
+                "bejeweled::BoardModel",
+                "bejeweled::TileViewDrawer"
+            ]
+        },
+        {
+            "className": "bejeweled::Drawable",
+            "method": [
+                "draw",
+                "~Drawable"
+            ],
+            "field": [],
+            "size": 4514,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "bejeweled::Engine",
+            "method": [
+                "Engine",
+                "~Engine",
+                "run",
+                "operator="
+            ],
+            "field": [
+                "GAME_FPS",
+                "WINDOW_TITLE",
+                "ICON_IMG",
+                "m_resManager",
+                "m_gameIcon",
+                "m_screen",
+                "m_fpsTimer",
+                "m_curScene"
+            ],
+            "size": 14957,
+            "inheritance": "N/A",
+            "dependency": [
+                "bejeweled::ResourceManager",
+                "bejeweled::Timer",
+                "bejeweled::GameObject"
+            ]
+        },
+        {
+            "className": "bejeweled::GameBoard",
+            "method": [
+                "GameBoard",
+                "~GameBoard",
+                "handleEvent",
+                "update",
+                "draw",
+                "isPointInObject",
+                "notifyPlayable",
+                "getBoardState",
+                "operator="
+            ],
+            "field": [
+                "NUM_ROWS",
+                "NUM_COLS",
+                "BOARD_OFFSET_X",
+                "BOARD_OFFSET_Y",
+                "TILE_BLUE_IMG",
+                "TILE_GREEN_IMG",
+                "TILE_PURPLE_IMG",
+                "TILE_RED_IMG",
+                "TILE_YELLOW_IMG",
+                "EFFECT_SELECTION",
+                "EFFECT_MATCH",
+                "NUM_COLORS",
+                "m_boardState",
+                "m_tileDrawer",
+                "m_boardModel",
+                "m_boardView",
+                "m_resManager",
+                "m_selectedTile",
+                "m_prevSelectedTile",
+                "m_effectSelection",
+                "m_effectMatch"
+            ],
+            "size": 45255,
+            "inheritance": "bejeweled::GameObject",
+            "dependency": [
+                "bejeweled::TileViewDrawer",
+                "bejeweled::BoardModel",
+                "bejeweled::BoardView",
+                "bejeweled::ResourceManager"
+            ]
+        },
+        {
+            "className": "bejeweled::GameButton",
+            "method": [
+                "GameButton",
+                "~GameButton",
+                "setText",
+                "handleEvent",
+                "update",
+                "draw",
+                "isPointInObject",
+                "getButtonStatus",
+                "notifyNoMoves",
+                "operator="
+            ],
+            "field": [
+                "FONT_SIZE",
+                "FONT_PATH",
+                "TEXT_OFFSET_INITIAL",
+                "TEXT_OFFSET_TIMER",
+                "TEXT_OFFSET_GAMEOVER",
+                "TEXT_OFFSET_NOMOVES",
+                "TEXT_OFFSET_Y",
+                "TIMER_BUTTON_TEXT",
+                "BUTTON_OFFSET_X",
+                "BUTTON_OFFSET_Y",
+                "BUTTON_SIZE_X",
+                "BUTTON_SIZE_Y",
+                "TIMER_TEXT_COLOR",
+                "BUTTON_BACKCOLOR",
+                "GAME_TIME_SECS",
+                "m_resManager",
+                "m_buttonSurface",
+                "m_fontSurface",
+                "m_font",
+                "m_text",
+                "m_textColor",
+                "m_buttonColor",
+                "m_gameTimer",
+                "m_height",
+                "m_width",
+                "m_textOffsetX",
+                "m_buttonStatus"
+            ],
+            "size": 47354,
+            "inheritance": "bejeweled::GameObject",
+            "dependency": [
+                "bejeweled::ResourceManager",
+                "bejeweled::Timer"
+            ]
+        },
+        {
+            "className": "bejeweled::GameException",
+            "method": [
+                "GameException",
+                "~GameException"
+            ],
+            "field": [],
+            "size": 6188,
+            "inheritance": "runtime_error",
+            "dependency": []
+        },
+        {
+            "className": "bejeweled::GameObject",
+            "method": [
+                "GameObject",
+                "~GameObject",
+                "setOrigin",
+                "setTargetSurface",
+                "handleEvent",
+                "update",
+                "draw",
+                "isPointInObject"
+            ],
+            "field": [
+                "m_dstSurface",
+                "m_originX",
+                "m_originY"
+            ],
+            "size": 16687,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "bejeweled::GameScene",
+            "method": [
+                "GameScene",
+                "~GameScene",
+                "isGameover",
+                "update",
+                "draw",
+                "handleEvent",
+                "isPointInObject",
+                "operator="
+            ],
+            "field": [
+                "BACKGROUND_IMG",
+                "BACKGROUND_MUSIC",
+                "m_isGameover",
+                "m_resManager",
+                "message",
+                "m_backgroundImage",
+                "m_music",
+                "m_gameBoard",
+                "m_button"
+            ],
+            "size": 23167,
+            "inheritance": "bejeweled::GameObject",
+            "dependency": [
+                "bejeweled::ResourceManager",
+                "bejeweled::GameBoard",
+                "bejeweled::GameButton"
+            ]
+        },
+        {
+            "className": "bejeweled::Grid",
+            "method": [
+                "Grid",
+                "operator=",
+                "getNumRows",
+                "getNumCols",
+                "isEmpty",
+                "clear",
+                "resize",
+                "operator[]"
+            ],
+            "field": [
+                "m_numRows",
+                "m_numCols",
+                "m_array"
+            ],
+            "size": 17964,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "bejeweled::ResourceManager",
+            "method": [
+                "ResourceManager",
+                "~ResourceManager",
+                "loadImage",
+                "loadSimpleImage",
+                "loadFont",
+                "loadMusic",
+                "loadEffect",
+                "operator="
+            ],
+            "field": [
+                "m_surfaces",
+                "m_fonts",
+                "m_music",
+                "m_effects"
+            ],
+            "size": 16325,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "bejeweled::SelectedTileView",
+            "method": [
+                "SelectedTileView",
+                "operator=",
+                "~SelectedTileView",
+                "draw"
+            ],
+            "field": [
+                "TILE_BORDER_COLOR",
+                "TILE_BORDER_WIDTH"
+            ],
+            "size": 14351,
+            "inheritance": "bejeweled::TileView",
+            "dependency": []
+        },
+        {
+            "className": "bejeweled::SurfaceProxy",
+            "method": [
+                "loadOptimizedImage",
+                "loadRegularImage",
+                "draw",
+                "getImageDimensions",
+                "SurfaceProxy",
+                "operator="
+            ],
+            "field": [],
+            "size": 9863,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "bejeweled::TileSequence",
+            "method": [
+                "TileSequence",
+                "operator=",
+                "~TileSequence",
+                "getTypeId",
+                "getSize",
+                "getStartRow",
+                "getStartCol",
+                "getOrientation"
+            ],
+            "field": [
+                "m_orientation",
+                "m_typeId",
+                "m_size",
+                "m_row",
+                "m_col"
+            ],
+            "size": 18584,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "bejeweled::TileView",
+            "method": [
+                "TileView",
+                "operator=",
+                "~TileView",
+                "draw",
+                "getWidth",
+                "getHeight"
+            ],
+            "field": [
+                "m_x",
+                "m_y",
+                "m_tileImg",
+                "m_isEmpty"
+            ],
+            "size": 16058,
+            "inheritance": "bejeweled::Drawable",
+            "dependency": []
+        },
+        {
+            "className": "bejeweled::TileViewDrawer",
+            "method": [
+                "TileViewDrawer",
+                "addAvailableTileImage",
+                "drawTile",
+                "getTileWidth",
+                "getTileHeight"
+            ],
+            "field": [
+                "m_selectedTileViews",
+                "m_tileViews",
+                "m_emptyTile"
+            ],
+            "size": 10458,
+            "inheritance": "N/A",
+            "dependency": [
+                "bejeweled::SelectedTileView",
+                "bejeweled::TileView"
+            ]
+        },
+        {
+            "className": "bejeweled::Timer",
+            "method": [
+                "Timer",
+                "start",
+                "stop",
+                "pause",
+                "unpause",
+                "getTicks",
+                "isStarted",
+                "isPaused"
+            ],
+            "field": [
+                "m_startTicks",
+                "m_pausedTicks",
+                "m_paused",
+                "m_started"
+            ],
+            "size": 12305,
+            "inheritance": "N/A",
+            "dependency": []
+        }
+    ]
+}

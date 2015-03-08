@@ -1,0 +1,271 @@
+{
+    "staticInfo": [
+        {
+            "className": "Battle",
+            "method": [
+                "Battle",
+                "battle_input",
+                "opponent_down",
+                "battle_end",
+                "opponent_attacks",
+                "~Battle",
+                "remove_little_life_pk",
+                "process_attack"
+            ],
+            "field": [
+                "wild_battle",
+                "pk_defence",
+                "pk_opponent",
+                "dont_do_anything",
+                "life_to_remove"
+            ],
+            "size": 12586,
+            "inheritance": "N/A",
+            "dependency": [
+                "Poke"
+            ]
+        },
+        {
+            "className": "Bot",
+            "method": [
+                "Bot",
+                "turn",
+                "get_direction",
+                "update",
+                "kind",
+                "say"
+            ],
+            "field": [
+                "type",
+                "area",
+                "message",
+                "anim",
+                "tmr",
+                "walktime",
+                "direction",
+                "frame"
+            ],
+            "size": 15071,
+            "inheritance": "Movement",
+            "dependency": [
+                "timer"
+            ]
+        },
+        {
+            "className": "Image",
+            "method": [
+                "Image",
+                "free",
+                "load",
+                "draw",
+                "draw_static",
+                "get",
+                "set"
+            ],
+            "field": [
+                "surface"
+            ],
+            "size": 9101,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "Move",
+            "method": [
+                "Move",
+                "getId",
+                "getName",
+                "getElemType",
+                "getPower",
+                "getAcc",
+                "getPP"
+            ],
+            "field": [
+                "_id",
+                "_name",
+                "_elemtype",
+                "_power",
+                "_acc",
+                "_pp"
+            ],
+            "size": 12102,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "Movement",
+            "method": [
+                "Movement",
+                "~Movement",
+                "x",
+                "y",
+                "set_x",
+                "set_y"
+            ],
+            "field": [
+                "pos_x",
+                "pos_y",
+                "walk",
+                "talking"
+            ],
+            "size": 10209,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "Music",
+            "method": [
+                "stream",
+                "check",
+                "errstr",
+                "Music",
+                "~Music",
+                "operator=",
+                "load",
+                "info",
+                "play",
+                "playing",
+                "update"
+            ],
+            "field": [
+                "SBO",
+                "source",
+                "oggstream",
+                "meta",
+                "oggfile",
+                "format",
+                "active"
+            ],
+            "size": 18351,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "Player",
+            "method": [
+                "Player",
+                "update",
+                "stop",
+                "start",
+                "direction",
+                "turn",
+                "get_frame"
+            ],
+            "field": [
+                "angle",
+                "move",
+                "anim",
+                "frame"
+            ],
+            "size": 12525,
+            "inheritance": "Movement",
+            "dependency": [
+                "timer"
+            ]
+        },
+        {
+            "className": "Poke",
+            "method": [
+                "Poke",
+                "~Poke",
+                "setFullHealth",
+                "causeDamage",
+                "isAlive",
+                "isDead",
+                "getId",
+                "getName",
+                "getPoseSpriteFilename",
+                "getBattleSpriteFilename",
+                "getLevel",
+                "getMaxHp",
+                "getHpPerLvl",
+                "getAttack",
+                "getAttPerLvl",
+                "getDefense",
+                "getDefPerLvl",
+                "getSpeca",
+                "getSpecaPerLvl",
+                "getSpecd",
+                "getSpecdPerLvl",
+                "getHealth",
+                "getExp",
+                "getCurpp",
+                "getMoven",
+                "toString"
+            ],
+            "field": [
+                "_id",
+                "_name",
+                "_pose",
+                "_battle",
+                "_level",
+                "_maxhp",
+                "_hp_per_lvl",
+                "_attack",
+                "_att_per_lvl",
+                "_defense",
+                "_def_per_lvl",
+                "_speca",
+                "_speca_per_lvl",
+                "_specd",
+                "_specd_per_lvl",
+                "_health",
+                "_exp",
+                "_curpp",
+                "_moven"
+            ],
+            "size": 43200,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "Sound",
+            "method": [
+                "Sound",
+                "~Sound",
+                "play",
+                "playing",
+                "stop",
+                "bind",
+                "pos",
+                "reverb",
+                "lowpass"
+            ],
+            "field": [
+                "source"
+            ],
+            "size": 10849,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "SoundBuffer",
+            "method": [
+                "SoundBuffer",
+                "~SoundBuffer",
+                "load",
+                "id"
+            ],
+            "field": [
+                "buffer"
+            ],
+            "size": 6372,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "timer",
+            "method": [
+                "timer",
+                "start",
+                "get_ticks"
+            ],
+            "field": [
+                "start_ticks"
+            ],
+            "size": 4106,
+            "inheritance": "N/A",
+            "dependency": []
+        }
+    ]
+}

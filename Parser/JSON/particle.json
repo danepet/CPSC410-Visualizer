@@ -1,0 +1,126 @@
+{
+    "staticInfo": [
+        {
+            "className": "Particle",
+            "method": [
+                "Particle",
+                "~Particle",
+                "getPosition",
+                "getVelocity",
+                "getAcceleration",
+                "getJerk",
+                "getLife",
+                "setPosition",
+                "setVelocity",
+                "setAcceleration",
+                "setJerk",
+                "setLife",
+                "runFrame"
+            ],
+            "field": [
+                "position",
+                "velocity",
+                "acceleration",
+                "jerk",
+                "life"
+            ],
+            "size": 25775,
+            "inheritance": "N/A",
+            "dependency": [
+                "Point"
+            ]
+        },
+        {
+            "className": "Pixel",
+            "method": [
+                "Pixel",
+                "~Pixel",
+                "getRed",
+                "getGreen",
+                "getBlue",
+                "getOpacity",
+                "setColor",
+                "runPixelFrame"
+            ],
+            "field": [
+                "red",
+                "green",
+                "blue",
+                "opacity",
+                "renderLines"
+            ],
+            "size": 40138,
+            "inheritance": "Particle",
+            "dependency": []
+        },
+        {
+            "className": "Point",
+            "method": [
+                "Point",
+                "~Point",
+                "getX",
+                "getY",
+                "setX",
+                "setY"
+            ],
+            "field": [
+                "x",
+                "y"
+            ],
+            "size": 10203,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "Window",
+            "method": [
+                "Window",
+                "~Window",
+                "addPixel",
+                "draw",
+                "dump",
+                "getClearing",
+                "setClearing",
+                "getAutoDelete",
+                "setAutoDelete",
+                "getRenderLine",
+                "setRenderLine",
+                "getAntialias",
+                "setAntialias",
+                "getBlendMode",
+                "setBlendMode",
+                "getClearColor",
+                "setClearColor",
+                "centerMouse",
+                "getWidth",
+                "getHeight",
+                "setCursorVisible",
+                "clear",
+                "drawPixels",
+                "drawAALine"
+            ],
+            "field": [
+                "width",
+                "height",
+                "blendmode",
+                "window",
+                "renderer",
+                "cursor",
+                "pixels",
+                "clearing",
+                "autoDelete",
+                "renderLine",
+                "antialias",
+                "clearColor",
+                "clearRed",
+                "clearGreen",
+                "clearBlue"
+            ],
+            "size": 37117,
+            "inheritance": "N/A",
+            "dependency": [
+                "Pixel"
+            ]
+        }
+    ]
+}

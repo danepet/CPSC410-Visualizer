@@ -1,0 +1,129 @@
+{
+    "staticInfo": [
+        {
+            "className": "ars::Camera",
+            "method": [
+                "Camera",
+                "setCamera"
+            ],
+            "field": [
+                "position",
+                "center",
+                "up",
+                "fov",
+                "aspect",
+                "near",
+                "far"
+            ],
+            "size": 9524,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "ars::Car",
+            "method": [
+                "Car",
+                "render",
+                "update",
+                "accelerate",
+                "deaccelerate",
+                "turnLeft",
+                "turnRight"
+            ],
+            "field": [
+                "grass",
+                "track",
+                "insideView",
+                "position",
+                "color",
+                "speed",
+                "angle"
+            ],
+            "size": 14196,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "ars::Color",
+            "method": [
+                "Color",
+                "getData",
+                "random"
+            ],
+            "field": [
+                "r",
+                "g",
+                "b",
+                "a"
+            ],
+            "size": 8381,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "ars::Grass",
+            "method": [
+                "Grass",
+                "initialize",
+                "render",
+                "isOut"
+            ],
+            "field": [
+                "color",
+                "texture"
+            ],
+            "size": 6506,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "ars::Track",
+            "method": [
+                "Track",
+                "render",
+                "isOut"
+            ],
+            "field": [
+                "color"
+            ],
+            "size": 4677,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "ars::Walls",
+            "method": [
+                "Walls",
+                "render"
+            ],
+            "field": [
+                "color"
+            ],
+            "size": 3579,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "ars::World",
+            "method": [
+                "World",
+                "initialize",
+                "render",
+                "update",
+                "handle"
+            ],
+            "field": [
+                "car",
+                "grass",
+                "track",
+                "walls",
+                "topdown",
+                "insideCar",
+                "current"
+            ],
+            "size": 12101,
+            "inheritance": "N/A",
+            "dependency": []
+        }
+    ]
+}

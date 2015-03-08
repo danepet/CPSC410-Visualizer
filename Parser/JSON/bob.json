@@ -1,0 +1,301 @@
+{
+    "staticInfo": [
+        {
+            "className": "MainWindow",
+            "method": [
+                "MainWindow",
+                "~MainWindow",
+                "show",
+                "populateInitialPlatforms",
+                "populateFrequencyPlatforms",
+                "populateSquids",
+                "populateBubbles",
+                "populatePatricks",
+                "populatePencils",
+                "restartPressed",
+                "startPressed",
+                "pausePressed",
+                "resumePressed",
+                "probabilityCreator",
+                "closeEvent",
+                "quitPressed",
+                "highScoresPressed",
+                "backPressed",
+                "keyPressEvent"
+            ],
+            "field": [
+                "timer",
+                "scene",
+                "view",
+                "topLayout",
+                "title",
+                "pause",
+                "start",
+                "enterNamePic",
+                "nameBG",
+                "scoreBG",
+                "pauseSplash",
+                "gameoverSplash",
+                "resume",
+                "quit_",
+                "restart",
+                "playerName",
+                "playerDisplay",
+                "titlePic",
+                "pauseBG",
+                "startButton",
+                "pauseButton",
+                "resumeButton",
+                "restartButton",
+                "quitButton",
+                "enterName",
+                "textBG",
+                "gameoverBG",
+                "highScoresSplash",
+                "highScoresBG",
+                "backButton",
+                "backButtonPic",
+                "highScoresButton",
+                "highScoresButtonPic",
+                "scoresList",
+                "spongebob",
+                "spongebob_crouched",
+                "spongebob_half_crouched",
+                "spongebob_extended",
+                "spongebob_p_crouched",
+                "spongebob_p_half_crouched",
+                "spongebob_p_extended",
+                "spongebob_bubble1",
+                "spongebob_bubble2",
+                "patrick",
+                "patrick1",
+                "patrick2",
+                "patrick3",
+                "patrick4",
+                "squid",
+                "squid1",
+                "squid2",
+                "squid3",
+                "squid4",
+                "squid5",
+                "squid6",
+                "squidHit",
+                "bubble",
+                "bubblePic",
+                "pencil",
+                "pencilPic",
+                "background",
+                "platform",
+                "platformPic",
+                "randY",
+                "randX",
+                "goodLoc",
+                "badItemCounter",
+                "goodItemCounter",
+                "highScore",
+                "activeObjects",
+                "scoreDisplay",
+                "frequencyCounter",
+                "counter",
+                "squidActive",
+                "bubbleActive",
+                "patrickActive",
+                "pencilActive",
+                "highScores"
+            ],
+            "size": 95328,
+            "inheritance": "N/A",
+            "dependency": [
+                "RSGUI",
+                "RSSpongebob",
+                "RSPatrick",
+                "RSSquid",
+                "RSBubble",
+                "RSPencil",
+                "RSPlatform",
+                "RSObject"
+            ]
+        },
+        {
+            "className": "RSBubble",
+            "method": [
+                "RSBubble",
+                "move",
+                "getName"
+            ],
+            "field": [
+                "spongebob_",
+                "name_"
+            ],
+            "size": 11814,
+            "inheritance": "N/A",
+            "dependency": [
+                "RSSpongebob"
+            ]
+        },
+        {
+            "className": "RSGUI",
+            "method": [
+                "RSGUI",
+                "mousePressEvent",
+                "move"
+            ],
+            "field": [],
+            "size": 10004,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "RSObject",
+            "method": [
+                "RSObject",
+                "setX",
+                "setY",
+                "setVelocityX",
+                "setVelocityY",
+                "getX",
+                "getY",
+                "getVelocityX",
+                "getVelocityY",
+                "setPixmap",
+                "setPos",
+                "getName",
+                "move"
+            ],
+            "field": [
+                "x_",
+                "y_",
+                "velocityX_",
+                "velocityY_",
+                "picture_",
+                "window_",
+                "name_"
+            ],
+            "size": 27561,
+            "inheritance": "N/A",
+            "dependency": [
+                "MainWindow"
+            ]
+        },
+        {
+            "className": "RSPatrick",
+            "method": [
+                "RSPatrick",
+                "move",
+                "getName"
+            ],
+            "field": [
+                "spongebob_",
+                "patrick2_",
+                "patrick3_",
+                "patrick4_",
+                "pictureSwitcher",
+                "name_"
+            ],
+            "size": 16561,
+            "inheritance": "N/A",
+            "dependency": [
+                "RSSpongebob"
+            ]
+        },
+        {
+            "className": "RSPencil",
+            "method": [
+                "RSPencil",
+                "move",
+                "getName"
+            ],
+            "field": [
+                "spongebob_",
+                "name_"
+            ],
+            "size": 11877,
+            "inheritance": "N/A",
+            "dependency": [
+                "RSSpongebob"
+            ]
+        },
+        {
+            "className": "RSPlatform",
+            "method": [
+                "RSPlatform",
+                "move",
+                "getName"
+            ],
+            "field": [
+                "spongebob_",
+                "name_"
+            ],
+            "size": 11993,
+            "inheritance": "N/A",
+            "dependency": [
+                "RSSpongebob"
+            ]
+        },
+        {
+            "className": "RSSpongebob",
+            "method": [
+                "RSSpongebob",
+                "move",
+                "getName"
+            ],
+            "field": [
+                "time",
+                "crouched_",
+                "halfCrouched_",
+                "extended_",
+                "pCrouched_",
+                "pHalfCrouched_",
+                "pExtended_",
+                "bubble1_",
+                "bubble2_",
+                "score",
+                "itrScore",
+                "frequencyScore",
+                "hasHitBadGuy",
+                "isShielded",
+                "isBubbling",
+                "isDead",
+                "first",
+                "second",
+                "number_",
+                "n",
+                "name_",
+                "tempY_",
+                "tempVY_"
+            ],
+            "size": 33088,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "RSSquid",
+            "method": [
+                "RSSquid",
+                "move",
+                "hit",
+                "getName"
+            ],
+            "field": [
+                "time",
+                "first",
+                "second",
+                "spongebob_",
+                "squid1_",
+                "squid2_",
+                "squid3_",
+                "squid4_",
+                "squid5_",
+                "squid6_",
+                "hit_",
+                "pictureSwitcher",
+                "name_"
+            ],
+            "size": 24026,
+            "inheritance": "N/A",
+            "dependency": [
+                "RSSpongebob"
+            ]
+        }
+    ]
+}

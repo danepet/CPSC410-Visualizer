@@ -1,0 +1,99 @@
+{
+    "staticInfo": [
+        {
+            "className": "Ball",
+            "method": [
+                "Ball",
+                "launch_ball",
+                "update_speed",
+                "wall_collision",
+                "collides_with",
+                "bounces_off",
+                "reset"
+            ],
+            "field": [
+                "status",
+                "x",
+                "y",
+                "dx",
+                "dy",
+                "bounce",
+                "speed",
+                "angle",
+                "hits",
+                "predicted_y",
+                "LENGTH"
+            ],
+            "size": 18779,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "Paddle",
+            "method": [
+                "Paddle",
+                "get_x",
+                "get_y",
+                "set_y",
+                "add_to_y",
+                "predict",
+                "AI"
+            ],
+            "field": [
+                "x",
+                "y",
+                "HEIGHT",
+                "WIDTH"
+            ],
+            "size": 11049,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        {
+            "className": "Pong",
+            "method": [
+                "Pong",
+                "execute",
+                "input",
+                "update",
+                "render",
+                "clean_up"
+            ],
+            "field": [
+                "SCREEN_WIDTH",
+                "SCREEN_HEIGHT",
+                "window",
+                "renderer",
+                "ball",
+                "left_paddle",
+                "right_paddle",
+                "paddle_sound",
+                "wall_sound",
+                "score_sound",
+                "controller",
+                "gamepad",
+                "gamepad_direction",
+                "mouse_x",
+                "mouse_y",
+                "font_name",
+                "font_color",
+                "font_image_left_score",
+                "font_image_right_score",
+                "font_image_winner",
+                "font_image_restart",
+                "font_image_launch",
+                "left_score",
+                "right_score",
+                "left_score_changed",
+                "right_score_changed",
+                "exit"
+            ],
+            "size": 32009,
+            "inheritance": "N/A",
+            "dependency": [
+                "Ball",
+                "Paddle"
+            ]
+        }
+    ]
+}

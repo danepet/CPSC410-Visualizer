@@ -1,0 +1,496 @@
+{
+    "staticInfo": [
+        {
+            "className": "cBlood",
+            "method": [
+                "cBlood",
+                "update",
+                "newBlood",
+                "oneNewBlood",
+                "reset"
+            ],
+            "field": [
+                "bloodparts",
+                "BLOODcount"
+            ],
+            "size": 7187,
+            "inheritance": null,
+            "dependency": []
+        },
+        {
+            "className": "cBonus",
+            "method": [
+                "cBonus",
+                "update",
+                "init"
+            ],
+            "field": [
+                "y_speed",
+                "x_speed",
+                "x",
+                "y",
+                "rect",
+                "SURFACE",
+                "type",
+                "counter",
+                "down_touch",
+                "left_touch",
+                "right_touch",
+                "up_touch",
+                "online"
+            ],
+            "size": 14028,
+            "inheritance": null,
+            "dependency": []
+        },
+        {
+            "className": "cBowser",
+            "method": [
+                "cBowser",
+                "update",
+                "hit"
+            ],
+            "field": [
+                "x",
+                "y",
+                "W",
+                "H",
+                "fx",
+                "fy",
+                "static_x",
+                "static_y",
+                "count",
+                "count2",
+                "getX",
+                "timer",
+                "rect",
+                "down_touch",
+                "arrived",
+                "godown",
+                "health",
+                "BOWSER_SURFACE",
+                "HAMMER_SURFACE",
+                "fire_flying",
+                "hammers",
+                "HAMMERcount",
+                "HAMMERS"
+            ],
+            "size": 22698,
+            "inheritance": null,
+            "dependency": []
+        },
+        {
+            "className": "cBrett",
+            "method": [
+                "cBrett",
+                "update"
+            ],
+            "field": [
+                "x",
+                "y",
+                "count",
+                "dir"
+            ],
+            "size": 5807,
+            "inheritance": null,
+            "dependency": []
+        },
+        {
+            "className": "cCannon",
+            "method": [
+                "cCannon",
+                "update"
+            ],
+            "field": [
+                "x",
+                "y",
+                "count",
+                "bullet_x",
+                "bullet_y",
+                "dir",
+                "die",
+                "updating"
+            ],
+            "size": 9064,
+            "inheritance": null,
+            "dependency": []
+        },
+        {
+            "className": "cCrack",
+            "method": [
+                "cCrack",
+                "update",
+                "init"
+            ],
+            "field": [
+                "CRACK",
+                "CRACKcount",
+                "rect",
+                "SURFACE",
+                "counter"
+            ],
+            "size": 8190,
+            "inheritance": null,
+            "dependency": []
+        },
+        {
+            "className": "cEnemy",
+            "method": [
+                "cEnemy",
+                "update",
+                "MakeMyWalk",
+                "die",
+                "add_update",
+                "headbang",
+                "draw",
+                "playerTouchRight",
+                "playerTouchLeft"
+            ],
+            "field": [
+                "scoring",
+                "H",
+                "W",
+                "dir",
+                "speed",
+                "down_touch",
+                "left_touch",
+                "right_touch",
+                "dead",
+                "dying",
+                "y_speed",
+                "x",
+                "y",
+                "DEATHcount",
+                "rect",
+                "walkcount",
+                "walkcount2",
+                "walkadd"
+            ],
+            "size": 26272,
+            "inheritance": null,
+            "dependency": []
+        },
+        {
+            "className": "cFire",
+            "method": [
+                "cFire",
+                "update",
+                "newFire",
+                "reset"
+            ],
+            "field": [
+                "FIRESURF",
+                "fireparts",
+                "super_y",
+                "super_x",
+                "SURFACE",
+                "RECT",
+                "x",
+                "y",
+                "FIREcount"
+            ],
+            "size": 11775,
+            "inheritance": null,
+            "dependency": []
+        },
+        {
+            "className": "cFireCircle",
+            "method": [
+                "cFireCircle",
+                "update"
+            ],
+            "field": [
+                "x",
+                "y",
+                "size",
+                "dir_x",
+                "dir_y",
+                "angle",
+                "rect",
+                "counta2"
+            ],
+            "size": 9381,
+            "inheritance": null,
+            "dependency": []
+        },
+        {
+            "className": "cFireball",
+            "method": [
+                "cFireball",
+                "init",
+                "update"
+            ],
+            "field": [
+                "FIREBALLS",
+                "online",
+                "rect",
+                "x",
+                "y",
+                "x_speed",
+                "y_speed",
+                "ani",
+                "down_touch",
+                "center_touch"
+            ],
+            "size": 11814,
+            "inheritance": null,
+            "dependency": []
+        },
+        {
+            "className": "cGamepad",
+            "method": [
+                "init",
+                "Close",
+                "OpenStick",
+                "CloseStick",
+                "reset",
+                "Handle_Event",
+                "drawStats"
+            ],
+            "field": [
+                "Joystick",
+                "enabled",
+                "left",
+                "right",
+                "up",
+                "down",
+                "Button_A",
+                "Button_B",
+                "Button_Start"
+            ],
+            "size": 14207,
+            "inheritance": null,
+            "dependency": []
+        },
+        {
+            "className": "cGlidder",
+            "method": [
+                "cGlidder",
+                "update",
+                "init"
+            ],
+            "field": [
+                "GLID",
+                "GLIDcount",
+                "rect",
+                "SURFACE"
+            ],
+            "size": 7579,
+            "inheritance": null,
+            "dependency": []
+        },
+        {
+            "className": "cGoomba",
+            "method": [
+                "cGoomba",
+                "add_update",
+                "headbang",
+                "draw"
+            ],
+            "field": [],
+            "size": 9075,
+            "inheritance": "cEnemy",
+            "dependency": []
+        },
+        {
+            "className": "cGoombaBig",
+            "method": [
+                "cGoombaBig",
+                "add_update",
+                "headbang",
+                "draw"
+            ],
+            "field": [],
+            "size": 9245,
+            "inheritance": "cEnemy",
+            "dependency": []
+        },
+        {
+            "className": "cKillerBlume",
+            "method": [
+                "cKillerBlume",
+                "update"
+            ],
+            "field": [
+                "x",
+                "y",
+                "count",
+                "dead",
+                "timer",
+                "rect"
+            ],
+            "size": 7660,
+            "inheritance": null,
+            "dependency": []
+        },
+        {
+            "className": "cPlayer",
+            "method": [
+                "cPlayer",
+                "update",
+                "changeStat",
+                "draw",
+                "die",
+                "movecam",
+                "MakeMyWalk"
+            ],
+            "field": [
+                "H",
+                "W",
+                "invincible",
+                "dir",
+                "top_touch",
+                "top_bonus_touch",
+                "down_touch",
+                "left_touch",
+                "right_touch",
+                "touch_now",
+                "Aed",
+                "Bed",
+                "KeyDown_down",
+                "y_speed",
+                "x_speed",
+                "max_speed",
+                "dead",
+                "incincible",
+                "STARPOWER_OVER",
+                "x",
+                "y",
+                "rect",
+                "Surface_R",
+                "Surface_L",
+                "walkcount",
+                "walkcount2",
+                "walkadd",
+                "JUMPcount",
+                "jumpheight",
+                "STARPOWER",
+                "stat",
+                "speed_jump_height",
+                "K_LEFT",
+                "K_RIGHT",
+                "K_UP",
+                "K_DOWN",
+                "K_B",
+                "K_A"
+            ],
+            "size": 38448,
+            "inheritance": null,
+            "dependency": []
+        },
+        {
+            "className": "cScene",
+            "method": [
+                "cScene",
+                "loadLevel",
+                "getParts",
+                "interpreteSceneLine",
+                "drawLevel",
+                "saveLevel",
+                "loadGame",
+                "initBackground",
+                "drawBackground",
+                "unloadLevel",
+                "posValid",
+                "touchBonus",
+                "BonusCheck",
+                "castlelation",
+                "updatePhysic"
+            ],
+            "field": [
+                "back_type",
+                "back_x",
+                "back_y",
+                "back_T",
+                "castled",
+                "Bonus_Kick_Mode",
+                "partcount",
+                "parts",
+                "ifs",
+                "tileread",
+                "bonusread",
+                "coinread",
+                "COINcount",
+                "BGCOLOR",
+                "nowlevel",
+                "RESTARTLevel",
+                "TEXTUREcount",
+                "TILE",
+                "COIN",
+                "BONUS",
+                "Textures",
+                "Bonus_Textures",
+                "SAVE_SURFACE",
+                "Background_Sky",
+                "Background_Sky_Night",
+                "VTiles",
+                "HTiles",
+                "STARTPOINTS",
+                "EXITPOINTS",
+                "CASTLE",
+                "SCREEN_RECT"
+            ],
+            "size": 41670,
+            "inheritance": null,
+            "dependency": []
+        },
+        {
+            "className": "cScore",
+            "method": [
+                "cScore",
+                "update",
+                "init"
+            ],
+            "field": [
+                "SCORE_S",
+                "SCOREcount"
+            ],
+            "size": 5776,
+            "inheritance": null,
+            "dependency": []
+        },
+        {
+            "className": "cSpiny",
+            "method": [
+                "cSpiny",
+                "add_update",
+                "headbang",
+                "draw"
+            ],
+            "field": [],
+            "size": 9022,
+            "inheritance": "cEnemy",
+            "dependency": []
+        },
+        {
+            "className": "cTurtle",
+            "method": [
+                "cTurtle",
+                "add_update",
+                "headbang",
+                "draw"
+            ],
+            "field": [
+                "down"
+            ],
+            "size": 9935,
+            "inheritance": "cEnemy",
+            "dependency": []
+        },
+        {
+            "className": "cTurtleFly",
+            "method": [
+                "cTurtleFly",
+                "add_update",
+                "headbang",
+                "draw"
+            ],
+            "field": [
+                "count"
+            ],
+            "size": 10117,
+            "inheritance": "cEnemy",
+            "dependency": []
+        }
+    ]
+}

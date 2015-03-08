@@ -1,0 +1,756 @@
+{
+    "staticInfo": [
+        {
+            "className": "Argument",
+            "method": [
+                "Argument"
+            ],
+            "field": [
+                "argc",
+                "args"
+            ],
+            "size": 4189,
+            "inheritance": "Object",
+            "dependency": []
+        },
+        {
+            "className": "Blank",
+            "method": [
+                "Blank",
+                "is_a"
+            ],
+            "field": [],
+            "size": 4752,
+            "inheritance": "StaticElement",
+            "dependency": []
+        },
+        {
+            "className": "Board",
+            "method": [
+                "replace",
+                "Board",
+                "instance",
+                "start",
+                "draw",
+                "delta_draw",
+                "sprite",
+                "eat",
+                "what_is",
+                "~Board"
+            ],
+            "field": [
+                "list",
+                "oldlist",
+                "board",
+                "gboard",
+                "u",
+                "_instance"
+            ],
+            "size": 16337,
+            "inheritance": "Object",
+            "dependency": [
+                "Element",
+                "G_Board",
+                "UserInterface",
+                "Board"
+            ]
+        },
+        {
+            "className": "Bonus",
+            "method": [
+                "start",
+                "getxy",
+                "eat",
+                "code",
+                "~Bonus",
+                "Bonus"
+            ],
+            "field": [
+                "lifetime"
+            ],
+            "size": 11393,
+            "inheritance": "UnmoveableElement",
+            "dependency": []
+        },
+        {
+            "className": "BonusLife",
+            "method": [
+                "BonusLife",
+                "is_a",
+                "eat"
+            ],
+            "field": [],
+            "size": 8646,
+            "inheritance": "Bonus",
+            "dependency": []
+        },
+        {
+            "className": "BonusPoint",
+            "method": [
+                "BonusPoint",
+                "is_a",
+                "eat"
+            ],
+            "field": [],
+            "size": 8680,
+            "inheritance": "Bonus",
+            "dependency": []
+        },
+        {
+            "className": "Colour",
+            "method": [
+                "Colour",
+                "~Colour"
+            ],
+            "field": [
+                "display",
+                "cmap",
+                "MYFOREGROUND",
+                "MYBACKGROUND",
+                "WALLCOLOUR",
+                "PACMANCOLOUR",
+                "GHOSTCOLOUR1",
+                "GHOSTCOLOUR2",
+                "GHOSTCOLOUR3",
+                "GHOSTCOLOUR4",
+                "RUNGHOSTCOLOUR",
+                "FOODCOLOUR",
+                "SUPERFOODCOLOUR",
+                "BONUSPOINTCOLOUR",
+                "BONUSLIFECOLOUR"
+            ],
+            "size": 16122,
+            "inheritance": "Object",
+            "dependency": []
+        },
+        {
+            "className": "Corner1",
+            "method": [
+                "Corner1"
+            ],
+            "field": [],
+            "size": 5475,
+            "inheritance": "Corner",
+            "dependency": []
+        },
+        {
+            "className": "Corner2",
+            "method": [
+                "Corner2"
+            ],
+            "field": [],
+            "size": 5477,
+            "inheritance": "Corner",
+            "dependency": []
+        },
+        {
+            "className": "Corner3",
+            "method": [
+                "Corner3"
+            ],
+            "field": [],
+            "size": 5497,
+            "inheritance": "Corner",
+            "dependency": []
+        },
+        {
+            "className": "Corner4",
+            "method": [
+                "Corner4"
+            ],
+            "field": [],
+            "size": 5498,
+            "inheritance": "Corner",
+            "dependency": []
+        },
+        {
+            "className": "Cross",
+            "method": [
+                "Cross"
+            ],
+            "field": [],
+            "size": 5083,
+            "inheritance": "G_Walls",
+            "dependency": []
+        },
+        {
+            "className": "DynamicElement",
+            "method": [
+                "draw",
+                "getxy",
+                "getgid"
+            ],
+            "field": [
+                "x",
+                "y",
+                "g"
+            ],
+            "size": 10408,
+            "inheritance": "Element",
+            "dependency": [
+                "DynamicGraphElement"
+            ]
+        },
+        {
+            "className": "DynamicGraphElement",
+            "method": [
+                "getgid"
+            ],
+            "field": [],
+            "size": 6231,
+            "inheritance": "GraphElement",
+            "dependency": []
+        },
+        {
+            "className": "E0",
+            "method": [
+                "E0"
+            ],
+            "field": [],
+            "size": 5563,
+            "inheritance": "EndWall",
+            "dependency": []
+        },
+        {
+            "className": "E180",
+            "method": [
+                "E180"
+            ],
+            "field": [],
+            "size": 5611,
+            "inheritance": "EndWall",
+            "dependency": []
+        },
+        {
+            "className": "E270",
+            "method": [
+                "E270"
+            ],
+            "field": [],
+            "size": 5613,
+            "inheritance": "EndWall",
+            "dependency": []
+        },
+        {
+            "className": "E90",
+            "method": [
+                "E90"
+            ],
+            "field": [],
+            "size": 5587,
+            "inheritance": "EndWall",
+            "dependency": []
+        },
+        {
+            "className": "Element",
+            "method": [
+                "draw",
+                "is_a",
+                "gset"
+            ],
+            "field": [
+                "g"
+            ],
+            "size": 9614,
+            "inheritance": "Object",
+            "dependency": [
+                "GraphElement"
+            ]
+        },
+        {
+            "className": "EndWall",
+            "method": [
+                "draw"
+            ],
+            "field": [],
+            "size": 6264,
+            "inheritance": "G_Walls",
+            "dependency": []
+        },
+        {
+            "className": "Food",
+            "method": [
+                "is_a",
+                "Food"
+            ],
+            "field": [],
+            "size": 5110,
+            "inheritance": "Edible",
+            "dependency": []
+        },
+        {
+            "className": "G_Blank",
+            "method": [
+                "G_Blank"
+            ],
+            "field": [],
+            "size": 4777,
+            "inheritance": "StaticGraphElement",
+            "dependency": []
+        },
+        {
+            "className": "G_Board",
+            "method": [
+                "eqpat",
+                "pattern",
+                "chartograph",
+                "G_Board",
+                "instance",
+                "~G_Board",
+                "graphele"
+            ],
+            "field": [
+                "blank",
+                "vertical",
+                "horizontal",
+                "cross",
+                "specwall",
+                "food",
+                "superfood",
+                "e0",
+                "e90",
+                "e180",
+                "e270",
+                "t0",
+                "t90",
+                "t180",
+                "t270",
+                "corner1",
+                "corner2",
+                "corner3",
+                "corner4",
+                "_instance"
+            ],
+            "size": 27871,
+            "inheritance": "Object",
+            "dependency": [
+                "G_Blank",
+                "VerticalWall",
+                "HorizontalWall",
+                "Cross",
+                "G_SpecialWall",
+                "G_Food",
+                "G_SuperFood",
+                "E0",
+                "E90",
+                "E180",
+                "E270",
+                "T0",
+                "T90",
+                "T180",
+                "T270",
+                "Corner1",
+                "Corner2",
+                "Corner3",
+                "Corner4",
+                "G_Board"
+            ]
+        },
+        {
+            "className": "G_BonusLife",
+            "method": [
+                "G_BonusLife"
+            ],
+            "field": [],
+            "size": 5843,
+            "inheritance": "G_Bonus",
+            "dependency": []
+        },
+        {
+            "className": "G_BonusPoint",
+            "method": [
+                "G_BonusPoint"
+            ],
+            "field": [],
+            "size": 5863,
+            "inheritance": "G_Bonus",
+            "dependency": []
+        },
+        {
+            "className": "G_Food",
+            "method": [
+                "G_Food"
+            ],
+            "field": [],
+            "size": 5114,
+            "inheritance": "G_Edible",
+            "dependency": []
+        },
+        {
+            "className": "G_Ghost",
+            "method": [
+                "G_Ghost",
+                "~G_Ghost",
+                "draw"
+            ],
+            "field": [
+                "pixmapn",
+                "pixmapr"
+            ],
+            "size": 9106,
+            "inheritance": "G_Moveables",
+            "dependency": []
+        },
+        {
+            "className": "G_Pacman",
+            "method": [
+                "G_Pacman",
+                "~G_Pacman",
+                "draw",
+                "getgid"
+            ],
+            "field": [
+                "pix0",
+                "pixl",
+                "pixr",
+                "pixu",
+                "pixd",
+                "look",
+                "mouth"
+            ],
+            "size": 14281,
+            "inheritance": "G_Moveables",
+            "dependency": []
+        },
+        {
+            "className": "G_SpecialWall",
+            "method": [
+                "G_SpecialWall"
+            ],
+            "field": [],
+            "size": 4928,
+            "inheritance": "StaticGraphElement",
+            "dependency": []
+        },
+        {
+            "className": "G_SuperFood",
+            "method": [
+                "G_SuperFood"
+            ],
+            "field": [],
+            "size": 5246,
+            "inheritance": "G_Edible",
+            "dependency": []
+        },
+        {
+            "className": "Gamedata",
+            "method": [
+                "setboardlevel",
+                "Gamedata",
+                "instance",
+                "start",
+                "start2",
+                "scorepluss",
+                "bondwn",
+                "levelup",
+                "livesdwn",
+                "livesup",
+                "foodeat",
+                "getscore",
+                "gethiscore",
+                "getbonus",
+                "getlevel",
+                "getboardlevel",
+                "getlives",
+                "eatenall",
+                "resetscore",
+                "reseteats",
+                "setbonus",
+                "setlevel",
+                "setlives"
+            ],
+            "field": [
+                "_instance",
+                "hiscore",
+                "score",
+                "bonus",
+                "level",
+                "boardlevel",
+                "lives",
+                "eats"
+            ],
+            "size": 28705,
+            "inheritance": "Object",
+            "dependency": [
+                "Gamedata"
+            ]
+        },
+        {
+            "className": "Ghost",
+            "method": [
+                "newdir",
+                "otherdir",
+                "searchpac",
+                "Ghost",
+                "~Ghost",
+                "draw",
+                "go",
+                "is_a",
+                "eat",
+                "getxy",
+                "die",
+                "start",
+                "getgid",
+                "lookforpac"
+            ],
+            "field": [
+                "startx",
+                "starty",
+                "go_x",
+                "go_y",
+                "dx",
+                "dy",
+                "st",
+                "d",
+                "deadtime",
+                "randmv",
+                "g",
+                "ghostseaten"
+            ],
+            "size": 28556,
+            "inheritance": "Moveables",
+            "dependency": [
+                "G_Ghost"
+            ]
+        },
+        {
+            "className": "GraphElement",
+            "method": [
+                "consfn",
+                "pix",
+                "draw",
+                "~GraphElement"
+            ],
+            "field": [
+                "display",
+                "window",
+                "screen",
+                "gc",
+                "depth",
+                "pixmap"
+            ],
+            "size": 17421,
+            "inheritance": "Object",
+            "dependency": []
+        },
+        {
+            "className": "HorizontalWall",
+            "method": [
+                "HorizontalWall"
+            ],
+            "field": [],
+            "size": 5891,
+            "inheritance": "StraightWall",
+            "dependency": []
+        },
+        {
+            "className": "Moveables",
+            "method": [
+                "die"
+            ],
+            "field": [
+                "u",
+                "b"
+            ],
+            "size": 8435,
+            "inheritance": "DynamicElement",
+            "dependency": [
+                "UserInterface",
+                "Board"
+            ]
+        },
+        {
+            "className": "Pacman",
+            "method": [
+                "getsupertime",
+                "start",
+                "is_dead",
+                "die",
+                "Pacman",
+                "~Pacman",
+                "draw",
+                "go",
+                "getxy",
+                "is_a",
+                "is_super",
+                "getgid"
+            ],
+            "field": [
+                "g",
+                "st",
+                "supertime",
+                "d",
+                "try_d"
+            ],
+            "size": 20002,
+            "inheritance": "Moveables",
+            "dependency": [
+                "G_Pacman"
+            ]
+        },
+        {
+            "className": "Point",
+            "method": [
+                "Point",
+                "val_x",
+                "val_y",
+                "set_x",
+                "set_y",
+                "set_xy"
+            ],
+            "field": [
+                "x",
+                "y"
+            ],
+            "size": 8669,
+            "inheritance": "Object",
+            "dependency": []
+        },
+        {
+            "className": "SpecialWall",
+            "method": [
+                "SpecialWall",
+                "is_a"
+            ],
+            "field": [],
+            "size": 4924,
+            "inheritance": "StaticElement",
+            "dependency": []
+        },
+        {
+            "className": "StraightWall",
+            "method": [
+                "draw"
+            ],
+            "field": [],
+            "size": 5884,
+            "inheritance": "G_Walls",
+            "dependency": []
+        },
+        {
+            "className": "SuperFood",
+            "method": [
+                "SuperFood",
+                "is_a"
+            ],
+            "field": [],
+            "size": 5238,
+            "inheritance": "Edible",
+            "dependency": []
+        },
+        {
+            "className": "T0",
+            "method": [
+                "T0"
+            ],
+            "field": [],
+            "size": 5560,
+            "inheritance": "T_Wall",
+            "dependency": []
+        },
+        {
+            "className": "T180",
+            "method": [
+                "T180"
+            ],
+            "field": [],
+            "size": 5608,
+            "inheritance": "T_Wall",
+            "dependency": []
+        },
+        {
+            "className": "T270",
+            "method": [
+                "T270"
+            ],
+            "field": [],
+            "size": 5608,
+            "inheritance": "T_Wall",
+            "dependency": []
+        },
+        {
+            "className": "T90",
+            "method": [
+                "T90"
+            ],
+            "field": [],
+            "size": 5584,
+            "inheritance": "T_Wall",
+            "dependency": []
+        },
+        {
+            "className": "T_Wall",
+            "method": [
+                "draw"
+            ],
+            "field": [],
+            "size": 6249,
+            "inheritance": "G_Walls",
+            "dependency": []
+        },
+        {
+            "className": "UserInterface",
+            "method": [
+                "check",
+                "UserInterface",
+                "instance",
+                "getdisplay",
+                "getwindow",
+                "getscreen",
+                "getgc",
+                "getevent",
+                "stick",
+                "write",
+                "getinput",
+                "waitsync",
+                "setinp",
+                "~UserInterface"
+            ],
+            "field": [
+                "_instance",
+                "in",
+                "x",
+                "y",
+                "last_x",
+                "last_y",
+                "mydisplay",
+                "mywindow",
+                "mygc",
+                "myevent",
+                "mykey",
+                "myhint",
+                "mywmhint",
+                "myscreen",
+                "myforeground",
+                "mybackground",
+                "font"
+            ],
+            "size": 31156,
+            "inheritance": "Object",
+            "dependency": [
+                "UserInterface"
+            ]
+        },
+        {
+            "className": "VerticalWall",
+            "method": [
+                "VerticalWall"
+            ],
+            "field": [],
+            "size": 5842,
+            "inheritance": "StraightWall",
+            "dependency": []
+        },
+        {
+            "className": "Walls",
+            "method": [
+                "Walls",
+                "is_a"
+            ],
+            "field": [],
+            "size": 4778,
+            "inheritance": "StaticElement",
+            "dependency": []
+        }
+    ]
+}

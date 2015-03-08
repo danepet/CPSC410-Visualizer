@@ -1,0 +1,238 @@
+{
+    "staticInfo": [
+        {
+            "className": "Element",
+            "method": [
+                "Element",
+                "getValue",
+                "setValue",
+                "setWrong",
+                "setCorrect",
+                "setChangable",
+                "setUnchangable",
+                "setPosVal",
+                "getPosVal",
+                "isWrong",
+                "paintEvent",
+                "mousePressEvent"
+            ],
+            "field": [
+                "row",
+                "column",
+                "value",
+                "posVal",
+                "changable",
+                "wrong"
+            ],
+            "size": 20112,
+            "inheritance": "QWidget",
+            "dependency": []
+        },
+        {
+            "className": "Field",
+            "method": [
+                "Field",
+                "getElement",
+                "buildSector"
+            ],
+            "field": [
+                "gamefield",
+                "gridLayout"
+            ],
+            "size": 6418,
+            "inheritance": "QWidget",
+            "dependency": [
+                "Element"
+            ]
+        },
+        {
+            "className": "GameControl",
+            "method": [
+                "GameControl",
+                "newGame",
+                "solveGame",
+                "editGame",
+                "getHint",
+                "elementChanged",
+                "getValue"
+            ],
+            "field": [
+                "window",
+                "puzzleNr",
+                "puzzle",
+                "timer",
+                "startTime",
+                "state"
+            ],
+            "size": 18987,
+            "inheritance": "QObject",
+            "dependency": [
+                "MainWindow",
+                "Puzzle"
+            ]
+        },
+        {
+            "className": "MainWindow",
+            "method": [
+                "MainWindow",
+                "getElement",
+                "closeEvent",
+                "createActions",
+                "createMenus",
+                "writeGameHtml",
+                "writeGamePDF"
+            ],
+            "field": [
+                "field",
+                "control",
+                "gameSelector",
+                "fileMenu",
+                "gameMenu",
+                "levelMenu",
+                "helpMenu",
+                "newAct",
+                "enterAct",
+                "solveAct",
+                "exportAct",
+                "hintAct",
+                "expertAct",
+                "normalAct",
+                "beginnerAct",
+                "levelGroup",
+                "aboutAct",
+                "helpAct",
+                "quitAct"
+            ],
+            "size": 32566,
+            "inheritance": "QMainWindow",
+            "dependency": [
+                "Field",
+                "GameControl"
+            ]
+        },
+        {
+            "className": "Puzzle",
+            "method": [
+                "getChoices",
+                "getNextChoices",
+                "Puzzle",
+                "solve",
+                "generate",
+                "get",
+                "set"
+            ],
+            "field": [
+                "field"
+            ],
+            "size": 9217,
+            "inheritance": "N/A",
+            "dependency": []
+        },
+        null,
+        {
+            "className": "Ui_MainWindow",
+            "method": [
+                "setupUi",
+                "retranslateUi"
+            ],
+            "field": [
+                "centralWidget",
+                "layoutWidget_3",
+                "gridLayout",
+                "gridLayout1",
+                "frame_8_3",
+                "frame_6_3",
+                "frame_12",
+                "frame_7_3",
+                "frame_9_3",
+                "frame_4_3",
+                "frame_10_3",
+                "frame_5_3",
+                "frame_3_3",
+                "gridLayout2",
+                "frame_8_2_2_2_2_2_2_2_2_2",
+                "frame_6_2_2_2_2_2_2_2_2_2",
+                "frame_11_2_2_2_2_2_2_2_2",
+                "frame_7_2_2_2_2_2_2_2_2_2",
+                "frame_9_2_2_2_2_2_2_2_2_2",
+                "frame_4_2_2_2_2_2_2_2_2_2",
+                "frame_10_2_2_2_2_2_2_2_2_2",
+                "frame_5_2_2_2_2_2_2_2_2_2",
+                "frame_3_2_2_2_2_2_2_2_2_2",
+                "gridLayout3",
+                "frame_8_2_2_3",
+                "frame_6_2_2_3",
+                "frame_11_2_3",
+                "frame_7_2_2_3",
+                "frame_9_2_2_3",
+                "frame_4_2_2_3",
+                "frame_10_2_2_3",
+                "frame_5_2_2_3",
+                "frame_3_2_2_3",
+                "gridLayout4",
+                "frame_8_2_2_2_3",
+                "frame_6_2_2_2_3",
+                "frame_11_2_2_3",
+                "frame_7_2_2_2_3",
+                "frame_9_2_2_2_3",
+                "frame_4_2_2_2_3",
+                "frame_10_2_2_2_3",
+                "frame_5_2_2_2_3",
+                "frame_3_2_2_2_3",
+                "gridLayout5",
+                "frame_8_2_2_2_2_2_2_3",
+                "frame_6_2_2_2_2_2_2_3",
+                "frame_11_2_2_2_2_2_3",
+                "frame_7_2_2_2_2_2_2_3",
+                "frame_9_2_2_2_2_2_2_3",
+                "frame_4_2_2_2_2_2_2_3",
+                "frame_10_2_2_2_2_2_2_3",
+                "frame_5_2_2_2_2_2_2_3",
+                "frame_3_2_2_2_2_2_2_3",
+                "gridLayout6",
+                "frame_8_2_2_2_2_2_2_2_3",
+                "frame_6_2_2_2_2_2_2_2_3",
+                "frame_11_2_2_2_2_2_2_3",
+                "frame_7_2_2_2_2_2_2_2_3",
+                "frame_9_2_2_2_2_2_2_2_3",
+                "frame_4_2_2_2_2_2_2_2_3",
+                "frame_10_2_2_2_2_2_2_2_3",
+                "frame_5_2_2_2_2_2_2_2_3",
+                "frame_3_2_2_2_2_2_2_2_3",
+                "gridLayout7",
+                "frame_8_2_2_2_2_2_3",
+                "frame_6_2_2_2_2_2_3",
+                "frame_11_2_2_2_2_3",
+                "frame_7_2_2_2_2_2_3",
+                "frame_9_2_2_2_2_2_3",
+                "frame_4_2_2_2_2_2_3",
+                "frame_10_2_2_2_2_2_3",
+                "frame_5_2_2_2_2_2_3",
+                "frame_3_2_2_2_2_2_3",
+                "gridLayout8",
+                "frame_8_2_2_2_2_3",
+                "frame_6_2_2_2_2_3",
+                "frame_11_2_2_2_3",
+                "frame_7_2_2_2_2_3",
+                "frame_9_2_2_2_2_3",
+                "frame_4_2_2_2_2_3",
+                "frame_10_2_2_2_2_3",
+                "frame_5_2_2_2_2_3",
+                "frame_3_2_2_2_2_3",
+                "gridLayout9",
+                "frame_8_2_3",
+                "frame_6_2_3",
+                "frame_11_3",
+                "frame_7_2_3",
+                "frame_9_2_3",
+                "frame_4_2_3",
+                "frame_10_2_3",
+                "frame_5_2_3",
+                "frame_3_2_3"
+            ],
+            "size": 86190,
+            "inheritance": "N/A",
+            "dependency": []
+        }
+    ]
+}
